@@ -14,45 +14,41 @@
 <html <?php language_attributes(); ?>>
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
 	<?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
-<div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'wp_nn_theme' ); ?></a>
-
-	<header id="masthead" class="site-header">
-		<div class="site-branding">
+<header id="masthead" class="site-header">
+	<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+		<div class="container">
+			<div class="site-branding">
+				<a class="navbar-brand" href="#">
+					<?php bloginfo('name'); ?>
+				</a>
+			</div>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
 			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			$wp_nn_theme_description = get_bloginfo( 'description', 'display' );
-			if ( $wp_nn_theme_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $wp_nn_theme_description; /* WPCS: xss ok. */ ?></p>
-			<?php endif; ?>
-		</div><!-- .site-branding -->
-
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'wp_nn_theme' ); ?></button>
-			<?php
-			wp_nav_menu( array(
-				'theme_location' => 'menu-1',
-				'menu_id'        => 'primary-menu',
-			) );
+			   wp_nav_menu([
+			     'menu'            => 'primary',
+			     'theme_location'  => 'menu-1',
+			     'container'       => 'div',
+			     'container_id'    => 'navbarCollapse',
+			     'container_class' => 'collapse navbar-collapse',
+			     'menu_id'         => false,
+			     'menu_class'      => 'navbar-nav mr-auto',
+			     'depth'           => 0,
+			     'fallback_cb'     => 'tcnavwalker::fallback',
+			     'walker'          => new tcnavwalker()
+			   ]);
 			?>
-		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
-
+		</div>
+	</nav>
+</header><!-- #masthead -->
+<div id="page" class="site container">
+	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'wp_nn_theme' ); ?></a>
 	<div id="content" class="site-content">
