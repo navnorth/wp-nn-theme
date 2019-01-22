@@ -124,6 +124,8 @@ function wp_nn_theme_scripts() {
         wp_enqueue_style( 'bootstrap-css', get_template_directory_uri() . '/css/bootstrap.min.css' );
         
 	wp_enqueue_style( 'wp_nn_theme-style', get_stylesheet_uri() );
+        
+        wp_enqueue_style( 'responsive-css', get_template_directory_uri() . '/css/responsive.css' );
 
 	wp_enqueue_script( 'wp_nn_theme-navigation', get_template_directory_uri() . '/js/navigation.js', array());
 

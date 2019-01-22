@@ -719,7 +719,8 @@ a:hover, a:active {
 }
 
 .nav-right { float:right; }
-#navbarCollapse { display:block !important; }
+.navbar-expand-md .navbar-collapse.collapse { display:none }
+.navbar-expand-md .navbar-collapse.collapse.show { display:block }
 
 /* Small menu. */
 .menu-toggle,
