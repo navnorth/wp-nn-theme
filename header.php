@@ -26,7 +26,15 @@
 		<div class="container">
 			<div class="site-branding">
 				<a class="navbar-brand" href="#">
-					<?php bloginfo('name'); ?>
+					<?php
+					$custom_logo_id = get_theme_mod( 'custom_logo' );
+					$logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
+					if ( has_custom_logo() ) {
+						echo '<img src="'. esc_url( $logo[0] ) .'">';
+					} else {
+						echo '<h1>'. get_bloginfo( 'name' ) .'</h1>';
+					}
+					?>
 				</a>
 			</div>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,7 +48,7 @@
 			     'container_id'    => 'navbarCollapse',
 			     'container_class' => 'collapse navbar-collapse',
 			     'menu_id'         => false,
-			     'menu_class'      => 'navbar-nav mr-auto',
+			     'menu_class'      => 'navbar-nav mr-auto nav-right',
 			     'depth'           => 0,
 			     'fallback_cb'     => 'tcnavwalker::fallback',
 			     'walker'          => new tcnavwalker()
