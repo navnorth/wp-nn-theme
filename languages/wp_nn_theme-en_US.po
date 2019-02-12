@@ -29,3 +29,59 @@ msgstr ""
 #: 404.php:47
 msgid "Try looking in the monthly archives. %1$s"
 msgstr ""
+
+#: comments.php:35
+msgid "One thought on &ldquo;%1$s&rdquo;"
+msgstr ""
+
+#: comments.php:41
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgstr ""
+
+#: comments.php:41
+msgid "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr ""
+
+#: comments.php:66
+msgid "Comments are closed."
+msgstr ""
+
+#: footer.php:19
+msgid "Copyright Reserved &copy; %d"
+msgstr ""
+
+#: header.php:61
+msgid "Skip to content"
+msgstr ""
+
+#: search.php:22
+msgid "Search Results for: %s"
+msgstr ""
+
+#: template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr ""
+
+#: template-parts/content-none.php:24
+msgid "Ready to publish your first post? <a href="%1$s">Get started here</a>."
+msgstr ""
+
+#: template-parts/content-none.php:37
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr ""
+
+#: template-parts/content-none.php:44
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr ""
+
+#: template-parts/content-page.php:24,template-parts/content.php:50
+msgid "Pages:"
+msgstr ""
+
+#: template-parts/content-page.php:37
+msgid 'Edit <span class="screen-reader-text">%s</span>'
+msgstr ""
+
+#: template-parts/content.php:39
+msgid 'Continue reading<span class="screen-reader-text"> "%s"</span>'
+msgstr ""
