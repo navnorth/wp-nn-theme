@@ -79,6 +79,7 @@ if ( ! function_exists( 'wp_nn_theme_setup' ) ) :
 			'flex-width'  => true,
 			'flex-height' => true,
 		) );
+                
 	}
 endif;
 add_action( 'after_setup_theme', 'wp_nn_theme_setup' );
@@ -171,3 +172,65 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+/**
+ * Theme Settings page
+ **/
+function wp_nn_theme_settings_page() {
+	//Create Settings Section
+	add_settings_section(
+		'wp_nn_theme_settings',
+		'',
+		'wp_nn_theme_settings_callback',
+		'nn_theme_settings'
+	);
+
+	//Add Settings field for Google Analytics ID
+	add_settings_field(
+		'wp_nn_theme_ga_id',
+		'',
+		'wp_nn_theme_settings_field',
+		'nn_theme_settings',
+		'wp_nn_theme_settings',
+		array(
+			'uid' => 'wp_nn_theme_ga_id',
+			'type' => 'text',
+			'name' =>  __('Google Analytics ID', 'wp_nn_theme')
+		)
+	);
+
+	register_setting( 'wp_nn_theme_settings' , 'wp_nn_theme_ga_id' );
+}
+add_action( 'admin_init' , 'wp_nn_theme_settings_page' );
+
+/**
+ * Theme Settings Callback
+ **/
+function wp_nn_theme_settings_callback() {
+
+}
+
+/**
+ * Theme Settings field
+ **/
+function wp_nn_theme_settings_field( $arguments ) {
+    echo '<label for="'.$arguments['uid'].'"><strong>'.$arguments['name'].'</strong></label>
+            <input name="'.$arguments['uid'].'" id="'.$arguments['uid'].'" type="'.$arguments['type'].'" value="' . $value . '" />';
+}
+
+/**
+ * Add Theme Settings Page
+ **/
+function add_wp_nn_theme_settings_menu(){
+    add_theme_page("Theme Settings", "Settings", "edit_theme_options", "theme-settings-page",  "add_wp_nn_theme_settings_page", 99);
+}
+add_action( "admin_menu", "add_wp_nn_theme_settings_menu" );
+
+function add_wp_nn_theme_settings_page(){
+    include( get_template_directory() . "/admin-template/settings.php");
+}
+
+function nn_theme_load_custom_scripts(){
+    wp_register_style( 'wp_nn_admin_css', get_template_directory_uri() . '/css/admin-style.css', false, '1.0.0' );
+    wp_enqueue_style( 'wp_nn_admin_css' );
+}
+add_action( "admin_enqueue_scripts", "nn_theme_load_custom_scripts" );
