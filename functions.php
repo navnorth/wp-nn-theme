@@ -301,7 +301,7 @@ function wp_nn_theme_settings_field( $arguments ) {
  * Add Theme Settings Page
  **/
 function add_wp_nn_theme_settings_menu(){
-    add_theme_page("Theme Settings", "Settings", "edit_theme_options", "theme-settings-page",  "add_wp_nn_theme_settings_page", 99);
+    add_theme_page("Theme Settings", "Settings", "edit_theme_options", "theme-settings-page",  "add_wp_nn_theme_settings_page");
 }
 add_action( "admin_menu", "add_wp_nn_theme_settings_menu" );
 
