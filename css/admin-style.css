@@ -2,3 +2,7 @@
  * Admin related styles
  **/
 #wp-nn-theme-settings .form-table th { display:none; }
+#wp-nn-theme-settings fieldset { border:1px solid #cdcdcd; padding:px 15px 15px; }
+#wp-nn-theme-settings legend { font-size:14px; margin-left:15px;  }
+#wp-nn-theme-settings label { width:130px; display:inline-block; }
+#wp-nn-theme-settings input[type=textbox] { max-width:500px; width:100%; }

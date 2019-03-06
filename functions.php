@@ -6,6 +6,8 @@
  *
  * @package wp_nn_theme
  */
+define( "WP_NN_THEME_NAME", "Teaching California Theme" );
+define( "WP_NN_THEME_VERSION", "0.0.1" );
  
 if ( ! function_exists( 'wp_nn_theme_setup' ) ) :
 	/**
@@ -193,12 +195,80 @@ function wp_nn_theme_settings_page() {
 		'wp_nn_theme_settings',
 		array(
 			'uid' => 'wp_nn_theme_ga_id',
-			'type' => 'text',
-			'name' =>  __('Google Analytics ID', 'wp_nn_theme')
+			'type' => 'textbox',
+			'name' =>  __('Google Analytics ID: ', 'wp_nn_theme')
+		)
+	);
+        
+        //Create Settings Sub Section for Social Links
+	add_settings_section(
+		'wp_nn_theme_social_settings',
+		'',
+		'wp_nn_theme_social_settings_callback',
+		'nn_theme_social_settings'
+	);
+        
+        //Add Settings field for Social Links - Instagram
+	add_settings_field(
+		'wp_nn_theme_social_instagram',
+		'',
+		'wp_nn_theme_settings_field',
+		'nn_theme_social_settings',
+		'wp_nn_theme_social_settings',
+		array(
+			'uid' => 'wp_nn_theme_social_instagram',
+			'type' => 'textbox',
+			'name' =>  __('Instagram: ', 'wp_nn_theme')
+		)
+	);
+        
+        //Add Settings field for Social Links - Facebook
+	add_settings_field(
+		'wp_nn_theme_social_facebook',
+		'',
+		'wp_nn_theme_settings_field',
+		'nn_theme_social_settings',
+		'wp_nn_theme_social_settings',
+		array(
+			'uid' => 'wp_nn_theme_social_facebook',
+			'type' => 'textbox',
+			'name' =>  __('Facebook: ', 'wp_nn_theme')
+		)
+	);
+        
+        //Add Settings field for Social Links - Twitter
+	add_settings_field(
+		'wp_nn_theme_social_twitter',
+		'',
+		'wp_nn_theme_settings_field',
+		'nn_theme_social_settings',
+		'wp_nn_theme_social_settings',
+		array(
+			'uid' => 'wp_nn_theme_social_twitter',
+			'type' => 'textbox',
+			'name' =>  __('Twitter: ', 'wp_nn_theme')
+		)
+	);
+        
+        //Add Settings field for Social Links - Flickr
+	add_settings_field(
+		'wp_nn_theme_social_flickr',
+		'',
+		'wp_nn_theme_settings_field',
+		'nn_theme_social_settings',
+		'wp_nn_theme_social_settings',
+		array(
+			'uid' => 'wp_nn_theme_social_flickr',
+			'type' => 'textbox',
+			'name' =>  __('Flickr: ', 'wp_nn_theme')
 		)
 	);
 
 	register_setting( 'wp_nn_theme_settings' , 'wp_nn_theme_ga_id' );
+        register_setting( 'wp_nn_theme_settings' , 'wp_nn_theme_social_instagram' );
+        register_setting( 'wp_nn_theme_settings' , 'wp_nn_theme_social_facebook' );
+        register_setting( 'wp_nn_theme_settings' , 'wp_nn_theme_social_twitter' );
+        register_setting( 'wp_nn_theme_settings' , 'wp_nn_theme_social_flickr' );
 }
 add_action( 'admin_init' , 'wp_nn_theme_settings_page' );
 
@@ -210,9 +280,19 @@ function wp_nn_theme_settings_callback() {
 }
 
 /**
+ * Theme Social Links Settings Callback
+ **/
+function wp_nn_theme_social_settings_callback(){
+    
+}
+
+/**
  * Theme Settings field
  **/
 function wp_nn_theme_settings_field( $arguments ) {
+    
+    $value = get_option($arguments['uid']);
+    
     echo '<label for="'.$arguments['uid'].'"><strong>'.$arguments['name'].'</strong></label>
             <input name="'.$arguments['uid'].'" id="'.$arguments['uid'].'" type="'.$arguments['type'].'" value="' . $value . '" />';
 }
