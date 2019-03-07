@@ -11,6 +11,7 @@ if (!current_user_can('edit_theme_options')) {
 <div class="wrap">
     <h1>Theme Options</h1>
     <form id="wp-nn-theme-settings" method="post" action="options.php">
+	<?php settings_errors(); ?>
         <?php settings_fields("theme_settings_page"); ?>
         <div class="form-row">
         <?php
