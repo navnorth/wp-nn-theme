@@ -178,12 +178,14 @@ if ( defined( 'JETPACK__VERSION' ) ) {
  * Theme Settings page
  **/
 function wp_nn_theme_settings_page() {
+        $page = "theme_settings_page";
+    
 	//Create Settings Section
 	add_settings_section(
 		'wp_nn_theme_settings',
 		'',
 		'wp_nn_theme_settings_callback',
-		'nn_theme_settings'
+		$page
 	);
 
 	//Add Settings field for Google Analytics ID
@@ -191,7 +193,7 @@ function wp_nn_theme_settings_page() {
 		'wp_nn_theme_ga_id',
 		'',
 		'wp_nn_theme_settings_field',
-		'nn_theme_settings',
+		$page,
 		'wp_nn_theme_settings',
 		array(
 			'uid' => 'wp_nn_theme_ga_id',
@@ -205,7 +207,7 @@ function wp_nn_theme_settings_page() {
 		'wp_nn_theme_social_settings',
 		'',
 		'wp_nn_theme_social_settings_callback',
-		'nn_theme_social_settings'
+		$page
 	);
         
         //Add Settings field for Social Links - Instagram
@@ -213,7 +215,7 @@ function wp_nn_theme_settings_page() {
 		'wp_nn_theme_social_instagram',
 		'',
 		'wp_nn_theme_settings_field',
-		'nn_theme_social_settings',
+		$page,
 		'wp_nn_theme_social_settings',
 		array(
 			'uid' => 'wp_nn_theme_social_instagram',
@@ -227,7 +229,7 @@ function wp_nn_theme_settings_page() {
 		'wp_nn_theme_social_facebook',
 		'',
 		'wp_nn_theme_settings_field',
-		'nn_theme_social_settings',
+		$page,
 		'wp_nn_theme_social_settings',
 		array(
 			'uid' => 'wp_nn_theme_social_facebook',
@@ -241,7 +243,7 @@ function wp_nn_theme_settings_page() {
 		'wp_nn_theme_social_twitter',
 		'',
 		'wp_nn_theme_settings_field',
-		'nn_theme_social_settings',
+		$page,
 		'wp_nn_theme_social_settings',
 		array(
 			'uid' => 'wp_nn_theme_social_twitter',
@@ -255,7 +257,7 @@ function wp_nn_theme_settings_page() {
 		'wp_nn_theme_social_flickr',
 		'',
 		'wp_nn_theme_settings_field',
-		'nn_theme_social_settings',
+		$page,
 		'wp_nn_theme_social_settings',
 		array(
 			'uid' => 'wp_nn_theme_social_flickr',
@@ -264,11 +266,11 @@ function wp_nn_theme_settings_page() {
 		)
 	);
 
-	register_setting( 'wp_nn_theme_settings' , 'wp_nn_theme_ga_id' );
-        register_setting( 'wp_nn_theme_settings' , 'wp_nn_theme_social_instagram' );
-        register_setting( 'wp_nn_theme_settings' , 'wp_nn_theme_social_facebook' );
-        register_setting( 'wp_nn_theme_settings' , 'wp_nn_theme_social_twitter' );
-        register_setting( 'wp_nn_theme_settings' , 'wp_nn_theme_social_flickr' );
+	register_setting( 'theme_settings_page' , 'wp_nn_theme_ga_id' );
+        register_setting( 'theme_settings_page' , 'wp_nn_theme_social_instagram' );
+        register_setting( 'theme_settings_page' , 'wp_nn_theme_social_facebook' );
+        register_setting( 'theme_settings_page' , 'wp_nn_theme_social_twitter' );
+        register_setting( 'theme_settings_page' , 'wp_nn_theme_social_flickr' );
 }
 add_action( 'admin_init' , 'wp_nn_theme_settings_page' );
 
@@ -293,15 +295,16 @@ function wp_nn_theme_settings_field( $arguments ) {
     
     $value = get_option($arguments['uid']);
     
-    echo '<label for="'.$arguments['uid'].'"><strong>'.$arguments['name'].'</strong></label>
-            <input name="'.$arguments['uid'].'" id="'.$arguments['uid'].'" type="'.$arguments['type'].'" value="' . $value . '" />';
+    echo '<div class="form-group"><label for="'.$arguments['uid'].'"><strong>'.$arguments['name'].'</strong></label>
+            <input name="'.$arguments['uid'].'" id="'.$arguments['uid'].'" type="'.$arguments['type'].'" value="' . $value . '" /></div>';
 }
 
 /**
  * Add Theme Settings Page
  **/
 function add_wp_nn_theme_settings_menu(){
-    add_theme_page("Theme Settings", "Settings", "edit_theme_options", "theme-settings-page",  "add_wp_nn_theme_settings_page");
+    add_theme_page("Theme Settings", "Settings", "edit_theme_options", "theme_settings_page",  "add_wp_nn_theme_settings_page", 10);
+    //add_submenu_page("themes.php", "Theme Settings", "Settings", "edit_theme_options", "theme_settings_page",  "add_wp_nn_theme_settings_page");
 }
 add_action( "admin_menu", "add_wp_nn_theme_settings_menu" );
 
