@@ -8,6 +8,7 @@
  */
 define( "WP_NN_THEME_NAME", "Teaching California Theme" );
 define( "WP_NN_THEME_VERSION", "0.0.1" );
+define( "WP_NN_SLUG", "wp_nn_theme" );
  
 if ( ! function_exists( 'wp_nn_theme_setup' ) ) :
 	/**
@@ -47,6 +48,7 @@ if ( ! function_exists( 'wp_nn_theme_setup' ) ) :
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
 			'menu-1' => esc_html__( 'Primary', 'wp_nn_theme' ),
+                        'menu-footer' => esc_html__( 'Footer', 'wp_nn_theme' )
 		) );
 
 		/*
@@ -317,3 +319,56 @@ function nn_theme_load_custom_scripts(){
     wp_enqueue_style( 'wp_nn_admin_css' );
 }
 add_action( "admin_enqueue_scripts", "nn_theme_load_custom_scripts" );
+
+function nn_theme_add_footer_menu(){
+    $menu_name = __('Footer Menu', WP_NN_SLUG);
+    $menu_location = "menu-footer";
+    
+    $menu_exists = wp_get_nav_menu_object($menu_name);
+    
+    //Create Footer menu automatically
+    if (!$menu_exists){
+        $menu_id = wp_create_nav_menu($menu_name);
+        
+        $pages = nn_get_top_level_pages();
+        
+        // Add Top Level Pages as menu
+        foreach($pages as $page){
+            $menu_title = $page->post_title;
+            $menu_classes = "nn-nav-menu-item";
+            $menu_url = $page->guid;
+            $menu_status = "publish";
+            
+             wp_update_nav_menu_item($menu_id, 0, array(
+                'menu-item-title' =>  $menu_title,
+                'menu-item-classes' => $menu_classes,
+                'menu-item-object' => 'page',
+                'menu-item-status' => $menu_status)
+            );
+            
+        }
+        
+        if( !has_nav_menu( $menu_location ) ){
+            $locations = get_theme_mod('nav_menu_locations');
+            $locations[$menu_location] = $menu_id;
+            set_theme_mod( 'nav_menu_locations', $locations );
+        }
+        
+    }
+}
+add_action( "admin_init","nn_theme_add_footer_menu" );
+
+function nn_get_top_level_pages(){
+    $pages = null;
+    
+    $args = array(
+        "post_type" => "page",
+        "post_status" => "publish",
+        "parent" => 0,
+        "hierarchical" => 0
+    );
+    
+    $pages = get_pages($args);
+    
+    return $pages;
+}
