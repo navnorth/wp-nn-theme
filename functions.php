@@ -342,6 +342,7 @@ function nn_theme_add_footer_menu(){
              wp_update_nav_menu_item($menu_id, 0, array(
                 'menu-item-title' =>  $menu_title,
                 'menu-item-classes' => $menu_classes,
+                'menu-item-url' => $menu_url,
                 'menu-item-object' => 'page',
                 'menu-item-status' => $menu_status)
             );
@@ -372,3 +373,9 @@ function nn_get_top_level_pages(){
     
     return $pages;
 }
+
+function nn_theme_load_frontend_scripts(){
+    wp_register_style( 'wp_nn_frontend_css', get_template_directory_uri() . '/css/frontend-style.css', false, '1.0.0' );
+    wp_enqueue_style( 'wp_nn_frontend_css' );
+}
+add_action( "wp_enqueue_scripts", "nn_theme_load_frontend_scripts" );
