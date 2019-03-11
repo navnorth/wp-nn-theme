@@ -46,7 +46,7 @@
 }
 @font-face{
     font-family:'Helvetica Neue';
-    src:url(fonts/HelveticaNeueLight.woff);
+    src:url(fonts/HelveticaNeue-Medium.woff);
 }
 @font-face{
     font-family:'Helvetica Neue Medium';
@@ -820,7 +820,7 @@ a:hover, a:active {
 	margin-right: auto;
 }
 
-.site-content { margin-top:25px; }
+.container .site-content { margin-top:25px; }
 /*--------------------------------------------------------------
 # Clearings
 --------------------------------------------------------------*/

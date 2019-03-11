@@ -56,6 +56,12 @@
 		</div>
 	</nav>
 </header><!-- #masthead -->
-<div id="page" class="site container">
+<?php
+$container_class = " container";
+if (is_front_page()){
+	$container_class = "";
+}
+?>
+<div id="page" class="site<?php echo $container_class; ?>">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'wp_nn_theme' ); ?></a>
 	<div id="content" class="site-content row">
