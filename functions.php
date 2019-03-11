@@ -373,9 +373,3 @@ function nn_get_top_level_pages(){
     
     return $pages;
 }
-
-function nn_theme_load_frontend_scripts(){
-    wp_register_style( 'wp_nn_frontend_css', get_template_directory_uri() . '/css/frontend-style.css', false, '1.0.0' );
-    wp_enqueue_style( 'wp_nn_frontend_css' );
-}
-add_action( "wp_enqueue_scripts", "nn_theme_load_frontend_scripts" );
