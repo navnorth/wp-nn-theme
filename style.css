@@ -1004,6 +1004,27 @@ object {
 	display: block;
 }
 /*--------------------------------------------------------------
+## Header
+--------------------------------------------------------------*/
+.site-header { background-color:#2A3E48; }
+.navbar.bg-dark { background-color:#2A3E48 !important; margin-bottom:0; }
+.site-branding {
+	width: 30%;
+	overflow: hidden;
+}
+.site-brand:hover { text-decoration:none; }
+#navbarTop { width:70%; overflow:hidden !important;  }
+#menu-main-menu li a { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:18px; color: #FFB904; font-weight:500; }
+#menu-main-menu li a:hover { text-decoration:underline; }
+.site-brand h1.blogname {
+	display:table;
+	clear:none;
+	text-transform:uppercase;
+	color:#FFB904;
+	font-size:24px;
+	margin:20px 0; 
+}
+/*--------------------------------------------------------------
 ## Footer
 --------------------------------------------------------------*/
 .site-footer {

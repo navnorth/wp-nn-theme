@@ -25,12 +25,12 @@
 	<nav class="navbar navbar-expand-md navbar-dark bg-dark">
 		<div class="container">
 			<div class="site-branding">
-				<a class="navbar-brand" href="#">
+				<a class="site-brand" href="<?php echo site_url(); ?>">
 					<?php
 					$custom_logo_id = get_theme_mod( 'custom_logo' );
 					$logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
 					if ( has_custom_logo() ) {
-						echo '<img src="'. esc_url( $logo[0] ) .'">';
+						echo '<img src="'. esc_url( $logo[0] ) .'" align="left">';
 					}
 					echo '<h1 class="blogname">'. get_bloginfo( 'name' ) .'</h1>';
 					?>
@@ -44,7 +44,7 @@
 			     'menu'            => 'primary',
 			     'theme_location'  => 'menu-1',
 			     'container'       => 'div',
-			     'container_id'    => 'navbarCollapse',
+			     'container_id'    => 'navbarTop',
 			     'container_class' => 'collapse navbar-collapse',
 			     'menu_id'         => false,
 			     'menu_class'      => 'navbar-nav mr-auto nav-right',
