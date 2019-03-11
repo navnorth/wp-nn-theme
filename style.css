@@ -1014,8 +1014,8 @@ object {
 }
 .site-brand:hover { text-decoration:none; }
 #navbarTop { width:70%; overflow:hidden !important;  }
-#menu-main-menu li a { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:18px; color: #FFB904; font-weight:500; }
-#menu-main-menu li a:hover { text-decoration:underline; }
+.navbar-nav li a { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:20px; color: #FFB904; font-weight:500; }
+.navbar-nav li a:hover { text-decoration:underline; }
 .site-brand h1.blogname {
 	display:table;
 	clear:none;
