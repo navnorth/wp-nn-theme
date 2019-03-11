@@ -13,9 +13,12 @@
  */
 
 get_header();
+$col = 12;
+if (is_active_sidebar('sidebar-1'))
+	$col = 8;
 ?>
 
-	<div id="primary" class="content-area col-md-8">
+	<div id="primary" class="content-area col-md-<?php echo $col; ?>">
 		<main id="main" class="site-main">
 
 		<?php

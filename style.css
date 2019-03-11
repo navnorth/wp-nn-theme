@@ -49,7 +49,7 @@
     src:url(../fonts/HelveticaNeueLight.woff);
 }
 @font-face{
-    font-family:'Helvetica Neue';
+    font-family:'Helvetica Neue Medium';
     src:url(../fonts/HelveticaNeueMedium.woff);
     font-weight:500;
 }	
@@ -1014,14 +1014,14 @@ object {
 }
 .site-brand:hover { text-decoration:none; }
 #navbarTop { width:70%; overflow:hidden !important;  }
-.navbar-nav li a { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:20px; color: #FFB904; font-weight:500; }
+.navbar-nav li a { font-family: 'Helvetica Neue Medium', Helvetica, Arial, sans-serif; font-size:20px; color: #FFB904 !important; }
 .navbar-nav li a:hover { text-decoration:underline; }
 .site-brand h1.blogname {
 	display:table;
 	clear:none;
 	text-transform:uppercase;
 	color:#FFB904;
-	font-size:24px;
+	font-size:30px;
 	margin:20px 0; 
 }
 /*--------------------------------------------------------------
