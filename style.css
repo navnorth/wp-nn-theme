@@ -819,10 +819,6 @@ a:hover, a:active {
 	margin-left: auto;
 	margin-right: auto;
 }
-
-.container .site-content { margin-top:25px; }
-.entry-content { margin:0; }
-.container .entry-content { margin:1.5em 0 0; }
 /*--------------------------------------------------------------
 # Clearings
 --------------------------------------------------------------*/
@@ -1057,6 +1053,9 @@ time {
 	font-size:24px;
 }
 .image-columns wp-block-column { margin:0; }
+.container .site-content { margin-top:25px; }
+.entry-content { margin:0; }
+.container .entry-content { margin:1.5em 0 0; }
 /*--------------------------------------------------------------
 ## Footer
 --------------------------------------------------------------*/
