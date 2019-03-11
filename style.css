@@ -821,6 +821,8 @@ a:hover, a:active {
 }
 
 .container .site-content { margin-top:25px; }
+.entry-content { margin:0; }
+.container .entry-content { margin:1.5em 0 0; }
 /*--------------------------------------------------------------
 # Clearings
 --------------------------------------------------------------*/
@@ -1054,6 +1056,7 @@ time {
 	color:#4F4F4F;
 	font-size:24px;
 }
+.image-columns wp-block-column { margin:0; }
 /*--------------------------------------------------------------
 ## Footer
 --------------------------------------------------------------*/
