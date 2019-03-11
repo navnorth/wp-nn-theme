@@ -107,6 +107,13 @@ hr {
 	overflow: visible; /* 2 */
 }
 
+p {
+	font-family: 'Helvetica Neue', Helvetica, Arial,sans-serif;
+	color: #4F4F4F;
+	font-size: 24px;
+	line-height: 28px;
+}
+
 /**
  * 1. Correct the inheritance and scaling of font size in all browsers.
  * 2. Correct the odd `em` font sizing in all browsers.
@@ -125,7 +132,10 @@ pre {
  */
 
 a {
-	background-color: transparent;
+	font-family: 'Helvetica Neue', Helvetica, Arial,sans-serif;
+	color: #CD620F;
+	font-size: 24px;
+	line-height: 28px;
 }
 
 /**
