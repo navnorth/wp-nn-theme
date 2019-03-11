@@ -409,7 +409,7 @@ select,
 optgroup,
 textarea {
 	color: #404040;
-	font-family: 'Raleway-Regular', sans-serif;
+	font-family: 'Helvetica Neue Medium', sans-serif;
 	font-size: 16px;
 	font-size: 1rem;
 	line-height: 1.5;
@@ -1034,6 +1034,16 @@ h2.section-heading {
 	font-weight:bold;
 	color:#851939;
 }
+time {
+	font-family:'Helvetica Neue', Helvetica, Arial,sans-serif;
+	color:#4F4F4F;
+	font-size:20px;
+}
+.wp-block-latest-posts li a {
+	font-family:'Helvetica Neue Medium', Helvetica, Arial,sans-serif;
+	color:#4F4F4F;
+	font-size:24px;
+}
 /*--------------------------------------------------------------
 ## Footer
 --------------------------------------------------------------*/
@@ -1043,7 +1053,7 @@ h2.section-heading {
     font-size:20px;
 }
 #menu-footer-menu { margin:20px 0; padding:0; }
-#menu-footer-menu li{ display:inline-block; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;  }
+#menu-footer-menu li{ display:inline-block; font-family: 'Helvetica Neue Medium', Helvetica, Arial, sans-serif;  }
 #menu-footer-menu li a { color:#FFB904; }
 #menu-footer-menu li a:hover { text-decoration:underline; }
 .nn-social-links { margin: 20px 0; padding: 0; text-align: right; }
