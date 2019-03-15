@@ -1077,16 +1077,16 @@ time {
 ## Home Page Specific Styles
 --------------------------------------------------------------*/
 .full-width { position:relative; }
-.full-width > .wp-block-column { width:100%; }
+.full-width > .wp-block-column { width:100%; flex-basis: 100%; margin-right: 0; }
 .row-full-width  .wp-block-column { margin:0;   }
-#banner-heading { position:absolute; top:65%; width:100%; text-align:center; }
+#banner-heading { position:absolute; top:50%; width:100%; text-align:center; }
 #banner-title {
 	font-family:'Biko', sans-serif;
 	font-weight:bold;
 	background-color: #851939;
 	color: #ffffff;
 	padding: 5px;
-	font-size: 48px;
+	font-size: 42px;
 	text-shadow: 7px 4px 4px rgba(0, 0, 0, 0.25);
 }
 #banner-subtitle {
@@ -1095,6 +1095,6 @@ time {
 	background-color: #851939;
 	color: #ffffff;
 	padding: 5px;
-	font-size: 28px;
+	font-size: 24px;
 	text-shadow: 7px 4px 4px rgba(0, 0, 0, 0.25);
 }
