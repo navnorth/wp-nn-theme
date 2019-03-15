@@ -1073,3 +1073,28 @@ time {
 .nn-social-links li:first-child { margin-left:0; }
 .nn-social-links li:last-child { margin-right:0; }
 .nn-social-links li a { color:#FFB904; }
+/*--------------------------------------------------------------
+## Home Page Specific Styles
+--------------------------------------------------------------*/
+.full-width { position:relative; }
+.full-width > .wp-block-column { width:100%; }
+.row-full-width  .wp-block-column { margin:0;   }
+#banner-heading { position:absolute; top:65%; width:100%; text-align:center; }
+#banner-title {
+	font-family:'Biko', sans-serif;
+	font-weight:bold;
+	background-color: #851939;
+	color: #ffffff;
+	padding: 5px;
+	font-size: 48px;
+	text-shadow: 7px 4px 4px rgba(0, 0, 0, 0.25);
+}
+#banner-subtitle {
+	font-family:'Helvetica Neue','Helvetica', Arial, sans-serif;
+	font-weight:300;
+	background-color: #851939;
+	color: #ffffff;
+	padding: 5px;
+	font-size: 28px;
+	text-shadow: 7px 4px 4px rgba(0, 0, 0, 0.25);
+}
