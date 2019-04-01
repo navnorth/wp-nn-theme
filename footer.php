@@ -36,22 +36,22 @@
 				<?php
 				$facebook = get_option("wp_nn_theme_social_facebook");
 				if ($facebook) {
-					echo "<li><a href='".$facebook."' target='_blank'><i class='fab fa-facebook-square fa-2x'></i></a></li>";
+					echo "<li><a href='".$facebook."' target='_blank'><i class='fa fa-facebook-square fa-2x'></i></a></li>";
 				}
 				
 				$twitter = get_option("wp_nn_theme_social_twitter");
 				if ($twitter) {
-					echo "<li><a href='".$twitter."' target='_blank'><i class='fab fa-twitter fa-2x'></i></a></li>";
+					echo "<li><a href='".$twitter."' target='_blank'><i class='fa fa-twitter fa-2x'></i></a></li>";
 				}
 				
 				$instagram = get_option("wp_nn_theme_social_instagram");
 				if ($instagram) {
-					echo "<li><a href='".$instagram."' target='_blank'><i class='fab fa-instagram fa-2x'></i></a></li>";
+					echo "<li><a href='".$instagram."' target='_blank'><i class='fa fa-instagram fa-2x'></i></a></li>";
 				}
 				
 				$flickr = get_option("wp_nn_theme_social_flickr");
 				if ($flickr) {
-					echo "<li><a href='".$flickr."' target='_blank'><i class='fab fa-flickr fa-2x'></i></a></li>";
+					echo "<li><a href='".$flickr."' target='_blank'><i class='fa fa-flickr fa-2x'></i></a></li>";
 				}
 				?>
 				</ul>
