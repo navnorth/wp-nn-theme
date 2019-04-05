@@ -1032,6 +1032,20 @@ object {
 	font-size:30px;
 	margin:20px 0; 
 }
+#menu-main-menu {
+	padding: 8px 50px 10px 0 !important;
+	display: inline-block;
+	list-style: none !important;
+}
+#menu-main-menu li.menu-item {
+    margin: 0 20px !important;
+}
+#menu-main-menu li a {
+    color: #FFB904 !important;
+    font-weight: 600;
+    border-bottom: 4px solid transparent;
+    padding-bottom: 2px !important;
+}
 /*--------------------------------------------------------------
 ## Content
 --------------------------------------------------------------*/
