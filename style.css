@@ -1070,6 +1070,7 @@ time {
 	font-size:24px;
 }
 .image-columns .wp-block-column { margin:0; }
+.container { max-width:100%; width:100%; }
 .container .site-content { margin-top:25px; }
 .entry-content { margin:0; }
 .container .entry-content { margin:1.5em 0 0; }
