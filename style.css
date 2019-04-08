@@ -1037,6 +1037,7 @@ object {
 	display: inline-block;
 	list-style: none !important;
 }
+#navbarTop .navbar-nav { padding:8px 0 10px !important; float:right; width:100%; text-align:right; }
 .navbar-nav li.menu-item {
     margin: 0 20px !important;
 }
