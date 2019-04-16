@@ -134,8 +134,8 @@ pre {
 a {
 	font-family: 'Helvetica Neue', Helvetica, Arial,sans-serif;
 	color: #CD620F;
-	font-size: 24px;
-	line-height: 28px;
+	font-size: 18px;
+	line-height: 20px;
 }
 
 /**
@@ -1022,8 +1022,16 @@ object {
 }
 .site-brand:hover { text-decoration:none; }
 #navbarTop { width:70%; overflow:hidden !important;  }
-.navbar-nav li a { font-family: 'Helvetica Neue Medium', Helvetica, Arial, sans-serif; font-size:18px; color: #FED104 !important; }
-.navbar-nav li a:hover { text-decoration:underline; }
+.navbar-nav li a { 
+	font-family: 'Helvetica Neue Medium', Helvetica, Arial, sans-serif; 
+	font-size:18px; 
+	color: #FED104 !important;
+	transition: all .2s ease-in;
+ }
+.navbar-nav li a:hover { 
+	text-decoration:none;
+	color: #fff !important;
+}
 .site-brand h1.blogname {
 	font-family: "Biko", Helvetica, Arial, sans-serif;
 	display: table;
@@ -1086,18 +1094,30 @@ time {
 --------------------------------------------------------------*/
 .site-footer {
     background:#2A3E48;
-    color:#FFB904;
+	color:#FFB904;
     font-size:20px;
 }
 #menu-footer-menu { margin:20px 0; padding:0; }
 #menu-footer-menu li{ display:inline-block; font-family: 'Helvetica Neue Medium', Helvetica, Arial, sans-serif;  }
-#menu-footer-menu li a { color:#FFB904; }
-#menu-footer-menu li a:hover { text-decoration:underline; }
-.nn-social-links { margin: 20px 0; padding: 0; text-align: right; }
+#menu-footer-menu li a { 
+	transition: all .2s ease-in;
+	color:#FFB904; 
+}
+#menu-footer-menu li a:hover { 
+	text-decoration: none; 
+	color: #fff !important;
+}
+.nn-social-links { margin: 20px 50px; padding: 0; text-align: right;}
 .nn-social-links li { list-style-type:none; display:inline-block; margin:0 20px; }
 .nn-social-links li:first-child { margin-left:0; }
 .nn-social-links li:last-child { margin-right:0; }
-.nn-social-links li a { color:#FFB904; }
+.nn-social-links li a { 
+	transition: all .2s ease-in;
+	color:#FFB904; 
+}
+.nn-social-links li a:hover {
+	color: #fff;
+}
 /*--------------------------------------------------------------
 ## Home Page Specific Styles
 --------------------------------------------------------------*/
