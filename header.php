@@ -16,8 +16,8 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
-
 	<?php wp_head(); ?>
+	<script type='text/javascript' src='//platform-api.sharethis.com/js/sharethis.js#property=5cb6187e384f190012d555fa&product=inline-share-buttons-wp' async='async'></script>
 </head>
 
 <body <?php body_class(); ?>>
