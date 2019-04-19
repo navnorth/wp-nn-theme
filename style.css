@@ -44,10 +44,10 @@
     src:url(fonts/Biko_Bold.otf) format('opentype');
     font-weight:bold;
 }
-@font-face{
+/* @font-face{
     font-family:'Helvetica Neue';
     src:url(fonts/HelveticaNeue-Medium.woff);
-}
+} */
 @font-face{
     font-family:'Helvetica Neue Medium';
     src:url(fonts/HelveticaNeueMedium.woff);
@@ -494,6 +494,10 @@ html {
 body {
 	background: #fff;
 	/* Fallback for when there is no custom background color defined. */
+}
+
+button:focus {
+	outline: none;
 }
 
 hr {
@@ -1024,7 +1028,7 @@ object {
 #navbarTop { width:70%; overflow:hidden !important;  }
 .navbar-nav li a { 
 	font-family: 'Helvetica Neue Medium', Helvetica, Arial, sans-serif; 
-	font-size:18px; 
+	font-size:16px; 
 	color: #FED104 !important;
 	transition: all .2s ease-in;
  }
@@ -1033,13 +1037,13 @@ object {
 	color: #fff !important;
 }
 .site-brand h1.blogname {
-	font-family: "Biko", Helvetica, Arial, sans-serif;
+	font-family: "Biko", Helvetica, Arial, sans-serif !important;
 	display: table;
 	clear:none;
 	text-transform:uppercase;
 	color:#FFB904;
-	font-size:24px;
-	margin:20px 0;
+	font-size:18px;
+	margin:15px 0;
 	width: 100px;
 }
 .navbar-nav {
@@ -1047,7 +1051,7 @@ object {
 	display: inline-block;
 	list-style: none !important;
 }
-#navbarTop .navbar-nav { padding:8px 0 10px !important; float:right; width:100%; text-align:right; }
+#navbarTop .navbar-nav { padding:8px 0 10px !important; float:right; text-align:right; }
 .navbar-nav li.menu-item {
     margin: 0 20px !important;
     display: inline-block;
@@ -1061,8 +1065,8 @@ object {
 .navbar-expand-md .navbar-collapse.collapse.in { display:block; }
 
 .header-logo {
-	width: 50px;
-	margin: 20px;
+	width: 35px;
+	margin: 15px;
 }
 /*--------------------------------------------------------------
 ## Content
@@ -1146,4 +1150,19 @@ time {
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
 	.site-branding { width:75%; }
+}
+
+@media only screen and (max-width: 576px) {
+	.header-logo {
+		display: none;
+	}
+	.sitebrand h1.blogname {
+		margin-left: 10px;
+	}
+	.nn-social-links {
+		margin: 20px 35px;
+	}
+	.nn-social-links i {
+		font-size: 1.5em;
+	}
 }

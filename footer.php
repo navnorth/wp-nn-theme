@@ -15,7 +15,7 @@
 <footer id="nn-footer" class="site-footer">
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-8">
+			<div class="col-sm-8 col-xs-12">
 				<?php
 				wp_nav_menu([
 				     'menu'            => 'secondary',
@@ -31,7 +31,7 @@
 				]);
 				?>
 			</div>
-			<div class="col-sm-4">
+			<div class="col-sm-4 col-xs-12">
 				<ul class="nn-social-links">
 				<?php
 				$facebook = get_option("wp_nn_theme_social_facebook");
