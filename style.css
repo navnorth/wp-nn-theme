@@ -492,7 +492,7 @@ html {
 }
 
 body {
-	background: #fff;
+	background: #FFFEF7;
 	/* Fallback for when there is no custom background color defined. */
 }
 
@@ -1165,4 +1165,8 @@ time {
 	.nn-social-links i {
 		font-size: 1.5em;
 	}
+}
+
+#page.site {
+	max-width: 1440px;
 }
