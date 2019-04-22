@@ -35,6 +35,36 @@ get_header();
             </div>
         </div>
     </div>
+    <div id="tc-highlights">
+        <div class="tc-highlights-wrapper">
+            <div class="row">
+                <div id="tc-highlight-box">
+                    <div class="col-md-7" id="tc-highlight-left">
+                        <?php if (get_field('home_page_highlight_title')): ?>
+                        <h2><?php echo the_field('home_page_highlight_title'); ?></h2>
+                        <?php endif; ?>
+                        <?php if (get_field('home_page_highlight_text')): ?>
+                        <div class="tc-highlight-text">
+                            <?php echo the_field('home_page_highlight_text'); ?>
+                        </div>
+                        <?php endif; ?>
+                    </div>
+                    <div class="col-md-5 padding-none" id="tc-highlight-right">
+                        <?php if (get_field('home_page_learn_more_text')): ?>
+                        <div class="tc-learn-more-text">
+                            <?php the_field('home_page_learn_more_text'); ?>
+                        </div>
+                        <?php endif; ?>
+                        <?php if (get_field('home_page_learn_more_button_label')): ?>
+                        <div class="tc-learn-more">
+                            <a href="<?php the_field('home_page_learn_more_button_url'); ?>" class="tc-learn-more-button"><?php the_field('home_page_learn_more_button_label'); ?></a>
+                        </div>
+                        <?php endif; ?>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div><!-- #primary -->
 
 <?php
