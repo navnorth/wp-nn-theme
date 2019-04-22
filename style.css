@@ -1146,7 +1146,7 @@ time {
 	width: 40px;
 	filter: drop-shadow(0 5px 3px rgba(0,0,0,0.1));
 }
-#tc-heading > .padding-none { float:left; }
+#tc-heading .padding-none { float:left; }
 #banner-heading { position:absolute; top:50%; width:100%; text-align:center; }
 #banner-title {
 	font-family:'Biko', sans-serif;
@@ -1184,9 +1184,11 @@ time {
 	background:#4a6e7f;
 	height:100%;
 	padding:30px;
+	float:left;
 }
 #tc-highlight-left {
 	padding:30px;
+	float:left;
 }
 .tc-highlight-text {
 	font-family:'Helvetica Neue','Helvetica', Arial, sans-serif;
