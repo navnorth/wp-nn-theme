@@ -1129,7 +1129,8 @@ time {
 .full-width { position:relative; }
 .full-width > .wp-block-column { width:100%; flex-basis: 100%; margin-right: 0; }
 .row-full-width  .wp-block-column { margin:0;   }
-#tc-heading { position:absolute; overflow:hidden; }
+#tc-heading { position:relative; overflow:hidden; }
+#tc-heading > .padding-none { float:left; }
 #banner-heading { position:absolute; top:50%; width:100%; text-align:center; }
 #banner-title {
 	font-family:'Biko', sans-serif;
