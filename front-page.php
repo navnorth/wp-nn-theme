@@ -62,7 +62,26 @@ get_header();
                         <?php endif; ?>
                     </div>
                 </div>
-            </div>
+            </div><!-- Highlights -->
+            <div class="row">
+                <div id="tc-quote-box">
+                    <div class="col-md-3" id="quote-img">
+                        <?php if (get_field('home_page_quote_image')): ?>
+                        <img src="<?php echo the_field('home_page_quote_image'); ?>" class="qImg">
+                        <?php endif; ?>
+                    </div>
+                    <div class="col-md-9" id="quote-text">
+                        <div class="tc-quote">
+                            <?php if (get_field('home_page_quote_text')): ?>
+                            <div class="tc-quote-text"><?php echo the_field('home_page_quote_text'); ?></div>
+                            <?php endif; ?>
+                            <?php if (get_field('home_page_quote_source')): ?>
+                            <footer class="quote-source"><?php echo the_field('home_page_quote_source'); ?></footer>
+                            <?php endif; ?>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- Quotes -->
         </div>
     </div>
 </div><!-- #primary -->

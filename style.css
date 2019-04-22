@@ -1217,6 +1217,50 @@ time {
 	color: #2a3e48 !important;
 	text-decoration:none;
 }
+#tc-quote-box {
+	max-width: 1140px;
+	margin: 50px auto;
+	width: 100%;
+}
+#quote-img { text-align:center; float:left; }
+img.qImg { border-radius:50%; width:150px; height:150px; }
+#quote-text { float:left; font-size:48px; quotes: "\201C""\201D""\2018""\2019"; padding:10px 20px; line-height:1.5; }
+#quote-text:before {
+	content:open-quote;
+	display:inline;
+	height:0;
+	line-height:0;
+	left:30px;
+	position:absolute;
+	top:30px;
+	color:#CD620F;
+	font-size:100px;
+	font-weight:bold;
+}
+#quote-text:after {
+	content:close-quote;
+	display:inline;
+	height:0;
+	line-height:0;
+	left:85%;
+	position:absolute;
+	bottom:5px;
+	color:#CD620F;
+	font-size:100px;
+	font-weight:bold;
+}
+.tc-quote { width:85%; }
+.tc-quote-text {
+	margin-left: 60px;
+	font-size: 24px;
+	color: #4f4f4f;
+}
+.quote-source {
+	text-align: right;
+	font-size: 20px;
+	color: #5d1027;
+	font-weight: bold;
+}
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
 	.site-branding { width:75%; }
