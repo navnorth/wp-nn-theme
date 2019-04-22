@@ -1129,7 +1129,23 @@ time {
 .full-width { position:relative; }
 .full-width > .wp-block-column { width:100%; flex-basis: 100%; margin-right: 0; }
 .row-full-width  .wp-block-column { margin:0;   }
-#tc-heading { position:relative; overflow:hidden; }
+#tc-heading { position:relative; background:#436576; padding-bottom:15px; }
+.tc-heading-wrapper { border-bottom: 10px solid #2A3E48; overflow:hidden; }
+#tc-heading:after {
+	transition: all .2s ease-in;
+	border-left: 40px solid transparent;
+	border-right: 40px solid transparent;
+	border-top: 40px solid #4a6e7f;
+	content: " ";
+	position: absolute;
+	bottom: -40px;
+	z-index: 1;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 40px;
+	filter: drop-shadow(0 5px 3px rgba(0,0,0,0.1));
+}
 #tc-heading > .padding-none { float:left; }
 #banner-heading { position:absolute; top:50%; width:100%; text-align:center; }
 #banner-title {
