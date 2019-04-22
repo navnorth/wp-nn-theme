@@ -1147,7 +1147,7 @@ time {
 	filter: drop-shadow(0 5px 3px rgba(0,0,0,0.1));
 }
 #tc-heading .padding-none { float:left; }
-#banner-heading { position:absolute; top:50%; width:100%; text-align:center; }
+#banner-heading { position:absolute; top:40%; width:100%; text-align:center; }
 #banner-title {
 	font-family:'Biko', sans-serif;
 	font-weight:bold;
