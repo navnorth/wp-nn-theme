@@ -1093,6 +1093,7 @@ time {
 .container .site-content { margin-top:25px; }
 .entry-content { margin:0; }
 .container .entry-content { margin:1.5em 0 0; }
+.padding-none { padding:0; }
 /*--------------------------------------------------------------
 ## Footer
 --------------------------------------------------------------*/
@@ -1128,23 +1129,27 @@ time {
 .full-width { position:relative; }
 .full-width > .wp-block-column { width:100%; flex-basis: 100%; margin-right: 0; }
 .row-full-width  .wp-block-column { margin:0;   }
+#tc-heading { position:absolute; overflow:hidden; }
 #banner-heading { position:absolute; top:50%; width:100%; text-align:center; }
 #banner-title {
 	font-family:'Biko', sans-serif;
 	font-weight:bold;
 	background-color: #851939;
 	color: #ffffff;
-	padding: 5px;
+	padding: 5px 20px;
 	font-size: 42px;
 	text-shadow: 7px 4px 4px rgba(0, 0, 0, 0.25);
+	display:inline-block;
+	margin-bottom:10px;
 }
 #banner-subtitle {
 	font-family:'Helvetica Neue','Helvetica', Arial, sans-serif;
 	font-weight:300;
 	background-color: #851939;
 	color: #ffffff;
-	padding: 5px;
+	padding: 5px 20px;
 	font-size: 24px;
+	display:inline-block;
 	text-shadow: 7px 4px 4px rgba(0, 0, 0, 0.25);
 }
 /* Small Devices, Tablets */
