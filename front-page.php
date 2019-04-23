@@ -119,6 +119,47 @@ get_header();
             </div>
         </div>
     </div>
+    <div id="tc-news-events">
+        <div class="tc-news-events-wrapper">
+            <?php if (get_field('home_page_news_header_text')): ?>
+            <h2 class="tc-news-events-header"><?php echo the_field('home_page_news_header_text'); ?></h2>
+            <?php endif; ?>
+            <div id="tc-news-events-blocks">
+                <?php for ($i=1;$i<=3;$i++) {
+                    $events_name = "home_page_newsevent_".$i;
+                ?>
+                <div class="col-md-4 col-sm-6 tc-news-events-blocks-padding">
+                    <div class="tc-news-events-block">
+                        <div class="tc-events-media-image">
+                            <div class="tc-events-image-thumbnail">
+                                <div class="tc-events-image-section">
+                                    <?php if (get_field($events_name."_image")): ?>
+                                    <img src="<?php echo the_field($events_name."_image"); ?>" alt="" class="img-thumbnail-square img-responsive img-loaded">
+                                    <?php endif; ?>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tc-news-events-description">
+                            <div class="tc-events-dates">
+                                <?php if (get_field($events_name."_date")): ?>
+                                <span><?php echo the_field($events_name."_date"); ?></span>
+                                <?php endif; ?>
+                            </div>
+                            <?php if (get_field($events_name."_link_label")): ?>
+                           <h4><a href="<?php echo the_field($events_name."_link_url"); ?>"><?php echo the_field($events_name."_link_label"); ?></a></h4>
+                           <?php endif; ?>
+                        </div>
+                    </div>
+                </div>
+                <?php } ?>
+            </div>
+            <div id="tc-news-events-all">
+                <?php if (get_field('home_page_news_view_all_button_label')): ?>
+                <a href="<?php echo the_field('home_page_news_view_all_button_url'); ?>" class="view-all-button"><?php echo the_field('home_page_news_view_all_button_label'); ?></a>
+                <?php endif; ?>
+            </div>
+        </div>
+    </div>
 </div><!-- #primary -->
 
 <?php
