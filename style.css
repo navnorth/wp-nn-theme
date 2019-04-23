@@ -1308,7 +1308,7 @@ img.qImg { border-radius:50%; width:150px; height:150px; }
 	position: absolute;
 	bottom: 0;
 	background: rgba(42,62,72,0.9);
-	width: 90%;
+	width: 254px;
 	padding: 15px;
 }
 .tc-inquiry-set-label h4 {
@@ -1335,6 +1335,11 @@ img.qImg { border-radius:50%; width:150px; height:150px; }
 	margin: auto;
 	width: 40px;
 	filter: drop-shadow(0 5px 3px rgba(0,0,0,0.1));
+}
+.tc-inquiry-set-media-image {
+	min-height: 200px;
+	background: #e0e0e0;
+	height: 100%;
 }
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
