@@ -160,6 +160,31 @@ get_header();
             </div>
         </div>
     </div>
+    <div id="tc-about">
+        <div class="tc-about-wrapper">
+            <div class="tc-about-topbar clearfix">
+                <div class="col-md-6 col-sm-6 col-xs-6 padding-0 tc-custom-bg-orange"></div>
+                <div class="col-md-6 col-sm-6 col-xs-6 padding-0 tc-custom-bg-pink"></div>
+                <div class="tc-about-section">
+                <?php if (get_field('home_page_about_header_text')): ?>
+                    <p><?php the_field('home_page_about_header_text'); ?></p>
+                <?php endif; ?>
+                </div>
+            </div>
+            <div class="tc-about-content clearfix">
+                <div class="col-md-6 col-sm-12 tc-about-content-left padding-none">
+                    <?php if (get_field('home_page_about_left_side_html_content')): ?>
+                        <?php the_field('home_page_about_left_side_html_content'); ?>
+                    <?php endif; ?>
+                </div>
+                <div class="col-md-6 col-sm-12 tc-about-content-right padding-none">
+                    <?php if (get_field('home_page_about_right_side_html_content')): ?>
+                        <?php the_field('home_page_about_right_side_html_content'); ?>
+                    <?php endif; ?>
+                </div>
+            </div>
+        </div>
+    </div>
 </div><!-- #primary -->
 
 <?php
