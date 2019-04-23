@@ -84,6 +84,41 @@ get_header();
             </div><!-- Quotes -->
         </div>
     </div>
+    <div id="tc-inquiry-sets">
+        <div class="tc-inquiry-sets-wrapper">
+            <div class="tc-inquiry-sets-topbar clearfix">
+                <div class="col-md-6 col-sm-6 col-xs-6 padding-0 tc-custom-bg-blue"></div>
+                <div class="col-md-6 col-sm-6 col-xs-6 padding-0 tc-custom-bg-yellow"></div>
+                <div class="tc-inquiry-set-section">
+                <?php if (get_field('home_page_explore_inquiry_set_header_text')): ?>
+                    <p><?php the_field('home_page_explore_inquiry_set_header_text'); ?></p>
+                <?php endif; ?>
+                </div>
+            </div>
+            <div class="tc-inquiry-sets-grid-section clearfix">
+                <?php for ($i=1;$i<=4;$i++) {
+                    $set_name = "home_page_inquiry_set_".$i;
+                ?>
+                <div class="col-md-3 col-sm-6 tc-inquiry-sets-block-padding">
+                    <div class="tc-inquiry-set-media-image">
+                        <div class="tc-inquiry-set-image-thumbnail">
+                            <div class="tc-inquiry-set-image-section">
+                                <?php if (get_field($set_name."_image")): ?>
+                                <img src="<?php echo the_field($set_name."_image"); ?>" alt="" class="img-thumbnail-square img-responsive img-loaded">
+                                <?php endif; ?>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tc-inquiry-set-label">
+                        <?php if (get_field($set_name."_link_label")): ?>
+                        <h4><a href="<?php echo the_field($set_name."_link_url"); ?>"><?php echo the_field($set_name."_link_label"); ?></a></h4>
+                        <?php endif; ?>
+                    </div>
+                </div>
+                <?php } ?>
+            </div>
+        </div>
+    </div>
 </div><!-- #primary -->
 
 <?php
