@@ -1018,7 +1018,10 @@ object {
 /*--------------------------------------------------------------
 ## Header
 --------------------------------------------------------------*/
-.site-header { background-color:#2A3E48; }
+.site-header { 
+	background-color:#2A3E48;
+	box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+}
 .navbar.bg-dark { background-color:#2A3E48 !important; margin-bottom:0; }
 .site-branding {
 	width: 30%;
@@ -1065,8 +1068,8 @@ object {
 .navbar-expand-md .navbar-collapse.collapse.in { display:block; }
 
 .header-logo {
-	width: 35px;
-	margin: 15px;
+	width: 45px;
+	margin: 10px 15px;
 }
 /*--------------------------------------------------------------
 ## Content
