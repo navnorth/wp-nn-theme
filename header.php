@@ -21,6 +21,7 @@
 </head>
 
 <body <?php body_class(); ?>>
+<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'wp_nn_theme' ); ?></a>
 <header id="masthead" class="site-header">
 	<nav class="navbar navbar-expand-md navbar-dark bg-dark">
 		<div class="container">
@@ -63,5 +64,4 @@ if (is_front_page()){
 }
 ?>
 <div id="page" class="site<?php echo $container_class; ?>">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'wp_nn_theme' ); ?></a>
 	<div id="content" class="site-content">
