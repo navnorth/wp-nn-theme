@@ -491,6 +491,11 @@ html {
 	box-sizing: inherit;
 }
 
+* {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
 body {
 	background: #FFFEF7;
 	/* Fallback for when there is no custom background color defined. */
