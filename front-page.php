@@ -12,22 +12,25 @@ get_header();
         <div class="tc-heading-wrapper">
             <?php if (get_field('home_page_banner_image_1')): ?>
             <div class="col-md-4 padding-none">
+                <div class="banner-overlay overlay-green"></div>
                 <img src="<?php echo the_field('home_page_banner_image_1'); ?>" class="head-banner" />
             </div>
             <?php endif; ?>
             <?php if (get_field('home_page_banner_image_2')): ?>
             <div class="col-md-4 padding-none">
+                <div class="banner-overlay overlay-orange"></div>
                 <img src="<?php echo the_field('home_page_banner_image_2'); ?>" class="head-banner" />
             </div>
             <?php endif; ?>
             <?php if (get_field('home_page_banner_image_3')): ?>
             <div class="col-md-4 padding-none">
+                <div class="banner-overlay overlay-pink"></div>
                 <img src="<?php echo the_field('home_page_banner_image_3'); ?>" class="head-banner" />
             </div>
             <?php endif; ?>
             <div class="primary-title" id="banner-heading">
                 <?php if (get_field('home_page_primary_title')): ?>
-                <h1 id="banner-title"><?php echo the_field('home_page_primary_title'); ?></h1>
+                <h1 id="banner-title"><?php echo the_field('home_page_primary_title'); ?>: <span id="secondary-banner-title"><?php echo the_field('home_page_secondary_title'); ?></span></h1>
                 <?php endif; ?>
                 <?php if (get_field('home_page_tagline')): ?>
                 <h2 id="banner-subtitle"><?php echo the_field('home_page_tagline'); ?></h2>

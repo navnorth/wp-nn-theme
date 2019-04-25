@@ -649,9 +649,9 @@ a {
 	color: royalblue;
 }
 
-a:visited {
+/* a:visited {
 	color: purple;
-}
+} */
 
 a:hover, a:focus, a:active {
 	color: midnightblue;
@@ -1194,7 +1194,30 @@ time {
 .full-width > .wp-block-column { width:100%; flex-basis: 100%; margin-right: 0; }
 .row-full-width  .wp-block-column { margin:0;   }
 #tc-heading { position:relative; background:#4a6e7f; padding-bottom:15px; }
-.tc-heading-wrapper { border-bottom: 10px solid #2A3E48; overflow:hidden; }
+.tc-heading-wrapper { border-bottom: 15px solid #2A3E48; overflow:hidden; }
+.banner-overlay {
+	height: 100%;
+    max-width: 100%;
+    background-color: #8C7C50;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+.overlay-green {
+	background-color: #8C7C50;
+	opacity: .5;
+}
+.overlay-orange {
+	background-color: #CD620F;
+	opacity: .4;
+}
+.overlay-pink {
+	background-color: #851939;
+	opacity: .4;
+}
 #tc-heading:after {
 	transition: all .2s ease-in;
 	border-left: 60px solid transparent;
@@ -1211,24 +1234,34 @@ time {
 	filter: drop-shadow(0 5px 3px rgba(0,0,0,0.1));
 }
 #tc-heading .padding-none { float:left; }
-#banner-heading { position:absolute; top:40%; width:100%; text-align:center; }
+#banner-heading { 
+	position: absolute; 
+	top: 40%;
+	right: 8%;
+	width: 100%; 
+	text-align: center;
+	z-index: 3;
+}
 #banner-title {
 	font-family:'Biko', sans-serif;
 	font-weight:bold;
 	background-color: #851939;
 	color: #ffffff;
-	padding: 5px 20px;
-	font-size: 42px;
+    padding: 10px 20px 5px 20px;
+	font-size: 36px;
 	text-shadow: 7px 4px 4px rgba(0, 0, 0, 0.25);
 	display:inline-block;
 	margin-bottom:10px;
 }
+#secondary-banner-title {
+	font-weight: 400;
+}
 #banner-subtitle {
-	font-family:'Helvetica Neue','Helvetica', Arial, sans-serif;
+	font-family:'Biko', sans-serif;
 	font-weight:300;
-	background-color: #851939;
+	background-color: #5D1027;
 	color: #ffffff;
-	padding: 5px 20px;
+    padding: 10px 20px 5px 20px;
 	font-size: 24px;
 	display:inline-block;
 	text-shadow: 7px 4px 4px rgba(0, 0, 0, 0.25);
