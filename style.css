@@ -1262,16 +1262,16 @@ time {
 	background-color: #5D1027;
 	color: #ffffff;
     padding: 10px 20px 5px 20px;
-	font-size: 24px;
+	font-size: 22px;
 	display:inline-block;
 	text-shadow: 7px 4px 4px rgba(0, 0, 0, 0.25);
 }
 #tc-highlights { background:#ffffff; overflow:hidden; }
 .tc-highlights-wrapper { padding:50px 0; }
 #tc-highlight-box {
-	-webkit-box-shadow: 0px 2px 10px 0px rgba(148,146,148,1);
-	-moz-box-shadow: 0px 2px 10px 0px rgba(148,146,148,1);
-	box-shadow: 0px 2px 10px 0px rgba(148,146,148,1);
+	-webkit-box-shadow: 0px 10px 24px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0px 10px 24px rgba(0, 0, 0, 0.1);
+	box-shadow: 0px 10px 24px rgba(0, 0, 0, 0.1);
 	background: #f2f2f2;
 	max-width: 1140px;
 	margin: 50px auto;
@@ -1284,22 +1284,22 @@ time {
 	float:left;
 }
 #tc-highlight-left {
-	padding:30px;
+	padding: 40px 50px;
 	float:left;
 }
 .tc-highlight-text {
 	font-family:'Helvetica Neue','Helvetica', Arial, sans-serif;
 	color:#4f4f4f;
-	font-size:24px;
-	line-height:28px;
+	font-size: 16px;
+	line-height:20px;
 	margin:20px 0;
 	padding-right:30px;
 }
 #tc-highlight-box h2 {
-	font-family:'Biko', sans-serif;
-	font-weight:bold;
-	color:#851939;
-	font-size:48px;
+	font-family: 'Biko', sans-serif;
+	font-weight: bold;
+	color: #851939;
+	font-size: 30px;
 }
 .tc-learn-more { text-align:center; }
 .tc-learn-more-button {
