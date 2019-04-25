@@ -1064,6 +1064,11 @@ object {
     margin: 0 20px !important;
     display: inline-block;
 }
+.navbar-nav li.menu-item.current-menu-item a {
+	border-bottom:5px solid #ffb904;
+	padding-left:2px;
+	padding-right:2px;
+}
 .navbar-nav li a {
     color: #FFB904 !important;
     font-weight: 600;
