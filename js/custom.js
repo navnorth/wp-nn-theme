@@ -1,6 +1,7 @@
 jQuery(document).ready(function($){
-    $('.tc-search-form').on("mouseover", function(){
-        $(this).addClass('focus');
-        $('.tc-search-field').addClass("show").focus();
+    $('.tc-search-bg').on("click", function(){
+        $('.tc-search-form').addClass('focus');
+        $('.tc-search-field').slideToggle("slow").focus();
+        $(this).hide();
     });
 });
