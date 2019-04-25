@@ -142,6 +142,7 @@ function wp_nn_theme_scripts() {
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
+        wp_enqueue_script( 'custom', get_template_directory_uri() . '/js/custom.js', array( 'jquery' ) );
 }
 add_action( 'wp_enqueue_scripts', 'wp_nn_theme_scripts' );
 
@@ -374,3 +375,13 @@ function nn_get_top_level_pages(){
     
     return $pages;
 }
+
+function add_search_nav_item($items, $args){
+    if ($args->menu == "primary"){
+        $search = '<form role="search" method="get" class="tc-search-form" action="'.site_url().'"><input type="search" class="tc-search-field" placeholder="Search..." value="" name="s" /><button type="submit" class="tc-search-submit"><i class="fas fa-search fa-2x"></i></button></form>';
+        $items = $items;
+        $items .= "<li class='menu-item nav-link tc-search-nav'>".$search."</li>";
+    }
+    return $items;
+}
+add_filter( 'wp_nav_menu_items', 'add_search_nav_item', 10, 2);
