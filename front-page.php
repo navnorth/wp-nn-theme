@@ -102,22 +102,24 @@ get_header();
                 <?php for ($i=1;$i<=4;$i++) {
                     $set_name = "home_page_inquiry_set_".$i;
                 ?>
-                <div class="col-md-3 col-sm-6 tc-inquiry-sets-block-padding">
-                    <div class="tc-inquiry-set-media-image">
-                        <div class="tc-inquiry-set-image-thumbnail">
-                            <div class="tc-inquiry-set-image-section">
-                                <?php if (get_field($set_name."_image")): ?>
-                                <img src="<?php echo the_field($set_name."_image"); ?>" alt="" class="img-thumbnail-square img-responsive img-loaded">
-                                <?php endif; ?>
+                <a href="<?php echo the_field($set_name."_link_url"); ?>">
+                    <div class="col-md-3 col-sm-6 tc-inquiry-sets-block tc-inquiry-sets-block-padding move-up-left">
+                        <div class="tc-inquiry-set-media-image">
+                            <div class="tc-inquiry-set-image-thumbnail">
+                                <div class="tc-inquiry-set-image-section">
+                                    <?php if (get_field($set_name."_image")): ?>
+                                    <img src="<?php echo the_field($set_name."_image"); ?>" alt="" class="img-thumbnail-square img-responsive img-loaded">
+                                    <?php endif; ?>
+                                </div>
                             </div>
                         </div>
+                        <div class="tc-inquiry-set-label">
+                            <?php if (get_field($set_name."_link_label")): ?>
+                            <h4><?php echo the_field($set_name."_link_label"); ?></h4>
+                            <?php endif; ?>
+                        </div>
                     </div>
-                    <div class="tc-inquiry-set-label">
-                        <?php if (get_field($set_name."_link_label")): ?>
-                        <h4><a href="<?php echo the_field($set_name."_link_url"); ?>"><?php echo the_field($set_name."_link_label"); ?></a></h4>
-                        <?php endif; ?>
-                    </div>
-                </div>
+                </a>
                 <?php } ?>
             </div>
         </div>

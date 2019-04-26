@@ -1190,6 +1190,13 @@ time {
 	color: #fff;
 }
 /*--------------------------------------------------------------
+## CSS Animations
+--------------------------------------------------------------*/
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.1); }
+.move-up-left { transition: all .2s ease-in-out; }
+.move-up-left:hover { transform: translate(-5px, -5px); }
+/*--------------------------------------------------------------
 ## Home Page Specific Styles
 --------------------------------------------------------------*/
 .full-width { position:relative; }
@@ -1410,6 +1417,10 @@ img.qImg {
 	background: linear-gradient(180deg, #4A6F81 0%, #436576 71.27%);
 	padding: 8%;
 }
+
+.tc-inquiry-sets-block:hover .tc-inquiry-set-label {
+	background: rgba(42, 62, 72, 1);
+}
 .tc-inquiry-sets-block-padding {
 	position:relative;
 	overflow:hidden;
@@ -1421,12 +1432,13 @@ img.qImg {
 	background: rgba(42,62,72,0.9);
 	width: 250px;
 	padding: 15px;
+	transition: all .2s ease-in-out;
 }
 .tc-inquiry-set-label h4 {
 	text-align:center;
 	margin-bottom:0;
 }
-.tc-inquiry-set-label h4 a {
+.tc-inquiry-set-label h4 {
 	color:#ffffff;
 	font-size:24px;
 	font-family: 'Helvetica Neue Medium';
@@ -1434,6 +1446,9 @@ img.qImg {
 .tc-inquiry-set-image-section img {
 	width: 250px;
 	height: 250px;
+	-webkit-box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
 }
 #tc-inquiry-sets { position:relative; }
 #tc-inquiry-sets:after {
