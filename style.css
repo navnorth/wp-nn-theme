@@ -1582,9 +1582,11 @@ img.qImg {
 /*--------------------------------------------------------------
 ## Main Inquiry Set Page Specific Styles
 --------------------------------------------------------------*/
+.page #page.site { max-width:100%; padding-left:0; padding-right:0; }
+.page #page.site .site-content { margin-top:0; }
 .inquiry-set-callout-box .wp-block-column {
 	flex-basis:60%;
-	margin:30px auto;
+	margin:60px auto;
 	background: #f2f2f2;
 	padding: 30px;
 	border-radius: 5px;
@@ -1600,6 +1602,24 @@ img.qImg {
 }
 .inquiry-set-callout-box .wp-block-column p {
 	margin-bottom:0;
+}
+#page-banner-heading { 
+	position: absolute; 
+	top: 55%;
+	left: 20%;
+	width: 100%; 
+	z-index: 3;
+}
+#page-banner-title {
+	font-family:'Biko', sans-serif;
+	font-weight:bold;
+	background-color: #851939;
+	color: #ffffff;
+	padding: 10px 20px 5px 20px;
+	font-size: 36px;
+	text-shadow: 7px 4px 4px rgba(0, 0, 0, 0.25);
+	display:inline-block;
+	margin-bottom:10px;
 }
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
