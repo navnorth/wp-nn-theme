@@ -179,11 +179,15 @@ get_header();
             <div class="tc-about-content clearfix">
                 <div class="col-md-6 col-sm-12 tc-about-content-left padding-none">
                     <?php if (get_field('home_page_about_left_side')): ?>
-                        <img src="<?php echo the_field('home_page_about_left_side_logo'); ?>">
-                        <div><?php echo the_field('home_page_about_left_side_address'); ?></div>
-                        <div><?php echo the_field('home_page_about_left_side_phone'); ?></div>
-                        <div><?php echo the_field('home_page_about_left_side_fax'); ?></div>
-                        <div><?php echo the_field('home_page_about_left_side_email'); ?></div>
+                        <img class="logo" src="<?php echo the_field('home_page_about_left_side_logo'); ?>">
+                        <div><i class="fal fa-map-marker-alt"></i><?php echo the_field('home_page_about_left_side_address'); ?></div>
+                        <div><i class="fal fa-phone"></i><?php echo the_field('home_page_about_left_side_phone'); ?></div>
+                        <?php if (get_field('home_page_about_left_side_fax')): ?>
+                            <div><i class="fal fa-fax"></i><?php echo the_field('home_page_about_left_side_fax'); ?> FAX</div>
+                        <?php endif; ?>
+                        <?php if (get_field('home_page_about_left_side_email')): ?>
+                            <div><i class="fal fa-envelope"></i><?php echo the_field('home_page_about_left_side_email'); ?></div>
+                        <?php endif; ?>
                     <?php endif; ?>
                 </div>
                 <div class="col-md-6 col-sm-12 tc-about-content-right padding-none">

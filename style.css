@@ -1573,7 +1573,17 @@ img.qImg {
 }
 .tc-about-content { background:#436576; overflow:hidden; }
 .tc-about-content-right,.tc-about-content-left { float:left; }
-.tc-about-content-left { padding:50px; }
+.tc-about-content-left { 
+	padding: 6%; 
+	color: #fff;
+	font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;	
+}
+.tc-about-content-left div {
+	display: flex;
+	margin: 20px 0 20px 30px;
+}
+.tc-about-content-left .logo { width: 320px; margin-bottom: 20px; }
+.tc-about-content-left i { color: #ffb904; font-size: 32px; margin-right: 20px; min-width: 32px; text-align: center; }
 .tc-about-content-right iframe {
 	width:100%;
 	z-index:0;
