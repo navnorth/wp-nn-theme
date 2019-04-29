@@ -178,8 +178,12 @@ get_header();
             </div>
             <div class="tc-about-content clearfix">
                 <div class="col-md-6 col-sm-12 tc-about-content-left padding-none">
-                    <?php if (get_field('home_page_about_left_side_html_content')): ?>
-                        <?php the_field('home_page_about_left_side_html_content'); ?>
+                    <?php if (get_field('home_page_about_left_side')): ?>
+                        <img src="<?php echo the_field('home_page_about_left_side_logo'); ?>">
+                        <div><?php echo the_field('home_page_about_left_side_address'); ?></div>
+                        <div><?php echo the_field('home_page_about_left_side_phone'); ?></div>
+                        <div><?php echo the_field('home_page_about_left_side_fax'); ?></div>
+                        <div><?php echo the_field('home_page_about_left_side_email'); ?></div>
                     <?php endif; ?>
                 </div>
                 <div class="col-md-6 col-sm-12 tc-about-content-right padding-none">
