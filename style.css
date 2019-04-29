@@ -1778,3 +1778,20 @@ img.qImg {
 	max-width: 1440px;
 	margin:auto;
 }
+/*  Cookies Plugin Overrides  */
+
+#cookie-law-info-bar {
+	background-color: rgba(18, 26, 31, 0.9) !important;
+	color: #fff !important;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+	padding: 10px 10px !important;
+	font-weight: 400 !important;
+}
+
+#cookie_action_close_header {
+	margin-left: 20px !important;
+}
+
+.cli_action_button {
+	transition: all .2s ease-in;
+}
