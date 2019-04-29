@@ -1280,7 +1280,7 @@ time {
 #tc-highlight-box {
 	-webkit-box-shadow: 2px 4px 18px rgba(0, 0, 0, 0.1);
 	-moz-box-shadow: 2px 4px 18px rgba(0, 0, 0, 0.1);
-    box-shadow: 2px 4px 18px rgba(0, 0, 0, 0.1);
+	box-shadow: 2px 4px 18px rgba(0, 0, 0, 0.1);
 	background: #f2f2f2;
 	max-width: 1140px;
 	margin: 50px auto;
@@ -1579,6 +1579,28 @@ img.qImg {
 	z-index:0;
 }
 .tc-about-content-right p { margin:0;padding:0;line-height:0; }
+/*--------------------------------------------------------------
+## Main Inquiry Set Page Specific Styles
+--------------------------------------------------------------*/
+.inquiry-set-callout-box .wp-block-column {
+	flex-basis:60%;
+	margin:30px auto;
+	background: #f2f2f2;
+	padding: 30px;
+	border-radius: 5px;
+	-webkit-box-shadow: 2px 4px 18px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 2px 4px 18px rgba(0, 0, 0, 0.1);
+	box-shadow: 2px 4px 18px rgba(0, 0, 0, 0.1);
+}
+.inquiry-set-callout-box .wp-block-column h2 {
+	font-size: 40px;
+	font-family: 'Biko Bold';
+	color: #851939;
+	margin-bottom: 25px;
+}
+.inquiry-set-callout-box .wp-block-column p {
+	margin-bottom:0;
+}
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
 	.site-branding { width:75%; }
