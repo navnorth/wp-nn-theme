@@ -133,7 +133,7 @@ get_header();
                 <?php for ($i=1;$i<=3;$i++) {
                     $events_name = "home_page_newsevent_".$i;
                 ?>
-                <div class="col-md-3 col-sm-6 tc-news-events-blocks-padding">
+                <div class="col-md-4 col-sm-6 tc-news-events-blocks-padding">
                     <div class="tc-news-events-block">
                         <div class="tc-events-media-image">
                             <div class="tc-events-image-thumbnail">

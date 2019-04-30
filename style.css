@@ -1106,7 +1106,6 @@ object {
 	-webkit-border-radius: 10em;
 	-moz-border-radius: 10em;
 	border-radius: 10em;
-	
 	-webkit-transition: all 1s ease;
 	-moz-transition: all 1s ease;
 	transition: all 1s ease;
@@ -1634,7 +1633,120 @@ img.qImg {
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
 	.site-branding { width:75%; }
-	.tc-heading-wrapper { height: 30vh; }
+	.tc-heading-wrapper { height: 25vh; }
+	#banner-title {
+		font-size: 24px;
+		margin-bottom: 5px;
+	}
+	#banner-subtitle {
+		font-size: 16px;
+	}
+	#banner-heading {
+		right: 5%;
+	}
+	#tc-highlight-box {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		background: #fff;
+		box-shadow: none;
+	}
+	#tc-highlight-right, #tc-highlight-left {
+		max-width: 100%;
+	}
+	.tc-learn-more-text {
+		width: 75%;
+		margin: 0 auto;
+	}
+	.tc-learn-more-text p:first-child {
+		text-align: center;
+	}
+	.tc-highlight-text {
+		line-height: 22px;
+	}
+	.tc-highlights-wrapper .row {
+		display: block;
+	}
+	#tc-highlight-right {
+		padding: 40px;
+	}
+	#tc-highlight-left {
+		padding: 0 8% 60px 8%;
+	}
+	.tc-highlight-text {
+		padding-right: 0;
+	}
+	img.qImg {
+		width: 100px;
+		height: 100px;
+	}
+	#quote-text {
+		margin-bottom: 75px;
+	}
+	#quote-text:before, #quote-text:after {
+		font-size: 48px;
+	}
+	#quote-text:before {
+		left: -10px;
+	}
+	#quote-text:after {
+		left: 85%;
+		bottom: 25px;
+	}
+	.tc-quote-text {
+		margin-left: 10px;
+	}
+	#tc-quote-box {
+		margin: 0;
+	}
+	.tc-inquiry-set-section {
+		width: 60%;
+	}
+	.tc-inquiry-set-image-section img {
+		width: 150px;
+		height: 150px;
+	}
+	.tc-inquiry-set-label {
+		width: 150px;
+	}
+	.tc-inquiry-set-label h4 {
+		font-size: 16px;
+	}
+	.tc-inquiry-set-media-image {
+		width: 150px;
+		min-height: 150px;
+	}
+	.tc-inquiry-sets-grid-section {
+		padding: 12% 4%;
+	}
+	.tc-news-events-wrapper {
+		padding: 75px 0;
+	}
+	.tc-news-events-header {
+		font-size: 32px;
+	}
+	.tc-events-image-section img {
+		height: 150px;
+		width: 200px;
+	}
+	.tc-news-events-block {
+		width: 200px;
+	}
+	.tc-events-dates {
+		font-size: 14px;
+	}
+	.tc-news-events-description h4 {
+		font-size: 16px;
+	}
+	#tc-news-events-blocks {
+		justify-content: space-around;
+	}
+	#tc-news-events-all {
+		text-align: center;
+	}
+	.tc-about-section {
+		width: 27%;
+	}
 }
 
 @media only screen and (max-width: 576px) {
