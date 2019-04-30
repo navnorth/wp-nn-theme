@@ -1226,6 +1226,10 @@ time {
 .row-full-width  .wp-block-column { margin:0;   }
 #tc-heading { position:relative; background:#4a6e7f; padding-bottom:15px; }
 .tc-heading-wrapper { border-bottom: 15px solid #2A3E48; overflow:hidden; height: 66vh; }
+.head-banner {
+	height: 66vh;
+	background-size: cover;
+}
 .banner-overlay {
 	height: 100%;
     max-width: 100%;

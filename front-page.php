@@ -13,19 +13,19 @@ get_header();
             <?php if (get_field('home_page_banner_image_1')): ?>
             <div class="col-md-4 padding-none banner-1">
                 <div class="banner-overlay overlay-green"></div>
-                <img src="<?php echo the_field('home_page_banner_image_1'); ?>" class="head-banner" />
+                <div style="background-image: url(<?php echo the_field('home_page_banner_image_1'); ?>)" class="head-banner"></div>
             </div>
             <?php endif; ?>
             <?php if (get_field('home_page_banner_image_2')): ?>
             <div class="col-md-4 padding-none banner-2">
                 <div class="banner-overlay overlay-orange"></div>
-                <img src="<?php echo the_field('home_page_banner_image_2'); ?>" class="head-banner" />
+                <div style="background-image: url(<?php echo the_field('home_page_banner_image_2'); ?>)" class="head-banner"></div>
             </div>
             <?php endif; ?>
             <?php if (get_field('home_page_banner_image_3')): ?>
             <div class="col-md-4 padding-none banner-3">
                 <div class="banner-overlay overlay-pink"></div>
-                <img src="<?php echo the_field('home_page_banner_image_3'); ?>" class="head-banner" />
+                <div style="background-image: url(<?php echo the_field('home_page_banner_image_3'); ?>)" class="head-banner"></div>
             </div>
             <?php endif; ?>
             <div class="primary-title" id="banner-heading">
