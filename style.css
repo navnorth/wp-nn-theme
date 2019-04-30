@@ -1080,8 +1080,7 @@ object {
 .navbar-expand-md .navbar-collapse.collapse.in { display:block; }
 
 .header-logo {
-	width: 45px;
-	margin: 10px 15px;
+	width: 200px;
 }
 .tc-search-form {
 	position: relative;
@@ -1796,8 +1795,7 @@ img.qImg {
 		height: 40vh;
 	}
 	.header-logo {
-		width: 40px;
-		margin: 11px 15px;
+		width: 100px;
 	}
 	.sitebrand h1.blogname {
 		margin-left: 10px;
