@@ -1600,7 +1600,7 @@ img.qImg {
 .tc-about-content { background:#436576; overflow:hidden; }
 .tc-about-content-right,.tc-about-content-left { float:left; }
 .tc-about-content-left { 
-	padding: 6%; 
+	padding: 5%; 
 	color: #fff;
 	font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;	
 }
