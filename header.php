@@ -33,7 +33,6 @@
 					if ( has_custom_logo() ) {
 						echo '<img class="header-logo" src="'. esc_url( $logo[0] ) .'">';
 					}
-					// echo '<h1 class="blogname">'. get_bloginfo( 'name' ) .'</h1>';
 					?>
 				</a>
 			</div>
