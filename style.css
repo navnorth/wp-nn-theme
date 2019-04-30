@@ -1088,18 +1088,41 @@ object {
 	background: transparent;
 	border-radius: 12px;
 	padding: 2px 7px 4px;
+	transition: all .2s ease-in;
 }
-.tc-search-form:hover, .tc-search-form:focus, .tc-search-form.focus {
-	background:#ffffff;
+.tc-search-field::-webkit-input-placeholder {
+	color: #fff;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.tc-search-field::-moz-placeholder {
+	color: #fff;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+.tc-search-field:-ms-input-placeholder {
+	color: #fff;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+.tc-search-field:-moz-placeholder { 
+	color: #fff;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+.tc-search-form button {
+	transition: all .2s ease-in;
+}
+.tc-search-form:hover button {
+	  color: #fff;
+  }
+.tc-search-form:focus, .tc-search-form.focus {
+	background:#436576;
 }
 .tc-search-field {
-	display: none;
 	line-height: 1em;
 	margin: 0;
 	height: 24px;
 	border: none !important;
 	font-size: 14px;
-	width: 120px;
+	color: #fff !important;
+	width: 0;
 	font-weight: normal;
 	outline:none;
 	background:transparent;
@@ -1483,7 +1506,7 @@ img.qImg {
 }
 #tc-news-events-blocks { 
 	overflow: hidden; 
-	margin: 50px 0 0; 
+	margin: 50px 100px; 
 	padding-bottom: 25px; 
 	display: flex;
 	justify-content: center;
@@ -1520,7 +1543,7 @@ img.qImg {
 	overflow: hidden;
 	padding: 30px 0;
 	max-width: 1200px;
-	margin: 0 auto;
+	margin: 0 180px 0 auto;
 	text-align: right;
 }
 .view-all-button {
@@ -1740,9 +1763,11 @@ img.qImg {
 	}
 	#tc-news-events-blocks {
 		justify-content: space-around;
+		margin: 50px 0;
 	}
 	#tc-news-events-all {
 		text-align: center;
+		margin: 0;
 	}
 	.tc-about-section {
 		width: 27%;
@@ -1816,6 +1841,7 @@ img.qImg {
 	}
 	.tc-quote-text {
 		font-size: 16px;
+		margin-left: 65px;
 	}
 	#quote-text:before {
 		font-size: 70px;
@@ -1868,12 +1894,14 @@ img.qImg {
 	}
 	#tc-news-events-blocks {
 		flex-direction: column;
+		margin: 50px 0 0 0;
 	}
 	.tc-news-events-blocks-padding {
 		padding-bottom: 30px;
 	}
 	#tc-news-events-all {
 		text-align: center;
+		margin: 0;
 	}
 	.tc-about-section {
 		width: 100%;
