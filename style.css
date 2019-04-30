@@ -1747,6 +1747,9 @@ img.qImg {
 	.tc-about-section {
 		width: 27%;
 	}
+	#cookie-law-info-bar:before {
+		display: none;
+	}
 }
 
 @media only screen and (max-width: 576px) {
@@ -1883,6 +1886,9 @@ img.qImg {
 	}
 	.tc-about-content-left {
 		padding-top: 100px;
+	}
+	#cookie-law-info-bar:before {
+		display: none;
 	}
 }
 
