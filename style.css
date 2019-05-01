@@ -1683,7 +1683,7 @@ img.qImg {
 }
 .inquiry-set-thumbnail-row {
 	max-width: 960px;
-	margin: auto;
+	margin: 50px auto 25px;
 }
 .inquiry-set-thumbnail-row > .wp-block-column:first-child .wp-block-wp-nn-theme-thumbnail-block  {
 	width:70%;
