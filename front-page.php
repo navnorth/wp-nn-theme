@@ -70,7 +70,7 @@ get_header();
                 <div id="tc-quote-box">
                     <div class="col-md-3" id="quote-img">
                         <?php if (get_field('home_page_quote_image')): ?>
-                        <img src="<?php echo the_field('home_page_quote_image'); ?>" class="qImg">
+                        <img alt="Teacher" src="<?php echo the_field('home_page_quote_image'); ?>" class="qImg">
                         <?php endif; ?>
                     </div>
                     <div class="col-md-9" id="quote-text">
@@ -108,7 +108,9 @@ get_header();
                             <div class="tc-inquiry-set-image-thumbnail">
                                 <div class="tc-inquiry-set-image-section">
                                     <?php if (get_field($set_name."_image")): ?>
-                                    <img src="<?php echo the_field($set_name."_image"); ?>" alt="" class="img-thumbnail-square img-responsive img-loaded">
+                                    <img src="<?php echo the_field($set_name."_image"); ?>"
+                                        <?php if (get_field($set_name."_link_label")): ?> alt="<?php echo the_field($set_name."_link_label"); ?>" <?php endif; ?>
+                                        class="img-thumbnail-square img-responsive img-loaded">
                                     <?php endif; ?>
                                 </div>
                             </div>
@@ -139,7 +141,9 @@ get_header();
                             <div class="tc-events-image-thumbnail">
                                 <div class="tc-events-image-section">
                                     <?php if (get_field($events_name."_image")): ?>
-                                    <img src="<?php echo the_field($events_name."_image"); ?>" alt="" class="img-thumbnail-square img-responsive img-loaded">
+                                    <img src="<?php echo the_field($events_name."_image"); ?>" 
+                                    <?php if (get_field($events_name."_link_label")): ?> alt="<?php echo the_field($events_name."_link_label"); ?>" <?php endif; ?>
+                                    class="img-thumbnail-square img-responsive img-loaded">
                                     <?php endif; ?>
                                 </div>
                             </div>
@@ -179,7 +183,7 @@ get_header();
             <div class="tc-about-content clearfix">
                 <div class="col-md-6 col-sm-12 tc-about-content-left padding-none">
                     <?php if (get_field('home_page_about_left_side')): ?>
-                        <img class="logo" src="<?php echo the_field('home_page_about_left_side_logo'); ?>">
+                        <img class="logo" alt="California Historical Society Logo" src="<?php echo the_field('home_page_about_left_side_logo'); ?>">
                         <div><i class="fal fa-map-marker-alt"></i><?php echo the_field('home_page_about_left_side_address'); ?></div>
                         <div><i class="fal fa-phone"></i><?php echo the_field('home_page_about_left_side_phone'); ?></div>
                         <?php if (get_field('home_page_about_left_side_fax')): ?>
