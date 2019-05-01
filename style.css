@@ -658,7 +658,7 @@ a:hover, a:focus, a:active {
 }
 
 a:focus {
-	outline: thin dotted;
+	outline: thin dotted #FFB904;
 }
 
 a:hover, a:active {
@@ -1042,9 +1042,19 @@ object {
 	color: #FED104 !important;
 	transition: all .2s ease-in;
  }
-.navbar-nav li a:hover { 
+ .navbar-nav li.menu-item.current-menu-item a {
+	border-bottom:3px solid #ffb904;
+	padding-left:2px;
+	padding-right:2px;
+}
+ .navbar-nav li.menu-item a:hover {
+	 color: #fff !important;
+	 border-bottom: 3px solid #fff;
+ }
+.navbar-nav li.menu-item.current-menu-item a:hover { 
 	text-decoration:none;
 	color: #fff !important;
+	border-bottom: 3px solid #ffffff;
 }
 .site-brand h1.blogname {
 	font-family: "Biko", Helvetica, Arial, sans-serif !important;
