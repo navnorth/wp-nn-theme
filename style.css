@@ -1034,6 +1034,11 @@ object {
 	width: 30%;
 	overflow: hidden;
 }
+a.site-brand {
+	display: block;
+	margin: 10px;
+	width: 210px;
+}
 .site-brand:hover { text-decoration:none; }
 #navbarTop { width:70%; overflow:hidden !important;  }
 .navbar-nav li a { 
