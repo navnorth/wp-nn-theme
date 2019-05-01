@@ -385,3 +385,31 @@ function add_search_nav_item($items, $args){
     return $items;
 }
 add_filter( 'wp_nav_menu_items', 'add_search_nav_item', 10, 2);
+
+
+/* Enqueue script and css for Gutenberg Inquiry Set Thumbnail block */
+function wp_nn_enqueue_inquiry_set_block(){
+	wp_enqueue_script(
+            'thumbnail-block-js', 
+            get_template_directory_uri() . "/js/thumbnail-block.build.js",
+            array('wp-blocks', 'wp-i18n', 'wp-element', 'wp-components', 'wp-editor', 'wp-api')
+	);
+        wp_localize_script(
+            'thumbnail-block-js',
+            'wp_nn_theme',
+            array(
+                "theme_path" => get_template_directory_uri()
+            )
+        );
+	wp_enqueue_style(
+            'thumbnail-block-css', 
+            get_template_directory_uri() . "/css/thumbnail-block.css",
+            array('wp-edit-blocks')
+	);
+	/* Register Block */
+	register_block_type('wp-nn-theme/thumbnail-block', array(
+            'editor_script' => 'thumbnail-block-js',
+            'editor_style' => 'thumbnail-block-css'
+	));
+}
+add_action('enqueue_block_editor_assets', 'wp_nn_enqueue_inquiry_set_block');
