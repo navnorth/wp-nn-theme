@@ -1,0 +1,26 @@
+.wp-block-wp-nn-theme-thumbnail-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:.5em;
+    box-shadow: 0 0 3px 0 rgba(0,0,0,.3);
+}
+.wp-nn-thumbnail-desc {
+    padding: 10px;
+    text-align: center;
+    width:100%;
+}
+.wp-nn-thumbnail-desc a.wp-nn-thumbnail-link {
+    font-size:18px;
+}
+.wp-nn-inspector-thumbnail-display {
+    overflow:hidden;
+    margin-bottom:10px;
+}
+img.wp-nn-inspector-thumbnail-image {
+    margin-bottom:5px;
+}
+.wp-nn-inspector-thumbnail-select-button {
+    margin: 5px auto;
+    display: inherit;
+}
