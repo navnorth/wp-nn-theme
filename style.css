@@ -1699,6 +1699,10 @@ img.qImg {
 	position:relative; 
 }
 .wp-block-wp-nn-theme-thumbnail-block .wp-nn-thumbnail-media { position:relative; }
+.wp-block-wp-nn-theme-thumbnail-block .wp-nn-thumbnail-media img {
+	width: 315px;
+	height: 275px;
+}
 .wp-nn-thumbnail-desc {
 	position: absolute;
 	left: 0;
