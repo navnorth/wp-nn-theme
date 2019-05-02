@@ -22,6 +22,8 @@
 
 <body <?php body_class(); ?>>
 <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'wp_nn_theme' ); ?></a>
+<a class="skip-link screen-reader-text" href="#search-button"><?php esc_html_e( 'Skip to search', 'wp_nn_theme' ); ?></a>
+<a class="skip-link screen-reader-text" href="#nn-footer"><?php esc_html_e( 'Skip to footer', 'wp_nn_theme' ); ?></a>
 <header id="masthead" class="site-header">
 	<nav class="navbar navbar-expand-md navbar-dark bg-dark">
 		<div class="container">
