@@ -60,7 +60,7 @@ get_header();
                         <?php endif; ?>
                         <?php if (get_field('home_page_learn_more_button_label')): ?>
                         <div class="tc-learn-more">
-                            <a href="<?php the_field('home_page_learn_more_button_url'); ?>" class="tc-learn-more-button"><?php the_field('home_page_learn_more_button_label'); ?></a>
+                            <a href="<?php the_field('home_page_learn_more_button_url'); ?>" class="tc-learn-more-button move-up-left"><?php the_field('home_page_learn_more_button_label'); ?></a>
                         </div>
                         <?php endif; ?>
                     </div>
@@ -164,7 +164,7 @@ get_header();
             </div>
             <div id="tc-news-events-all">
                 <?php if (get_field('home_page_news_view_all_button_label')): ?>
-                <a href="<?php echo the_field('home_page_news_view_all_button_url'); ?>" class="view-all-button"><?php echo the_field('home_page_news_view_all_button_label'); ?></a>
+                <a href="<?php echo the_field('home_page_news_view_all_button_url'); ?>" class="view-all-button move-up-left"><?php echo the_field('home_page_news_view_all_button_label'); ?></a>
                 <?php endif; ?>
             </div>
         </div>
