@@ -46,7 +46,7 @@
 			     'container'       => 'div',
 			     'container_id'    => 'navbarTop',
 			     'container_class' => 'collapse navbar-collapse',
-			     'menu_id'         => false,
+			     'menu_id'         => 'navbarCollapse',
 			     'menu_class'      => 'navbar-nav mr-auto nav-right',
 			     'depth'           => 0,
 			     'fallback_cb'     => 'tcnavwalker::fallback',
