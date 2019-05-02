@@ -1055,7 +1055,7 @@ a.site-brand {
 	padding-left:2px;
 	padding-right:2px;
 }
-.navbar-nav li.menu-item a:hover {
+.navbar-nav li.menu-item a:hover, .navbar-nav li a:focus {
 	 color: #fff !important;
  }
 .navbar-nav li.menu-item.current-menu-item a:hover { 
@@ -1122,16 +1122,16 @@ a.site-brand {
 	-webkit-transition: all 0.3s ease-in-out 0s;
 	transition: all 0.3s ease-in-out 0s;
 }
-.navbar-nav li.current-menu-item a:before {
+.navbar-nav li.current-menu-item a:before, .navbar-nav li a:focus:before {
 	visibility: visible;
 	-webkit-transform: scaleX(1);
 	transform: scaleX(1);
 	background-color: #FFB904;
 }
-.navbar-nav li.current-menu-item a:hover:before {
+.navbar-nav li.current-menu-item a:hover:before, .navbar-nav li a:focus:before {
 	background-color: #fff;
 }
-.navbar-nav li a:hover:before {
+.navbar-nav li a:hover:before, .navbar-nav li a:focus:before {
 	visibility: visible;
 	-webkit-transform: scaleX(1);
 	transform: scaleX(1);
@@ -1204,6 +1204,9 @@ a.site-brand {
 	margin: 0;
 	cursor:pointer;
 }
+.tc-search-submit:focus {
+	color: #fff;
+}
 .tc-search-nav { padding:7px 0; }
 .tc-search-bg {
 	position: absolute;
@@ -1269,12 +1272,12 @@ time {
 	-webkit-transition: all 0.3s ease-in-out 0s;
 	transition: all 0.3s ease-in-out 0s;
 }
-#menu-footer-menu li a:hover:before {
+#menu-footer-menu li a:hover:before, #menu-footer-menu li a:focus:before {
 	visibility: visible;
 	-webkit-transform: scaleX(1);
 	transform: scaleX(1);
 }
-#menu-footer-menu li a:hover { 
+#menu-footer-menu li a:hover, #menu-footer-menu li a:focus { 
 	text-decoration: none; 
 	color: #fff !important;
 }
@@ -1286,7 +1289,7 @@ time {
 	transition: all .2s ease-in;
 	color:#FFB904; 
 }
-.nn-social-links li a:hover {
+.nn-social-links li a:hover, .nn-social-links li a:focus {
 	color: #fff;
 }
 /*--------------------------------------------------------------
@@ -1424,7 +1427,7 @@ time {
 	color: #fff !important;
 	transition: all .2s ease-in;
 }
-.tc-learn-more-button:hover, .view-all-button:hover {
+.tc-learn-more-button:hover, .view-all-button:hover, .tc-learn-more-button:focus, .view-all-button:focus {
 	background: #5D1027;
 	color: #fff!important;
 	text-decoration:none;
