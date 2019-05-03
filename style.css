@@ -1774,6 +1774,40 @@ img.qImg {
 	font-family: 'Helvetica Neue Medium';
 	color: #ffffff;
 }
+/** Inquiry Sets - Grade Styling **/
+.lp-inquiry-set-thumbnail-block-row {
+    max-width:1200px;
+    margin:45px auto 15px;
+}
+.wp-block-wp-curriculum-inquiry-set-thumbnail-block{
+    width: 345px;
+    height: 260px;
+    margin: auto;
+    position:relative;
+}
+.lp-tc-related-inquiry-grades {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 5px 10px;
+    color: #ffffff;
+    background: rgba(173, 33, 82, 0.85);
+}
+.custom-bg-dark { background: #283d47 !important; }
+.custom-bg-dark-inquiry-sets { height: 15px; }
+.lp-tc-related-inquiry-set-description {
+    padding: 16px;
+    font-weight: 500;
+    background: #436576;
+    box-shadow: 0 10px 28px 0 #3333337a;
+}
+.lp-tc-related-inquiry-set-description h4 {
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    color:#ffffff !important;
+}
+.lp-tc-related-inquiry-set-description h4 a { color:#ffffff !important; white-space:nowrap; }
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
 	.site-branding { width:75%; }
