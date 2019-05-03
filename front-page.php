@@ -103,7 +103,7 @@ get_header();
                     $set_name = "home_page_inquiry_set_".$i;
                 ?>
                 <a href="<?php echo the_field($set_name."_link_url"); ?>">
-                    <div class="col-md-3 col-sm-6 tc-inquiry-sets-block tc-inquiry-sets-block-padding move-up-left">
+                    <div tabindex="-1" class="col-md-3 col-sm-6 tc-inquiry-sets-block tc-inquiry-sets-block-padding move-up-left">
                         <div class="tc-inquiry-set-media-image">
                             <div class="tc-inquiry-set-image-thumbnail">
                                 <div class="tc-inquiry-set-image-section">
@@ -136,29 +136,31 @@ get_header();
                     $events_name = "home_page_newsevent_".$i;
                 ?>
                 <div class="col-md-4 col-sm-6 tc-news-events-blocks-padding">
-                    <div class="tc-news-events-block">
-                        <div class="tc-events-media-image">
-                            <div class="tc-events-image-thumbnail">
-                                <div class="tc-events-image-section">
-                                    <?php if (get_field($events_name."_image")): ?>
-                                    <img src="<?php echo the_field($events_name."_image"); ?>" 
-                                    <?php if (get_field($events_name."_link_label")): ?> alt="<?php echo the_field($events_name."_link_label"); ?>" <?php endif; ?>
-                                    class="img-thumbnail-square img-responsive img-loaded">
-                                    <?php endif; ?>
+                    <a href="<?php echo the_field($events_name."_link_url"); ?>">
+                        <div class="tc-news-events-block move-up-left">
+                            <div class="tc-events-media-image">
+                                <div class="tc-events-image-thumbnail">
+                                    <div class="tc-events-image-section">
+                                        <?php if (get_field($events_name."_image")): ?>
+                                        <img src="<?php echo the_field($events_name."_image"); ?>" 
+                                        <?php if (get_field($events_name."_link_label")): ?> alt="<?php echo the_field($events_name."_link_label"); ?>" <?php endif; ?>
+                                        class="img-thumbnail-square img-responsive img-loaded">
+                                        <?php endif; ?>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="tc-news-events-description">
-                            <div class="tc-events-dates">
-                                <?php if (get_field($events_name."_date")): ?>
-                                <span><?php echo the_field($events_name."_date"); ?></span>
-                                <?php endif; ?>
+                            <div class="tc-news-events-description">
+                                <div class="tc-events-dates">
+                                    <?php if (get_field($events_name."_date")): ?>
+                                    <span><?php echo the_field($events_name."_date"); ?></span>
+                                    <?php endif; ?>
+                                </div>
+                                <?php if (get_field($events_name."_link_label")): ?>
+                            <h4><?php echo the_field($events_name."_link_label"); ?></h4>
+                            <?php endif; ?>
                             </div>
-                            <?php if (get_field($events_name."_link_label")): ?>
-                           <h4><a href="<?php echo the_field($events_name."_link_url"); ?>"><?php echo the_field($events_name."_link_label"); ?></a></h4>
-                           <?php endif; ?>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <?php } ?>
             </div>
