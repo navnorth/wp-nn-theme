@@ -44,15 +44,19 @@
     src:url(fonts/Biko_Bold.otf) format('opentype');
     font-weight:bold;
 }
-/* @font-face{
-    font-family:'Helvetica Neue';
-    src:url(fonts/HelveticaNeue-Medium.woff);
-} */
 @font-face{
     font-family:'Helvetica Neue Medium';
     src:url(fonts/HelveticaNeueMedium.woff);
     font-weight:500;
-}	
+}
+@font-face {
+    font-family: 'robotoregular';
+    src: url('roboto-regular-webfont.woff2') format('woff2'),
+         url('roboto-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 /*--------------------------------------------------------------
 # Normalize
@@ -108,7 +112,7 @@ hr {
 }
 
 p {
-	font-family: 'Helvetica Neue', Helvetica, Arial,sans-serif;
+	font-family: 'Helvetica Neue', 'Roboto', Helvetica, Arial,sans-serif;
 	color: #4F4F4F;
 	font-size: 24px;
 	line-height: 28px;
@@ -132,7 +136,7 @@ pre {
  */
 
 a {
-	font-family: 'Helvetica Neue', Helvetica, Arial,sans-serif;
+	font-family: 'Helvetica Neue', 'Roboto', Helvetica, Arial,sans-serif;
 	color: #CD620F;
 	font-size: 18px;
 	line-height: 20px;
@@ -419,7 +423,7 @@ select,
 optgroup,
 textarea {
 	color: #404040;
-	font-family: 'Helvetica Neue Medium', sans-serif;
+	font-family: 'Helvetica Neue', 'Roboto', Helvetica, Arial, sans-serif;
 	font-size: 16px;
 	font-size: 1rem;
 	line-height: 1.5;
@@ -1046,7 +1050,7 @@ a.site-brand {
 .site-brand:hover { text-decoration:none; }
 #navbarTop { width:70%; overflow:hidden !important;  }
 .navbar-nav li a { 
-	font-family: 'Helvetica Neue Medium', Helvetica, Arial, sans-serif; 
+	font-family: 'Helvetica Neue Medium', 'Helvetica Neue', 'Roboto', Helvetica, Arial, sans-serif; 
 	font-size:16px; 
 	color: #FED104 !important;
 	transition: all .2s ease-in;
@@ -1150,19 +1154,19 @@ a.site-brand {
 }
 .tc-search-field::-webkit-input-placeholder {
 	color: #fff;
-	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-family: 'Helvetica Neue', 'Roboto', Helvetica, Arial, sans-serif;
 }
 .tc-search-field::-moz-placeholder {
 	color: #fff;
-	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-family: 'Helvetica Neue', 'Roboto', Helvetica, Arial, sans-serif;
   }
 .tc-search-field:-ms-input-placeholder {
 	color: #fff;
-	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-family: 'Helvetica Neue', 'Roboto', Helvetica, Arial, sans-serif;
   }
 .tc-search-field:-moz-placeholder { 
 	color: #fff;
-	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-family: 'Helvetica Neue', 'Roboto', Helvetica, Arial, sans-serif;
   }
 .tc-search-form button {
 	transition: all .2s ease-in;
@@ -1228,12 +1232,12 @@ h2.section-heading {
 	color:#851939;
 }
 time {
-	font-family:'Helvetica Neue', Helvetica, Arial,sans-serif;
+	font-family:'Helvetica Neue', 'Roboto', Helvetica, Arial, sans-serif;
 	color:#4F4F4F;
 	font-size:20px;
 }
 .wp-block-latest-posts li a {
-	font-family:'Helvetica Neue Medium', Helvetica, Arial,sans-serif;
+	font-family:'Helvetica Neue', 'Roboto', Helvetica, Arial, sans-serif;
 	color:#4F4F4F;
 	font-size:24px;
 }
@@ -1252,7 +1256,7 @@ time {
     font-size:20px;
 }
 #menu-footer-menu { margin:20px 0; padding:0; }
-#menu-footer-menu li{ display:inline-block; font-family: 'Helvetica Neue Medium', Helvetica, Arial, sans-serif;  }
+#menu-footer-menu li{ display:inline-block; font-family: 'Helvetica Neue Medium', 'Helvetica Neue', 'Roboto', Helvetica, Arial, sans-serif;  }
 #menu-footer-menu li a { 
 	transition: all .2s ease-in;
 	color:#FFB904; 
@@ -1359,7 +1363,7 @@ time {
 	z-index: 3;
 }
 #banner-title {
-	font-family:'Biko', sans-serif;
+	font-family: 'Biko', 'Helvetica Neue', 'Roboto', 'Helvetica', Arial, sans-serif;
 	font-weight:bold;
 	background-color: #851939;
 	color: #ffffff;
@@ -1373,7 +1377,7 @@ time {
 	font-weight: 400;
 }
 #banner-subtitle {
-	font-family:'Biko', sans-serif;
+	font-family: 'Biko', 'Helvetica Neue', 'Roboto', 'Helvetica', Arial, sans-serif;
 	font-weight:300;
 	background-color: #5D1027;
 	color: #ffffff;
@@ -1404,7 +1408,7 @@ time {
 	float:left;
 }
 .tc-highlight-text {
-	font-family:'Helvetica Neue','Helvetica', Arial, sans-serif;
+	font-family: 'Helvetica Neue', 'Roboto', 'Helvetica', Arial, sans-serif;
 	color:#4f4f4f;
 	font-size: 16px;
 	line-height: 28px;
@@ -1412,14 +1416,14 @@ time {
 	padding-right:30px;
 }
 #tc-highlight-box h2 {
-	font-family: 'Biko', sans-serif;
+	font-family: 'Biko', 'Helvetica Neue', 'Roboto', 'Helvetica', Arial, sans-serif;
 	font-weight: bold;
 	color: #851939;
 	font-size: 30px;
 }
 .tc-learn-more { text-align:center; }
 .tc-learn-more-button {
-	font-family: 'Biko', 'Helvetica Neue', sans-serif;
+	font-family: 'Biko', 'Helvetica Neue', 'Roboto', 'Helvetica', Arial, sans-serif;
 	display: inline-block;
 	background: #2a3e48;
     padding: 14px 20px 10px 20px;
@@ -1477,7 +1481,7 @@ img.qImg {
 	font-size: 20px;
 	color: #4f4f4f;
 	font-weight: 400;
-	font-family: 'Helvetica Neue', Helvetica, Arial,sans-serif;
+	font-family: 'Helvetica Neue', 'Roboto', Helvetica, Arial,sans-serif;
 }
 .quote-source {
 	text-align: right;
@@ -1509,7 +1513,7 @@ img.qImg {
 	top: -23px;
 }
 .tc-inquiry-set-section p {
-	font-family: "Biko Bold", Helvetica, Arial, sans-serif;
+	font-family: "Biko Bold", 'Helvetica Neue', 'Roboto', Helvetica, Arial, sans-serif;
 	color: #ffffff;
 	text-align: center;
 	margin-bottom: 0;
@@ -1548,7 +1552,7 @@ img.qImg {
 .tc-inquiry-set-label h4 {
 	color:#ffffff;
 	font-size:24px;
-	font-family: 'Helvetica Neue Medium';
+	font-family: 'Helvetica Neue Medium', 'Helvetica Neue', 'Roboto', Helvetica, Arial, sans-serif;
 }
 .tc-inquiry-set-image-section img {
 	width: 250px;
@@ -1634,10 +1638,10 @@ img.qImg {
 	margin-bottom: 25px;
 	margin-bottom: 20px;
 	color: #6f6f6f;
-	font-family: 'Helvetica Neue';
+	font-family: 'Helvetica Neue', 'Roboto', Arial, Helvetica, sans-serif;
 }
 .tc-news-events-description h4 a{
-	font: normal 18px 'Helvetica Neue';
+	font-size: 18px;
 	color:#4f4f4f;
 	line-height:1em;
 	letter-spacing:0.5px;
@@ -1655,7 +1659,7 @@ img.qImg {
 	font-size: 18px;
     padding: 14px 17px 10px 17px;
 	color: #fff !important;
-	font-family: 'Biko';
+	font-family: 'Biko', 'Helvetica Neue', 'Roboto', Helvetica, Arial, sans-serif;
 	text-transform: uppercase;
 	transition: all .2s ease-in;
 	box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
@@ -1685,7 +1689,7 @@ img.qImg {
 	z-index:999;
 }
 .tc-about-section p {
-	font-family: "Biko Bold", Helvetica, Arial, sans-serif;
+	font-family: "Biko Bold", 'Helvetica Neue', 'Roboto', Helvetica, Arial, sans-serif;
 	color: #ffffff;
 	text-align: center;
 	margin-bottom: 0;
@@ -1701,7 +1705,7 @@ img.qImg {
 .tc-about-content-left { 
 	padding: 5%; 
 	color: #fff;
-	font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;	
+	font-family: 'Helvetica Neue', 'Roboto', Arial, Helvetica, sans-serif;	
 }
 .tc-about-content-left div {
 	display: flex;
@@ -1731,7 +1735,7 @@ img.qImg {
 }
 .inquiry-set-callout-box .wp-block-column h2 {
 	font-size: 40px;
-	font-family: 'Biko Bold';
+	font-family: 'Biko Bold', 'Helvetica Neue', 'Roboto', Helvetica, Arial, sans-serif;
 	color: #851939;
 	margin-bottom: 25px;
 }
@@ -1746,7 +1750,7 @@ img.qImg {
 	z-index: 3;
 }
 #page-banner-title {
-	font-family:'Biko', sans-serif;
+	font-family:'Biko', 'Helvetica Neue', 'Roboto', Helvetica, Arial, sans-serif;
 	font-weight:bold;
 	background-color: #851939;
 	color: #ffffff;
@@ -1789,7 +1793,7 @@ img.qImg {
 }
 .wp-nn-thumbnail-link {
 	font-size: 32px;
-	font-family: 'Helvetica Neue Medium';
+	font-family: 'Helvetica Neue', 'Roboto', Helvetica, Arial, sans-serif;
 	color: #ffffff;
 }
 /** Inquiry Sets - Grade Styling **/
@@ -2119,7 +2123,7 @@ img.qImg {
 #cookie-law-info-bar {
 	background-color: rgba(18, 26, 31, 0.9) !important;
 	color: #fff !important;
-	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+	font-family: 'Helvetica Neue', 'Roboto', Helvetica, Arial, sans-serif !important;
 	padding: 10px 10px !important;
 	font-weight: 400 !important;
 }
