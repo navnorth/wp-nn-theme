@@ -2096,7 +2096,19 @@ img.qImg {
 	}
 }
 
-/* @media only screen and (min-width: ) */
+
+/* Large Devices */
+@media only screen and (min-width: 1725px) {
+	#banner-heading {
+		width: 88%;
+		right: 17%;
+	}
+}
+@media only screen and (min-width: 2200px) {
+	#banner-heading {
+		width: 78%;
+	}
+}
 
 #page.site {
 	max-width: 1440px;
