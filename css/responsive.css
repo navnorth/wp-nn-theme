@@ -1,13 +1,344 @@
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) { }
-
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
     .navbar-expand-md .navbar-collapse { display:block !important; }   
 }
 
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {  }
+/* Large Devices */
+@media only screen and (min-width: 1725px) {
+	#banner-heading {
+		width: 88%;
+		right: 17%;
+	}
+}
 
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {  }
+/* Extra Large Devices */
+@media only screen and (min-width: 2200px) {
+	#banner-heading {
+		width: 78%;
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	.site-branding { width:75%; }
+	.tc-heading-wrapper { height: 25vh; }
+	#banner-title {
+		font-size: 24px;
+		margin-bottom: 5px;
+	}
+	#banner-subtitle {
+		font-size: 16px;
+	}
+	#banner-heading {
+		right: 5%;
+	}
+	#tc-highlight-box {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		background: #fff;
+		box-shadow: none;
+	}
+	#tc-highlight-right, #tc-highlight-left {
+		max-width: 100%;
+	}
+	.tc-learn-more-text {
+		width: 75%;
+		margin: 0 auto;
+	}
+	.tc-learn-more-text p:first-child {
+		text-align: center;
+	}
+	.tc-highlight-text {
+		line-height: 22px;
+	}
+	.tc-highlights-wrapper .row {
+		display: block;
+	}
+	#tc-highlight-right {
+		padding: 40px;
+	}
+	#tc-highlight-left {
+		padding: 0 8% 60px 8%;
+	}
+	.tc-highlight-text {
+		padding-right: 0;
+	}
+	img.qImg {
+		width: 100px;
+		height: 100px;
+	}
+	#quote-text {
+		margin-bottom: 75px;
+	}
+	#quote-text:before, #quote-text:after {
+		font-size: 48px;
+	}
+	#quote-text:before {
+		left: -10px;
+	}
+	#quote-text:after {
+		left: 85%;
+		bottom: 25px;
+	}
+	.tc-quote-text {
+		margin-left: 10px;
+	}
+	#tc-quote-box {
+		margin: 0;
+	}
+	.tc-inquiry-set-section {
+		width: 60%;
+	}
+	.tc-inquiry-set-image-section img {
+		width: 150px;
+		height: 150px;
+	}
+	.tc-inquiry-set-label {
+		width: 150px;
+	}
+	.tc-inquiry-set-label h4 {
+		font-size: 16px;
+	}
+	.tc-inquiry-set-media-image {
+		width: 150px;
+		min-height: 150px;
+	}
+	.tc-inquiry-sets-grid-section {
+		padding: 12% 4%;
+	}
+	.tc-news-events-wrapper {
+		padding: 75px 0;
+	}
+	.tc-news-events-header {
+		font-size: 32px;
+	}
+	.tc-events-image-section img {
+		height: 150px;
+		width: 200px;
+	}
+	.tc-news-events-block {
+		width: 200px;
+	}
+	.tc-events-dates {
+		font-size: 14px;
+	}
+	.tc-news-events-description h4 {
+		font-size: 16px;
+	}
+	#tc-news-events-blocks {
+		justify-content: space-around;
+		margin: 50px 0;
+	}
+	#tc-news-events-all {
+		text-align: center;
+		margin: 0;
+	}
+	.tc-about-section {
+		width: 27%;
+	}
+	#cookie-law-info-bar:before {
+		display: none;
+	}
+}
+
+/* Extra small devices */
+@media only screen and (max-width: 576px) {
+	.navbar-nav li.menu-item {
+		display: block;
+		margin: 10px 20px !important;
+	}
+	.navbar-nav li.menu-item.current-menu-item a {
+		border-bottom: none;
+	}
+	.banner-1, .banner-2 {
+		display: none;
+	}
+	.tc-heading-wrapper {
+		height: 40vh;
+	}
+	.header-logo {
+		width: 100px;
+	}
+	.sitebrand h1.blogname {
+		margin-left: 10px;
+	}
+	.nn-social-links {
+		margin: 20px 35px;
+	}
+	.nn-social-links i {
+		font-size: 1.5em;
+	}
+	#banner-heading {
+		top: 0%;
+		left: 0%;
+	}
+	#banner-title {
+		font-size: 14px;
+		display: none;
+	}
+	#banner-subtitle {
+		font-size: 14px;
+		text-align: left;
+		width: 100%;
+	}
+	#tc-heading:after {
+		bottom: -38px;
+	}
+	.tc-highlights-wrapper {
+		padding: 0;
+	}
+	#tc-highlight-box {
+		background-color: #fff;
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		box-shadow: none;
+	}
+	#tc-highlight-right	{
+		height: 54%;
+	}
+	.tc-learn-more-text {
+		text-align: center;
+		padding-top: 15px;
+	}
+	.tc-learn-more-text p img {
+		margin-bottom: 20px;
+	}
+	.tc-quote-text {
+		font-size: 16px;
+		margin-left: 65px;
+	}
+	#quote-text:before {
+		font-size: 70px;
+	}
+	#quote-text:before {
+		top: 35px;
+		left: 45px;
+	}
+	#quote-text:after {
+		display: none;
+	}
+	.quote-source {
+		font-size: 16px;
+	}
+	#quote-img {
+		margin-top: -25px;
+		margin-bottom: 25px;
+	}
+	img.qImg {
+		width: 125px;
+		height: 125px;
+	}
+	.tc-inquiry-set-section {
+		top: 0;
+		width: 100%;
+	}
+	.tc-inquiry-set-section p {
+		font-size: 28px;
+	}
+	.tc-inquiry-sets-topbar .tc-custom-bg-blue, .tc-inquiry-sets-topbar .tc-custom-bg-yellow {
+		display: none;
+	}
+	.tc-inquiry-sets-grid-section {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding-top: 100px;
+	}
+	.tc-inquiry-sets-grid-section a {
+		margin-bottom: 30px;
+	}
+	#tc-inquiry-sets:after {
+		bottom: -38px;
+	}
+	.tc-news-events-wrapper {
+		padding: 75px 0;
+	}
+	.tc-news-events-header {
+		font-size: 32px;
+	}
+	#tc-news-events-blocks {
+		flex-direction: column;
+		margin: 50px 0 0 0;
+	}
+	.tc-news-events-blocks-padding {
+		padding-bottom: 30px;
+	}
+	#tc-news-events-all {
+		text-align: center;
+		margin: 0;
+	}
+	.tc-about-section {
+		width: 100%;
+	}
+	.tc-about-section p {
+		font-size: 28px;
+	}
+	.tc-about-topbar .tc-custom-bg-orange, .tc-about-topbar .tc-custom-bg-pink {
+		display: none;
+	}
+	.tc-about-content-left {
+		padding-top: 100px;
+	}
+	#cookie-law-info-bar:before {
+		display: none;
+	}
+}
+
+/* Small Landscape devices */
+@media only screen and (min-width: 321px) and (max-width: 576px) {
+	.header-logo {
+		width: 150px;
+	}
+	.banner-1, .banner-2 {
+		display: none;
+	}
+	#banner-heading {
+		width: 100%;
+		top: 0;
+		right: 0;
+	}
+	#banner-title {
+		display: none;
+	}
+	#banner-subtitle {
+		width: 100%;
+	}
+	.tc-heading-wrapper {
+		height: 50vh;
+	}
+	#quote-text:before {
+		left: 25px;
+	}
+	#quote-text:after {
+		left: 92%;
+	}
+	.tc-quote {
+		margin: 0 auto;
+	}
+	.tc-inquiry-sets-block-padding {
+		margin: 20px auto;
+	}
+	#tc-news-events-blocks {
+		display: block;
+	}
+	.nn-social-links-wrapper {
+		max-width: 100%;
+		flex: 0 0 100%;
+	}
+}
+
+/* iPads (landscape) */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+	#banner-heading {
+		right: 0;
+	}
+	.tc-inquiry-set-section {
+		width: 45%;
+	}
+	.tc-inquiry-sets-block {
+		max-width: 50%;
+		flex: 0 0 50%;
+		margin: 20px auto;
+	}
+}

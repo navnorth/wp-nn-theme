@@ -31,7 +31,7 @@
 				]);
 				?>
 			</div>
-			<div class="col-md-6 col-sm-4 col-xs-12">
+			<div class="col-md-6 col-sm-4 col-xs-12 nn-social-links-wrapper">
 				<ul class="nn-social-links">
 				<?php
 				$facebook = get_option("wp_nn_theme_social_facebook");
