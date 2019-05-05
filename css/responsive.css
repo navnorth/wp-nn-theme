@@ -1,6 +1,16 @@
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-    .navbar-expand-md .navbar-collapse { display:block !important; }   
+@media only screen and (min-width:1023px) {
+	.navbar-expand-lg .navbar-collapse { display:block !important; }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+	#navbarCollapse { display: flex; }
+	.navbar li.menu-item {
+		display: flex;
+		align-self: flex-end;
+	}
+	.head-banner {
+		height: 30vh;
+	}
 }
 
 /* Large Devices */
@@ -12,9 +22,15 @@
 }
 
 /* Extra Large Devices */
-@media only screen and (min-width: 2200px) {
+@media only screen and (min-width: 1920px) {
 	#banner-heading {
 		width: 78%;
+	}
+}
+
+@media only screen and (min-width: 2200px) {
+	#banner-heading {
+		width: 68%;
 	}
 }
 

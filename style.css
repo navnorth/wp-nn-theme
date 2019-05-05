@@ -1387,7 +1387,7 @@ time {
 	display:inline-block;
 	text-shadow: 7px 4px 4px rgba(0, 0, 0, 0.25);
 }
-#tc-highlights { background:#ffffff; overflow:hidden; }
+#tc-highlights { background: #FFFEF7; overflow:hidden; }
 .tc-highlights-wrapper { padding:50px 0; }
 #tc-highlight-box {
 	-webkit-box-shadow: 2px 4px 18px rgba(0, 0, 0, 0.1);
@@ -1584,7 +1584,7 @@ img.qImg {
 	width:250px;
 }
 #tc-news-events {
-	background:#ffffff;
+	background:#FFFEF7;
 	overflow:hidden;
 }
 .tc-news-events-wrapper { padding:150px 0; }
