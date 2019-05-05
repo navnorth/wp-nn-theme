@@ -378,7 +378,7 @@ function nn_get_top_level_pages(){
 
 function add_search_nav_item($items, $args){
     if ($args->menu == "primary"){
-        $search = '<form role="search" method="get" class="tc-search-form" action="'.site_url().'"><input tabindex="-1" type="search" class="tc-search-field" placeholder="Search..." value="" name="s" /><button tabindex="0" type="submit" class="tc-search-submit" id="search-button"><i class="fas fa-search fa-2x"></i></button><a class="tc-search-bg"></a></form>';
+        $search = '<form tabindex="0" role="search" method="get" class="tc-search-form" action="'.site_url().'"><input tabindex="-1" type="search" class="tc-search-field" placeholder="Search..." value="" name="s" /><button type="submit" class="tc-search-submit" id="search-button"><i class="fas fa-search fa-2x"></i></button><span class="tc-search-bg"></span></form>';
         $items = $items;
         $items .= "<li class='menu-item nav-link tc-search-nav'>".$search."</li>";
     }

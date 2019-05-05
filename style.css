@@ -1176,6 +1176,7 @@ a.site-brand {
   }
 .tc-search-form:focus, .tc-search-form.focus {
 	background:#436576;
+	outline: thin dotted #FFB904;
 }
 .tc-search-field {
 	line-height: 1em;
