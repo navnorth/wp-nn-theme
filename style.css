@@ -1086,6 +1086,9 @@ a.site-brand {
 .tc-search-submit:focus {
 	outline: thin dotted #FFB904;
 }
+.tc-search-submit:active {
+	outline: none;
+}
 .navbar-nav {
 	padding: 8px 50px 10px 0 !important;
 	display: inline-block;
@@ -1176,7 +1179,7 @@ a.site-brand {
   }
 .tc-search-form:focus, .tc-search-form.focus {
 	background:#436576;
-	outline: thin dotted #FFB904;
+	outline: none;
 }
 .tc-search-field {
 	line-height: 1em;
