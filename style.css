@@ -1490,6 +1490,7 @@ img.qImg {
 .quote-source {
 	text-align: right;
 	font-size: 20px;
+	font-weight: 500;
 	color: #851939;
     margin-top: 18px;
     margin-right: 10px;
@@ -1631,6 +1632,7 @@ img.qImg {
 }
 .tc-news-events-description h4 {
 	color: #4F4F4F;
+	font-weight: 400;
 }
 .tc-events-image-section img {
 	height: 200px;
