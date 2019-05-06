@@ -383,8 +383,8 @@
 
 /* Phone (landscape) */
 @media screen 
-  and (min-width: 360px) 
-  and (max-height: 640px) 
+  and (min-device-width: 360px) 
+  and (max-device-height: 640px) 
   and (orientation: landscape) {
 	.nn-social-links-wrapper {
 		max-width: 100%;
