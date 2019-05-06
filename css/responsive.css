@@ -11,6 +11,30 @@
 	.head-banner {
 		height: 30vh;
 	}
+	.inquiry-set-wrapper .wp-block-column {
+		flex-basis: 100%;
+		margin-right: 0;
+	}
+	.inquiry-set-grid .wp-block-column {
+		flex-basis: 45%;
+	}
+	.inquiry-set-callout-box {
+		padding: 0 30px;
+	}
+}
+
+/* Medium devices */
+@media only screen and (max-width: 1440px) {
+	.wp-block-wp-nn-theme-thumbnail-block .wp-nn-thumbnail-media {
+		width: 200px;
+	}
+	.wp-block-wp-nn-theme-thumbnail-block .wp-nn-thumbnail-media img {
+		width: 200px;
+		height: 200px;
+	}
+	.wp-nn-thumbnail-link {
+		font-size: 24px;
+	}
 }
 
 /* Large Devices */
@@ -156,6 +180,29 @@
 	#cookie-law-info-bar:before {
 		display: none;
 	}
+	.wp-block-wp-nn-theme-thumbnail-block .wp-nn-thumbnail-media {
+		margin: 0 auto;
+	}
+	.inquiry-set-wrapper .wp-block-column {
+		flex-basis: 100%;
+		margin-right: 0;
+	}
+	.inquiry-set-grid .wp-block-column {
+		flex-basis: 45%;
+	}
+	.inquiry-set-grid {
+		padding-bottom: 150px;
+	}
+	.wp-block-wp-nn-theme-thumbnail-block .wp-nn-thumbnail-media {
+		width: 150px;
+	}
+	.wp-block-wp-nn-theme-thumbnail-block .wp-nn-thumbnail-media img {
+		width: 150px;
+		height: 150px;
+	}
+	.wp-nn-thumbnail-link {
+		font-size: 20px;
+	}
 }
 
 /* Extra small devices */
@@ -299,6 +346,12 @@
 	#cookie-law-info-bar:before {
 		display: none;
 	}
+	.inquiry-set-callout-box .wp-block-column {
+		margin: 30px auto;
+	}
+	.inquiry-set-grid {
+		padding-bottom: 150px;
+	}
 }
 
 /* Small Landscape devices */
@@ -365,6 +418,9 @@
 		max-width: 50%;
 		flex: 0 0 50%;
 		margin: 20px auto;
+	}	
+	.inquiry-set-grid .wp-block-column {
+		margin-right: 0;
 	}
 }
 
@@ -378,6 +434,9 @@
 		}
 		#tc-inquiry-sets:after {
 			bottom: -38px;
+		}
+		.inquiry-set-wrapper {
+			/* min-height: 0; */
 		}
 	}
 
@@ -459,5 +518,21 @@
 		.tc-news-events-blocks-padding {
 			max-width: 50%;
 			flex: 0 0 50%;
+		}
+		.wp-block-wp-nn-theme-thumbnail-block .wp-nn-thumbnail-media {
+			width: 150px;
+		}
+		.wp-block-wp-nn-theme-thumbnail-block .wp-nn-thumbnail-media img {
+			width: 150px;
+			height: 150px;
+		}
+		.wp-nn-thumbnail-link {
+			font-size: 20px;
+		}
+		.inquiry-set-callout-box .wp-block-column {
+			margin-top: 0;
+		}
+		.inquiry-set-grid {
+			padding-bottom: 150px;
 		}
 }

@@ -1736,6 +1736,7 @@ img.qImg {
 .page #page.site .site-content { margin-top:0; }
 .inquiry-set-page .content-area {
 	padding-left: 0;
+	padding-right: 0;
 }
 .inquiry-set-page .entry-content {
 	margin-top: 0;
