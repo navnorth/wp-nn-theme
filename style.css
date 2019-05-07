@@ -1856,14 +1856,18 @@ img.qImg {
     max-width:1200px;
     margin:45px auto 15px;
 }
-.wp-block-wp-curriculum-inquiry-set-thumbnail-block{
-    width: 345px;
-    margin: auto;
-    position:relative;
+.wp-block-wp-curriculum-inquiry-set-thumbnail-block {
+	width: 250px;
+	height: 250px;
+    margin: 15px auto;
+	position:relative;
+	-webkit-box-shadow: 2px 4px 18px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 2px 4px 18px rgba(0, 0, 0, 0.1);
+	box-shadow: 2px 4px 18px rgba(0, 0, 0, 0.1);
 }
 .wp-block-wp-curriculum-inquiry-set-thumbnail-block .media-image img {
 	width:100%;
-	height:260px;
+	height:250px;
 }
 .lp-tc-related-inquiry-grades {
     position: absolute;
@@ -1874,21 +1878,26 @@ img.qImg {
     background: rgba(173, 33, 82, 0.85);
     font-size:18px;
 }
-.custom-bg-dark { background: #283d47 !important; }
-.custom-bg-dark-inquiry-sets { height: 15px; }
+/* .custom-bg-dark { background: #283d47 !important; }
+.custom-bg-dark-inquiry-sets { height: 15px; } */
 .lp-tc-related-inquiry-set-description {
+	border-top: 15px solid #283d47;
+	position: absolute;
+	bottom: 0;
+	left: 0;
     padding: 16px;
     font-weight: 500;
-    background: #436576;
-    box-shadow: 0 10px 28px 0 #3333337a;
+	background: #436576;
+	width: 250px;
 }
 .lp-tc-related-inquiry-set-description h4 {
     overflow:hidden;
     text-overflow:ellipsis;
     white-space:nowrap;
-    color:#ffffff !important;
+	color:#ffffff !important;
+	font-size: 20px;
 }
-.lp-tc-related-inquiry-set-description h4 a { color:#ffffff !important; white-space:nowrap; font-size:24px; }
+.lp-tc-related-inquiry-set-description h4 a { color:#ffffff !important; white-space:nowrap; font-size:20px; }
 
 #page.site {
 	max-width: 1440px;
