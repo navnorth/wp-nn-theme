@@ -177,7 +177,7 @@ wp.blocks.registerBlockType('wp-nn-theme/thumbnail-block', {
             )
         ), wp.element.createElement(
             'a',
-            { href: attributes.link_url, target: openLink, className: className },
+            { href: attributes.link_url, target: openLink, className: className, rel: 'noopener noreferrer' },
             wp.element.createElement(
                 'div',
                 null,
@@ -204,7 +204,7 @@ wp.blocks.registerBlockType('wp-nn-theme/thumbnail-block', {
         }
         return wp.element.createElement(
             'a',
-            { href: attributes.link_url, target: openLink, className: className },
+            { href: attributes.link_url, target: openLink, className: className, rel: 'noopener noreferrer' },
             wp.element.createElement(
                 'div',
                 null,
