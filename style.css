@@ -1746,6 +1746,7 @@ img.qImg {
 }
 .inquiry-set-wrapper .wp-block-column {
 	margin-bottom: 0;
+	margin-right: 0;
 }
 .inquiry-set-grid {
 	align-items: center;
@@ -1812,17 +1813,27 @@ img.qImg {
 .wp-block-wp-nn-theme-thumbnail-block {
 	width:100%;
 	margin: 2em auto;
-	position:relative; 
+	position:relative;
+	display: block;
+	transition: all .2s ease-in;
+}
+.wp-block-wp-nn-theme-thumbnail-block:hover {
+	transform: translate(-2px, -2px);
+}
+.wp-block-wp-nn-theme-thumbnail-block:hover .wp-nn-thumbnail-desc {
+	opacity: 1;
 }
 .wp-block-wp-nn-theme-thumbnail-block .wp-nn-thumbnail-media {
 	width: 250px;
-	position:relative; 
+	position:relative;
+	margin: 0 auto;
 }
 .wp-block-wp-nn-theme-thumbnail-block .wp-nn-thumbnail-media img {
 	width: 250px;
 	height: 250px;
 }
 .wp-nn-thumbnail-desc {
+	transition: all .2s ease-in;
 	position: absolute;
 	left: 0;
 	bottom: 0;
@@ -1831,12 +1842,12 @@ img.qImg {
 	background: #851939;
 	opacity: .9;
 	text-align: center;
-}
-.wp-nn-thumbnail-link {
-	font-size: 28px;
+	color: #fff;
+	font-weight: 500;
+	font-size: 22px;
 	font-family: 'Helvetica Neue', 'Roboto', Helvetica, Arial, sans-serif;
-	color: #ffffff;
 }
+
 /** Inquiry Sets - Grade Styling **/
 .lp-inquiry-set-thumbnail-block-row {
     max-width:1200px;
