@@ -176,18 +176,18 @@ wp.blocks.registerBlockType('wp-nn-theme/thumbnail-block', {
                     onChange: changeNewTab })
             )
         ), wp.element.createElement(
-            'div',
-            { className: className },
+            'a',
+            { href: attributes.link_url, target: openLink, className: className },
             wp.element.createElement(
                 'div',
-                { className: 'wp-nn-thumbnail-media' },
-                wp.element.createElement('img', { src: attributes.image_url }),
+                null,
                 wp.element.createElement(
                     'div',
-                    { className: 'wp-nn-thumbnail-desc' },
+                    { className: 'wp-nn-thumbnail-media' },
+                    wp.element.createElement('img', { src: attributes.image_url }),
                     wp.element.createElement(
-                        'a',
-                        { className: 'wp-nn-thumbnail-link', href: attributes.link_url, target: openLink },
+                        'div',
+                        { className: 'wp-nn-thumbnail-desc' },
                         attributes.link_label
                     )
                 )
@@ -198,19 +198,23 @@ wp.blocks.registerBlockType('wp-nn-theme/thumbnail-block', {
         var className = props.className,
             attributes = props.attributes;
 
+        var openLink = '';
+        if (attributes.new_tab) {
+            openLink = '_blank';
+        }
         return wp.element.createElement(
-            'div',
-            { className: className },
+            'a',
+            { href: attributes.link_url, target: openLink, className: className },
             wp.element.createElement(
                 'div',
-                { className: 'wp-nn-thumbnail-media' },
-                wp.element.createElement('img', { src: attributes.image_url }),
+                null,
                 wp.element.createElement(
                     'div',
-                    { className: 'wp-nn-thumbnail-desc' },
+                    { className: 'wp-nn-thumbnail-media' },
+                    wp.element.createElement('img', { src: attributes.image_url }),
                     wp.element.createElement(
-                        'a',
-                        { className: 'wp-nn-thumbnail-link', href: attributes.link_url, target: attributes.new_tab },
+                        'div',
+                        { className: 'wp-nn-thumbnail-desc' },
                         attributes.link_label
                     )
                 )
