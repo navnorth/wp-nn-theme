@@ -1827,6 +1827,9 @@ img.qImg {
 	width: 250px;
 	position:relative;
 	margin: 0 auto;
+	-webkit-box-shadow: 2px 4px 18px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 2px 4px 18px rgba(0, 0, 0, 0.1);
+	box-shadow: 2px 4px 18px rgba(0, 0, 0, 0.1);
 }
 .wp-block-wp-nn-theme-thumbnail-block .wp-nn-thumbnail-media img {
 	width: 250px;
