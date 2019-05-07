@@ -1852,6 +1852,17 @@ img.qImg {
 }
 
 /** Inquiry Sets - Grade Styling **/
+.inquiry-set-grade-level-page .entry-content {
+	margin-top: 0;
+}
+.inquiry-set-grade-level-cols {
+	margin-top: 70px;
+}
+.inquiry-set-by-grade-header {
+	font-size: 24px;
+	font-weight: 400;
+	margin-left: 20px;
+}
 .lp-inquiry-set-thumbnail-block-row {
     max-width:1200px;
     margin:45px auto 15px;
@@ -1898,7 +1909,35 @@ img.qImg {
 	font-size: 20px;
 }
 .lp-tc-related-inquiry-set-description h4 a { color:#ffffff !important; white-space:nowrap; font-size:20px; }
+.inquiry-set-header-wrapper {
+	display: flex;
+	background-color: rgb(19,29,33, .9);
+	color: #FFFEF7;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	padding: 15px 10px;
+}
+.inquiry-set-header-wrapper .back-button {
+	background-color: #851939;
+	font-family: 'Biko', 'Helvetica Neue', 'Roboto', 'Helvetica', Arial, sans-serif;
+	text-transform: uppercase;
+	transition: all .2s ease-in;
+	color: #fff;
+	padding: 5px 10px;
+}
 
+.inquiry-set-header-wrapper .back-button:hover {
+	text-decoration: none;
+	background-color: #4a6e7f;
+}
+
+.inquiry-set-header-wrapper .back-button i {
+	color: #fff;
+	padding-right: 10px;
+    padding-top: 2px;
+}
 #page.site {
 	max-width: 1440px;
 	margin:auto;
