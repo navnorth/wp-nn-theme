@@ -1947,21 +1947,43 @@ img.qImg {
 	margin:auto;
 }
 /*--------------------------------------------------------------
-## Privacy Policy Specific Styles
+## Privacy Policy, FAQs, and Terms of Use Specific Styles
 --------------------------------------------------------------*/
-.privacy-policy {
+.privacy-policy, .faqs {
 	font-family: 'Helvetica Neue', 'Roboto', Helvetica, Arial, sans-serif !important;
 }
-.privacy-policy h2 {
+.privacy-policy h2, .faqs h2 {
 	font-family: 'Biko Bold', 'Biko', 'Helvetica Neue', 'Roboto', Helvetica, Arial sans-serif !important;
 	color: #851939;
 	font-size: 24px;
 	margin-top: 20px;
 }
-.privacy-policy p {
+.faqs hr {
+	width: 75%;
+	margin: 40px auto;
+}
+.faqs h2 {
+	font-size: 32px;
+	color: #CD620F;
+}
+.faqs h3 {
+	font-size: 24px;
+	color: #aaa;
+	margin: 20px 0;
+}
+.faqs h4 {
+	font-size: 20px;
+	color: #851939;
+	font-family: 'Biko Bold', 'Biko', 'Helvetica Neue', 'Roboto', Helvetica, Arial sans-serif !important;
+	margin: 30px 0 15px 0;
+}
+.privacy-policy p, .faqs p {
 	font-size: 16px;
 	line-height: 24px;
 	margin-left: 10px;
+}
+.faqs p {
+	margin-left: 0;
 }
 .privacy-policy .small-p {
 	font-size: 14px;
@@ -1972,7 +1994,7 @@ img.qImg {
 .privacy-policy .intro-text {
 	margin-left: 0;
 }
-.privacy-policy .content-area {
+.privacy-policy .content-area, .faqs .content-area {
 	max-width: 70%;
 	margin: 0 auto 1.5em;
 }
