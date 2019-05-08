@@ -1250,7 +1250,7 @@ time {
 }
 .image-columns .wp-block-column { margin:0; }
 .container { max-width:100%; width:100%; }
-.container .site-content { margin-top:25px; }
+.container .site-content { margin-top:25px; padding-bottom: 80px; }
 .entry-content { margin:0; }
 .container .entry-content { margin:1.5em 0 0; }
 .padding-none { padding:0; }
@@ -1760,12 +1760,7 @@ img.qImg {
 .inquiry-set-callout-box .wp-block-column {
 	flex-basis:70%;
 	margin:60px auto;
-	/* background: #f2f2f2; */
 	padding: 30px;
-	/* border-radius: 5px;
-	-webkit-box-shadow: 2px 4px 18px rgba(0, 0, 0, 0.1);
-	-moz-box-shadow: 2px 4px 18px rgba(0, 0, 0, 0.1);
-	box-shadow: 2px 4px 18px rgba(0, 0, 0, 0.1); */
 }
 .inquiry-set-callout-box .wp-block-column h2, h2.left-column-header {
 	font-size: 28px;
@@ -1851,12 +1846,14 @@ img.qImg {
 	font-family: 'Helvetica Neue', 'Roboto', Helvetica, Arial, sans-serif;
 }
 
-/** Inquiry Sets - Grade Styling **/
+/*--------------------------------------------------------------
+## Inquiry Set by Grade Page Specific Styles
+--------------------------------------------------------------*/
 .inquiry-set-grade-level-page .entry-content {
 	margin-top: 0;
 }
 .inquiry-set-grade-level-cols {
-	margin-top: 70px;
+	margin: 80px 5% 0 5%;
 }
 .inquiry-set-by-grade-header {
 	font-size: 24px;
@@ -1889,8 +1886,6 @@ img.qImg {
     background: rgba(173, 33, 82, 0.85);
     font-size:18px;
 }
-/* .custom-bg-dark { background: #283d47 !important; }
-.custom-bg-dark-inquiry-sets { height: 15px; } */
 .lp-tc-related-inquiry-set-description {
 	border-top: 15px solid #283d47;
 	position: absolute;
@@ -1907,32 +1902,41 @@ img.qImg {
     white-space:nowrap;
 	color:#ffffff !important;
 	font-size: 20px;
+	margin-bottom: 0;
 }
 .lp-tc-related-inquiry-set-description h4 a { color:#ffffff !important; white-space:nowrap; font-size:20px; }
 .inquiry-set-header-wrapper {
 	display: flex;
 	background-color: rgb(19,29,33, .9);
 	color: #FFFEF7;
-	position: absolute;
+	position: absolute; 
 	top: 0;
 	left: 0;
 	right: 0;
 	padding: 15px 10px;
+	font-family: 'Biko', 'Helvetica Neue', 'Roboto', 'Helvetica', Arial, sans-serif;
 }
 .inquiry-set-header-wrapper .back-button {
-	background-color: #851939;
-	font-family: 'Biko', 'Helvetica Neue', 'Roboto', 'Helvetica', Arial, sans-serif;
+	background-color: #4a6e7f;
+	font-family: 'Helvetica Neue', 'Roboto', 'Helvetica', Arial, sans-serif;
+	font-weight: 300;
 	text-transform: uppercase;
 	transition: all .2s ease-in;
 	color: #fff;
 	padding: 5px 10px;
 }
-
+.inquiry-sets-by-grade-header {
+	font-family: 'Biko', 'Helvetica Neue', 'Roboto', 'Helvetica', Arial, sans-serif;
+	font-weight: 500;
+	color: #FFFEF7;
+    margin-bottom: 0;
+    margin-left: 20px;
+    margin-top: 2px;
+}
 .inquiry-set-header-wrapper .back-button:hover {
 	text-decoration: none;
-	background-color: #4a6e7f;
+	background-color: #851939;
 }
-
 .inquiry-set-header-wrapper .back-button i {
 	color: #fff;
 	padding-right: 10px;
@@ -1942,8 +1946,40 @@ img.qImg {
 	max-width: 1440px;
 	margin:auto;
 }
-/*  Cookies Plugin Overrides  */
+/*--------------------------------------------------------------
+## Privacy Policy Specific Styles
+--------------------------------------------------------------*/
+.privacy-policy {
+	font-family: 'Helvetica Neue', 'Roboto', Helvetica, Arial, sans-serif !important;
+}
+.privacy-policy h2 {
+	font-family: 'Biko Bold', 'Biko', 'Helvetica Neue', 'Roboto', Helvetica, Arial sans-serif !important;
+	color: #851939;
+	font-size: 24px;
+	margin-top: 20px;
+}
+.privacy-policy p {
+	font-size: 16px;
+	line-height: 24px;
+	margin-left: 10px;
+}
+.privacy-policy .small-p {
+	font-size: 14px;
+	margin-left: 0;
+	font-weight: 500;
+	color: #6f6f6f;
+}
+.privacy-policy .intro-text {
+	margin-left: 0;
+}
+.privacy-policy .content-area {
+	max-width: 70%;
+	margin: 0 auto 1.5em;
+}
 
+/*--------------------------------------------------------------
+## Cookie Plugin Overrides
+--------------------------------------------------------------*/
 #cookie-law-info-bar {
 	background-color: rgba(18, 26, 31, 0.9) !important;
 	color: #fff !important;
@@ -1956,7 +1992,6 @@ img.qImg {
 	content: '\f564';
 	font-family: 'Font Awesome 5 Pro';
 	font-size: 24px;
-	/* margin-right: 10px; */
 	position: absolute;
     left: 162px;
 	top: 13px;
