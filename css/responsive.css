@@ -365,6 +365,9 @@
 	#cookie-law-info-bar:before {
 		display: none;
 	}
+	.inquiry-set-callout-box {
+		min-height: 100%;
+	}
 	.inquiry-set-callout-box .wp-block-column {
 		margin: 30px auto;
 	}
@@ -461,6 +464,16 @@
 		padding: 3px 7px;
 	}
 }
+
+/* iPads (portrait) */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) { 
+	.inquiry-set-callout-box {
+		min-height: 100%;
+	}
+ }
 
 /* iPads (landscape) */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {

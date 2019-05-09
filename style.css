@@ -1755,6 +1755,7 @@ img.qImg {
 .inquiry-set-callout-box {
 	background: linear-gradient(180deg, #4A6F81 0%, #436576 71.27%);
 	height: 100%;
+	min-height: calc(100vh - 175px);
 	width: 100%;
 }
 .inquiry-set-callout-box .wp-block-column {
