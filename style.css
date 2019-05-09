@@ -1250,7 +1250,7 @@ time {
 }
 .image-columns .wp-block-column { margin:0; }
 .container { max-width:100%; width:100%; }
-.container .site-content { margin-top:25px; padding-bottom: 80px; }
+.container .site-content { margin-top:25px; padding-bottom: 79px; }
 .entry-content { margin:0; }
 .container .entry-content { margin:1.5em 0 0; }
 .padding-none { padding:0; }
@@ -1867,7 +1867,7 @@ img.qImg {
 .wp-block-wp-curriculum-inquiry-set-thumbnail-block {
 	width: 250px;
 	height: 250px;
-    margin: 15px auto;
+    margin: 15px auto 30px auto;
 	position:relative;
 	-webkit-box-shadow: 2px 4px 18px rgba(0, 0, 0, 0.1);
 	-moz-box-shadow: 2px 4px 18px rgba(0, 0, 0, 0.1);
@@ -1930,8 +1930,8 @@ img.qImg {
 	font-weight: 500;
 	color: #FFFEF7;
     margin-bottom: 0;
-    margin-left: 20px;
-    margin-top: 2px;
+    margin-left: 35px;
+    margin-top: 3px;
 }
 .inquiry-set-header-wrapper .back-button:hover {
 	text-decoration: none;
