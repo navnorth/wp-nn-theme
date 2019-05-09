@@ -132,37 +132,31 @@ get_header();
             <h2 class="tc-news-events-header"><?php echo the_field('home_page_news_header_text'); ?></h2>
             <?php endif; ?>
             <div id="tc-news-events-blocks">
-                <?php for ($i=1;$i<=3;$i++) {
-                    $events_name = "home_page_newsevent_".$i;
-                ?>
+                <?php $the_query = new WP_Query( 'posts_per_page=3' ); ?>
+                <?php while ($the_query -> have_posts()) : $the_query -> the_post(); ?>
                 <div class="col-md-4 col-sm-6 tc-news-events-blocks-padding">
-                    <a href="<?php echo the_field($events_name."_link_url"); ?>">
+                    <a href="<?php the_permalink() ?>">
                         <div class="tc-news-events-block move-up-left">
                             <div class="tc-events-media-image">
                                 <div class="tc-events-image-thumbnail">
                                     <div class="tc-events-image-section">
-                                        <?php if (get_field($events_name."_image")): ?>
-                                        <img src="<?php echo the_field($events_name."_image"); ?>" 
-                                        <?php if (get_field($events_name."_link_label")): ?> alt="<?php echo the_field($events_name."_link_label"); ?>" <?php endif; ?>
-                                        class="img-thumbnail-square img-responsive img-loaded">
-                                        <?php endif; ?>
+                                        <?php the_post_thumbnail() ?>
                                     </div>
                                 </div>
                             </div>
                             <div class="tc-news-events-description">
                                 <div class="tc-events-dates">
-                                    <?php if (get_field($events_name."_date")): ?>
-                                    <span><?php echo the_field($events_name."_date"); ?></span>
-                                    <?php endif; ?>
+                                    <span><?php echo get_the_date( 'F j, Y' ); ?></span>
                                 </div>
-                                <?php if (get_field($events_name."_link_label")): ?>
-                            <h4><?php echo the_field($events_name."_link_label"); ?></h4>
-                            <?php endif; ?>
+                            <h4><?php the_title(); ?></h4>
                             </div>
                         </div>
                     </a>
                 </div>
-                <?php } ?>
+                <?php 
+                endwhile;
+                wp_reset_postdata();
+                ?>
             </div>
             <div id="tc-news-events-all">
                 <?php if (get_field('home_page_news_view_all_button_label')): ?>

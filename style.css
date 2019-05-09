@@ -1888,6 +1888,15 @@ img.qImg {
     background: rgba(173, 33, 82, 0.85);
     font-size:18px;
 }
+.lp-tc-related-inquiry-block-link {
+	transition: all .2s ease-in;
+}
+.lp-tc-related-inquiry-block-link:hover, .lp-tc-related-inquiry-block-link:focus {
+	transform: translate(-2px, -2px);
+}
+.lp-tc-related-inquiry-block-link:hover .lp-tc-related-inquiry-set-description, .lp-tc-related-inquiry-block-link:focus .lp-tc-related-inquiry-set-description{
+	background-color: #283d47;
+}
 .lp-tc-related-inquiry-set-description {
 	border-top: 15px solid #283d47;
 	position: absolute;
@@ -1897,6 +1906,7 @@ img.qImg {
     font-weight: 500;
 	background: #436576;
 	width: 250px;
+	transition: all .2s ease-in;
 }
 .lp-tc-related-inquiry-set-description h4 {
     overflow:hidden;
@@ -1905,6 +1915,7 @@ img.qImg {
 	color:#ffffff !important;
 	font-size: 20px;
 	margin-bottom: 0;
+	font-weight: 400;
 }
 .lp-tc-related-inquiry-set-description h4 a { color:#ffffff !important; white-space:nowrap; font-size:20px; }
 .inquiry-set-header-wrapper {
@@ -1925,6 +1936,7 @@ img.qImg {
 	text-transform: uppercase;
 	transition: all .2s ease-in;
 	color: #fff;
+	margin-left: 10px;
 	padding: 5px 10px;
 }
 .inquiry-sets-by-grade-header {
