@@ -1868,11 +1868,12 @@ img.qImg {
 .wp-block-wp-curriculum-inquiry-set-thumbnail-block {
 	width: 250px;
 	height: 250px;
-    margin: 15px auto 30px auto;
+	margin: 15px auto 30px auto;
 	position:relative;
 	-webkit-box-shadow: 2px 4px 18px rgba(0, 0, 0, 0.1);
 	-moz-box-shadow: 2px 4px 18px rgba(0, 0, 0, 0.1);
 	box-shadow: 2px 4px 18px rgba(0, 0, 0, 0.1);
+	display: block;
 }
 .wp-block-wp-curriculum-inquiry-set-thumbnail-block .media-image img {
 	width:100%;
