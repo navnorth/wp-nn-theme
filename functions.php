@@ -45,6 +45,9 @@ if ( ! function_exists( 'wp_nn_theme_setup' ) ) :
 		 */
 		add_theme_support( 'post-thumbnails' );
 
+		add_image_size( 'resource-thumbnail', 360, 360, true );
+		add_image_size( 'inquiry-set-featured', 718, 600, true );
+
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
 			'menu-1' => esc_html__( 'Primary', 'wp_nn_theme' ),
@@ -83,11 +86,10 @@ if ( ! function_exists( 'wp_nn_theme_setup' ) ) :
 			'flex-width'  => true,
 			'flex-height' => true,
 		) );
-                
+
 	}
 endif;
 add_action( 'after_setup_theme', 'wp_nn_theme_setup' );
-
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
  *
