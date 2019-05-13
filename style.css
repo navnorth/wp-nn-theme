@@ -1939,13 +1939,19 @@ img.qImg {
 	margin-left: 10px;
 	padding: 5px 10px;
 }
-.inquiry-sets-by-grade-header {
+.inquiry-sets-by-grade-header, .inquiry-sets-by-tag-header {
 	font-family: 'Biko', 'Helvetica Neue', 'Roboto', 'Helvetica', Arial, sans-serif;
 	font-weight: 500;
 	color: #FFFEF7;
     margin-bottom: 0;
     margin-left: 35px;
     margin-top: 3px;
+}
+.inquiry-sets-by-tag-header {
+	font-family: 'Biko Bold', 'Biko', 'Helvetica Neue', 'Roboto', Arial, sans-serif;
+}
+#tag-name {
+	font-family: 'Biko', 'Helvetica Neue', 'Roboto', Arial, sans-serif;
 }
 .inquiry-set-header-wrapper .back-button:hover {
 	text-decoration: none;
