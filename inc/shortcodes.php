@@ -69,7 +69,7 @@ function tc_accordion_func($atts, $content = null)
 
 /**
  * Bar Tile Shortcode
- * Shortcode Example : [tc_bar_tile short_description="" link_label="" link_url="" new_window="false" width="100%"] your content goes here [/tc_bar_tile]
+ * Shortcode Example : [tc_bar_tile short_description="" link_label="" link_url="" new_window="false"] your content goes here [/tc_bar_tile]
  */
 add_shortcode('tc_bar_tile', 'tc_bar_tile_func');
 function tc_bar_tile_func($atts, $content = null)
@@ -96,6 +96,45 @@ function tc_bar_tile_func($atts, $content = null)
     $return .= '    <div class="col-md-9 col-sm-8 tc-bar-tile-label">';
     $return .=  $link_label;
     $return .= '    </div>';
+    $return .= '</div>';
+    $return .= '</a>';
+    return $return;
+}
+
+/**
+ * Button Tile Shortcode
+ * Shortcode Example : [tc_button_tile short_description="" link_label="" link_url="" new_window="false"] your content goes here [/tc_bar_tile]
+ */
+add_shortcode('tc_button_tile', 'tc_button_tile_func');
+function tc_button_tile_func($atts, $content = null)
+{
+    
+    if (!empty($atts))
+        extract($atts);
+    
+    $return     = '';
+    $new_tab    = '';
+    $classes    = '';
+    
+    if ($new_window==true)
+        $new_tab = ' target="_blank"';
+    if (isset($short_description))
+        $classes = 'class="col-md-3"';
+    else
+        $classes = 'class="col-md-6"';
+        
+    $return .= '<a href="'.$link_url.'"'.$new_tab.''.$classes.'>';
+    $return .= '<div class="tc-button-tile-block">';
+    
+    $return .= '    <div class="col-md-4 col-sm-6 tc-button-tile-short-desc">';
+    $return .= $short_description;
+    $return .= '    </div>';
+    
+    if (issest($link_label)){
+        $return .= '    <div class="col-md-8 col-sm-6 tc-button-tile-label">';
+        $return .=  $link_label;
+        $return .= '    </div>';
+    }
     $return .= '</div>';
     $return .= '</a>';
     return $return;
