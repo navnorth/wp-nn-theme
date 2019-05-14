@@ -58,7 +58,7 @@ function tc_accordion_func($atts, $content = null)
     
             $return .= '<div id="collapse'. $group_id. $accordion_series .'" class="panel-collapse collapse '.$uptcls.'" role="tabpanel" aria-labelledby="heading'. $accordion_series .'">';
                 $return .= '<div class="panel-body">';
-                    $return .= $content;
+                    $return .= do_shortcode($content);
                 $return .= '</div>';
             $return .= '</div>';
         $return .= '</div>';
@@ -80,7 +80,6 @@ function tc_bar_tile_func($atts, $content = null)
     
     $return     = '';
     $new_tab    = '';
-    $styles      = '';
     
     if ($new_window==true)
         $new_tab = ' target="_blank"';
