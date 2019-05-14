@@ -66,4 +66,39 @@ function tc_accordion_func($atts, $content = null)
         return $return;
     }
 }
+
+/**
+ * Bar Tile Shortcode
+ * Shortcode Example : [tc_bar_tile short_description="" link_label="" link_url="" new_window="false" width="100%"] your content goes here [/tc_bar_tile]
+ */
+add_shortcode('tc_bar_tile', 'tc_bar_tile_func');
+function tc_bar_tile_func($atts, $content = null)
+{
+    
+    if (!empty($atts))
+        extract($atts);
+    
+    $return     = '';
+    $new_tab    = '';
+    $styles      = '';
+    
+    if ($new_window==true)
+        $new_tab = ' target="_blank"';
+    
+    $return .= '<a href="'.$link_url.'"'.$new_tab.'>';
+    $return .= '<div class="tc-bar-tile-block">';
+    
+    if (issest($short_description)){
+        $return .= '    <div class="col-md-3 col-sm-4 tc-bar-tile-short-desc">';
+        $return .= $short_description;
+        $return .= '    </div>';
+    }
+    
+    $return .= '    <div class="col-md-9 col-sm-8 tc-bar-tile-label">';
+    $return .=  $link_label;
+    $return .= '    </div>';
+    $return .= '</div>';
+    $return .= '</a>';
+    return $return;
+}
 ?>
