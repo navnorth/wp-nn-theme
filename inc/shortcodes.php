@@ -58,7 +58,7 @@ function tc_accordion_func($atts, $content = null)
     
             $return .= '<div id="collapse'. $group_id. $accordion_series .'" class="panel-collapse collapse '.$uptcls.'" role="tabpanel" aria-labelledby="heading'. $accordion_series .'">';
                 $return .= '<div class="panel-body">';
-                    $return .= do_shortcode($content);
+                    $return .= $content;
                 $return .= '</div>';
             $return .= '</div>';
         $return .= '</div>';
