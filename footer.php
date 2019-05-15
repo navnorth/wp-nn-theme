@@ -37,22 +37,22 @@
 				<?php
 				$facebook = get_option("wp_nn_theme_social_facebook");
 				if ($facebook) {
-					echo "<li><a href='".$facebook."' target='_blank'><i class='fab fa-facebook-square fa-2x'></i><span class='sr-only'>Facebook</span></a></li>";
+					echo "<li><a href='".$facebook."' title='Opens in a New Window' target='_blank'><i class='fab fa-facebook-square fa-2x'></i><span class='sr-only'>Facebook</span></a></li>";
 				}
 				
 				$twitter = get_option("wp_nn_theme_social_twitter");
 				if ($twitter) {
-					echo "<li><a href='".$twitter."' target='_blank'><i class='fab fa-twitter fa-2x'></i><span class='sr-only'>Twitter</span></a></li>";
+					echo "<li><a href='".$twitter."' title='Opens in a New Window' target='_blank'><i class='fab fa-twitter fa-2x'></i><span class='sr-only'>Twitter</span></a></li>";
 				}
 				
 				$instagram = get_option("wp_nn_theme_social_instagram");
 				if ($instagram) {
-					echo "<li><a href='".$instagram."' target='_blank'><i class='fab fa-instagram fa-2x'></i><span class='sr-only'>Instagram</span></a></li>";
+					echo "<li><a href='".$instagram."' title='Opens in a New Window' target='_blank'><i class='fab fa-instagram fa-2x'></i><span class='sr-only'>Instagram</span></a></li>";
 				}
 				
 				$flickr = get_option("wp_nn_theme_social_flickr");
 				if ($flickr) {
-					echo "<li><a href='".$flickr."' target='_blank'><i class='fab fa-flickr fa-2x'></i><span class='sr-only'>Flickr</span></a></li>";
+					echo "<li><a href='".$flickr."' title='Opens in a New Window' target='_blank'><i class='fab fa-flickr fa-2x'></i><span class='sr-only'>Flickr</span></a></li>";
 				}
 				?>
 				</ul>
