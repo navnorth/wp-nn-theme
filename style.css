@@ -1525,7 +1525,7 @@ img.qImg {
 	height: 60px;
 	top: -23px;
 }
-.tc-inquiry-set-section p {
+.tc-inquiry-set-section h2 {
 	font-family: "Biko Bold", 'Helvetica Neue', 'Roboto', Helvetica, Arial, sans-serif;
 	color: #ffffff;
 	text-align: center;
@@ -1556,11 +1556,9 @@ img.qImg {
 	padding: 15px;
 	transition: all .2s ease-in-out;
 }
-.tc-inquiry-set-label h4 {
+.tc-inquiry-set-label h3 {
 	text-align:center;
 	margin-bottom:0;
-}
-.tc-inquiry-set-label h4 {
 	color:#ffffff;
 	font-size:24px;
 	font-family: 'Helvetica Neue Medium', 'Helvetica Neue', 'Roboto', Helvetica, Arial, sans-serif;
@@ -1617,7 +1615,7 @@ img.qImg {
 #tc-news-events-blocks a:focus .tc-news-events-description {
 	background-color: #851738;
 }
-#tc-news-events-blocks a:focus .tc-news-events-description h4, #tc-news-events-blocks a:focus .tc-events-dates {
+#tc-news-events-blocks a:focus .tc-news-events-description h3, #tc-news-events-blocks a:focus .tc-events-dates {
 	color: #fff;
 }
 .tc-news-events-block {
@@ -1637,9 +1635,10 @@ img.qImg {
 	padding: 20px 25px;
 	transition: all .2s ease-in-out;
 }
-.tc-news-events-description h4 {
+.tc-news-events-description h3 {
 	color: #4F4F4F;
 	font-weight: 400;
+	font-size: 1.5rem;
 }
 .tc-events-image-section img {
 	height: 200px;
@@ -1652,7 +1651,7 @@ img.qImg {
 	color: #6f6f6f;
 	font-family: 'Helvetica Neue', 'Roboto', Arial, Helvetica, sans-serif;
 }
-.tc-news-events-description h4 a{
+.tc-news-events-description h3 a{
 	font-size: 18px;
 	color:#4f4f4f;
 	line-height:1em;
@@ -1701,7 +1700,7 @@ img.qImg {
 	top: -23px;
 	z-index:999;
 }
-.tc-about-section p {
+.tc-about-section h2 {
 	font-family: "Biko Bold", 'Helvetica Neue', 'Roboto', Helvetica, Arial, sans-serif;
 	color: #ffffff;
 	text-align: center;
@@ -1879,7 +1878,7 @@ img.qImg {
 	width:100%;
 	height:250px;
 }
-.lp-tc-related-inquiry-grades {
+.lp-tc-related-inquiry-grades, .tc-related-inquiry-grades {
     position: absolute;
     top: 0;
     left: 0;
@@ -1887,6 +1886,18 @@ img.qImg {
     color: #ffffff;
     background: rgba(173, 33, 82, 0.85);
     font-size:18px;
+}
+.lp-tc-related-inquiry-block {
+	max-width: 300px;
+}
+.lp-tc-related-wrap {
+	position: relative;
+}
+.lp-tc-related-inquiry-block:hover {
+	text-decoration: none;
+}
+.lp-tc-related-inquiry-block .image-section {
+	min-height: 250px;
 }
 .lp-tc-related-inquiry-block-link {
 	transition: all .2s ease-in;

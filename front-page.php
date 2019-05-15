@@ -76,7 +76,9 @@ get_header();
                     <div class="col-md-9" id="quote-text">
                         <div class="tc-quote">
                             <?php if (get_field('home_page_quote_text')): ?>
-                            <div class="tc-quote-text"><?php echo the_field('home_page_quote_text'); ?></div>
+                            <div class="tc-quote-text">
+                                <blockquote><?php echo the_field('home_page_quote_text'); ?></blockquote>
+                            </div>
                             <?php endif; ?>
                             <?php if (get_field('home_page_quote_source')): ?>
                             <footer class="quote-source"><?php echo the_field('home_page_quote_source'); ?></footer>
@@ -94,7 +96,7 @@ get_header();
                 <div class="col-md-6 col-sm-6 col-xs-6 padding-0 tc-custom-bg-yellow"></div>
                 <div class="tc-inquiry-set-section">
                 <?php if (get_field('home_page_explore_inquiry_set_header_text')): ?>
-                    <p><?php the_field('home_page_explore_inquiry_set_header_text'); ?></p>
+                    <h2><?php the_field('home_page_explore_inquiry_set_header_text'); ?></h2>
                 <?php endif; ?>
                 </div>
             </div>
@@ -117,7 +119,7 @@ get_header();
                         </div>
                         <div class="tc-inquiry-set-label">
                             <?php if (get_field($set_name."_link_label")): ?>
-                            <h4><?php echo the_field($set_name."_link_label"); ?></h4>
+                            <h3><?php echo the_field($set_name."_link_label"); ?></h3>
                             <?php endif; ?>
                         </div>
                     </div>
@@ -148,7 +150,7 @@ get_header();
                                 <div class="tc-events-dates">
                                     <span><?php echo get_the_date( 'F j, Y' ); ?></span>
                                 </div>
-                            <h4><?php the_title(); ?></h4>
+                                <h3><?php the_title(); ?></h3>
                             </div>
                         </div>
                     </a>
@@ -172,7 +174,7 @@ get_header();
                 <div class="col-md-6 col-sm-6 col-xs-6 padding-0 tc-custom-bg-pink"></div>
                 <div class="tc-about-section">
                 <?php if (get_field('home_page_about_header_text')): ?>
-                    <p><?php the_field('home_page_about_header_text'); ?></p>
+                    <h2><?php the_field('home_page_about_header_text'); ?></h2>
                 <?php endif; ?>
                 </div>
             </div>
