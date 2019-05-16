@@ -2066,12 +2066,16 @@ img.qImg {
 	width: 80%;
 	margin: 0 auto;
 }
+.frameworks-standards-wrapper.has-1-columns .wp-block-column { flex-basis:100%; }
 .frameworks-standards-wrapper #accordion .panel-heading {
 	background-color: #375260;
 	border-color: #375260;
 	color: #ffffff;
 	border-radius: 0;
+	padding: 10px 15px;
+	border-bottom: 0;
 }
+.frameworks-standards-wrapper #accordion .panel-heading  h5.panel-title { margin-bottom:0; }
 .frameworks-standards-wrapper #accordion .panel-heading  h5.panel-title a {
 	font-size: 24px;
 	font-weight: bold;
@@ -2104,4 +2108,7 @@ img.qImg {
 .frameworks-standards-wrapper #accordion .panel-heading  h5.panel-title a:active,
 .frameworks-standards-wrapper #accordion .panel-heading  h5.panel-title a:visited{
 	color:#fff !important;
+}
+.frameworks-standards-wrapper #accordion .panel-collapse {
+	padding:30px;
 }
