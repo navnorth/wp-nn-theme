@@ -84,7 +84,7 @@ function tc_bar_tile_func($atts, $content = null)
     if ($new_window==true)
         $new_tab = ' target="_blank"';
     
-    $return .= '<a href="'.$link_url.'"'.$new_tab.'>';
+    $return .= '<a href="'.$link_url.'"'.$new_tab.' class="tc-bar-tile-block-link">';
     $return .= '<div class="tc-bar-tile-block row">';
     
     if (isset($short_description) && $short_description!==""){
@@ -119,9 +119,9 @@ function tc_button_tile_func($atts, $content = null)
     if ($new_window==true)
         $new_tab = ' target="_blank"';
     if (isset($short_description))
-        $classes = 'class="col-md-3"';
+        $classes = 'class="col-md-3 tc-button-tile-block-link"';
     else
-        $classes = 'class="col-md-6"';
+        $classes = 'class="col-md-6 tc-button-tile-block-link"';
         
     $return .= '<a href="'.$link_url.'"'.$new_tab.''.$classes.'>';
     $return .= '<div class="tc-button-tile-block row">';
