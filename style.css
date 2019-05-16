@@ -2126,6 +2126,8 @@ img.qImg {
 	box-shadow: 0px 3px 5px 0px rgba(100,100,100,0.5);
 	margin-right: 0;
 	margin-left: 0;
+	width:99.5%;
+	overflow:hidden;
 }
 .tc-bar-tile-short-desc {
 	padding: 10px 15px;
@@ -2153,4 +2155,14 @@ img.qImg {
 	box-shadow: 0px 3px 5px 0px rgba(100,100,100,0.5);
 	margin-right: 0;
 	margin-left: 0;
+}
+.tc-bar-tile-block-link {
+	overflow: hidden;
+	width: 100%;
+}
+.tc-button-tile-block-link:nth-child(odd){
+	margin-right:10px;
+}
+.tc-button-tile-block-link:nth-child(even){
+	margin-right:0;
 }
