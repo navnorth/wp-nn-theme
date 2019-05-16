@@ -2157,7 +2157,7 @@ img.qImg {
 	margin-left: 0;
 }
 .tc-button-tile-block-link.col-md-3 {
-	max-width:150px;
+	max-width:200px;
 }
 .tc-button-tile-block-link.col-md-3 .tc-button-tile-block {
 	background-color: #5d1027;
@@ -2176,4 +2176,9 @@ img.qImg {
 	max-width:100px;
 	margin:auto;
 	line-height:2em;
+}
+.tc-button-tile-label {
+	flex-direction: column;
+	justify-content: center;
+	display: flex;
 }
