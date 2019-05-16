@@ -50,7 +50,7 @@ function tc_accordion_func($atts, $content = null)
                         $uptcls = '';
                     }
     
-                    $return .= '<a class="'.$class.'" role="button" data-toggle="collapse" data-parent="#'.$group_id.'" href="#collapse'. $group_id. $accordion_series .'" data-target="#collapse'. $group_id. $accordion_series .'" aria-expanded="false" aria-controls="collapse'. $group_id. $accordion_series .'">';
+                    $return .= '<a class="'.$class.'" role="button" data-toggle="collapse" href="#collapse'. $group_id. $accordion_series .'" data-target="#collapse'. $group_id. $accordion_series .'" aria-expanded="false" aria-controls="collapse'. $group_id. $accordion_series .'">';
                         $return .= $title;
                     $return .= '</a>';
                 $return .= ' </h5>';
@@ -69,7 +69,7 @@ function tc_accordion_func($atts, $content = null)
 
 /**
  * Bar Tile Shortcode
- * Shortcode Example : [tc_bar_tile short_description="" link_label="" link_url="" new_window="false"] your content goes here [/tc_bar_tile]
+ * Shortcode Example : [tc_bar_tile short_description="" link_label="" link_url="" new_window="false"]
  */
 add_shortcode('tc_bar_tile', 'tc_bar_tile_func');
 function tc_bar_tile_func($atts, $content = null)
@@ -85,7 +85,7 @@ function tc_bar_tile_func($atts, $content = null)
         $new_tab = ' target="_blank"';
     
     $return .= '<a href="'.$link_url.'"'.$new_tab.'>';
-    $return .= '<div class="tc-bar-tile-block">';
+    $return .= '<div class="tc-bar-tile-block row">';
     
     if (isset($short_description)){
         $return .= '    <div class="col-md-3 col-sm-4 tc-bar-tile-short-desc">';
@@ -103,7 +103,7 @@ function tc_bar_tile_func($atts, $content = null)
 
 /**
  * Button Tile Shortcode
- * Shortcode Example : [tc_button_tile short_description="" link_label="" link_url="" new_window="false"] your content goes here [/tc_bar_tile]
+ * Shortcode Example : [tc_button_tile short_description="" link_label="" link_url="" new_window="false"]
  */
 add_shortcode('tc_button_tile', 'tc_button_tile_func');
 function tc_button_tile_func($atts, $content = null)
@@ -124,7 +124,7 @@ function tc_button_tile_func($atts, $content = null)
         $classes = 'class="col-md-6"';
         
     $return .= '<a href="'.$link_url.'"'.$new_tab.''.$classes.'>';
-    $return .= '<div class="tc-button-tile-block">';
+    $return .= '<div class="tc-button-tile-block row">';
     
     $return .= '    <div class="col-md-4 col-sm-6 tc-button-tile-short-desc">';
     $return .= $short_description;
