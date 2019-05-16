@@ -118,10 +118,10 @@ function tc_button_tile_func($atts, $content = null)
     
     if ($new_window==true)
         $new_tab = ' target="_blank"';
-    if (isset($short_description))
-        $classes = 'class="col-md-3 tc-button-tile-block-link"';
-    else
+    if (isset($link_label) && $link_label!=="")
         $classes = 'class="col-md-6 tc-button-tile-block-link"';
+    else
+        $classes = 'class="col-md-3 tc-button-tile-block-link"';
         
     $return .= '<a href="'.$link_url.'"'.$new_tab.''.$classes.'>';
     $return .= '<div class="tc-button-tile-block row">';
