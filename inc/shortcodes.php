@@ -115,18 +115,21 @@ function tc_button_tile_func($atts, $content = null)
     $return     = '';
     $new_tab    = '';
     $classes    = '';
+    $sd_classes = 'col-md-4 col-sm-6';
     
     if ($new_window==true)
         $new_tab = ' target="_blank"';
     if (isset($link_label) && $link_label!=="")
         $classes = 'class="col-md-6 tc-button-tile-block-link"';
-    else
+    else{
         $classes = 'class="col-md-3 tc-button-tile-block-link"';
+        $sd_classes = 'col-md-12 col-sm-12';
+    }
         
     $return .= '<a href="'.$link_url.'"'.$new_tab.''.$classes.'>';
     $return .= '<div class="tc-button-tile-block row">';
     
-    $return .= '    <div class="col-md-4 col-sm-6 tc-button-tile-short-desc">';
+    $return .= '    <div class="'.$sd_classes.' tc-button-tile-short-desc">';
     $return .= $short_description;
     $return .= '    </div>';
     
