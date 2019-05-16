@@ -2126,4 +2126,11 @@ img.qImg {
 	-moz-box-shadow: 0px 3px 5px 0px rgba(100,100,100,0.5);
 	box-shadow: 0px 3px 5px 0px rgba(100,100,100,0.5);
 }
+.tc-bar-tile-short-desc {
+	padding: 10px 15px;
+	background: #436576;
+	color: #ffffff;
+	max-width: 125px !important;
+	text-align: center;
+}
 .tc-bar-tile-label { color:#5d1027; font-size: 18px; font-weight: bold; }
