@@ -2217,7 +2217,8 @@ img.qImg {
 .tc-framework-bar-left .back-button i { font-weight:bold; margin-right:15px; }
 .tc-framework-bar-right .tc-prev-button i { font-weight:bold; margin-right:10px; }
 .tc-framework-bar-right .tc-next-button i { font-weight:bold; margin-left:10px; }
-.tc-framework-bar-right { text-align:right; }
+.tc-framework-bar-right { text-align:right; float:right; }
+.tc-framework-bar-left { float:left; }
 .site-frameworks-chapter {
 	overflow: hidden;
 	padding: 50px 5%;
@@ -2233,6 +2234,7 @@ img.qImg {
 	font-size: 32px;
 	margin-top: 0;
 }
+.frameworks-chapter-content { float:left; }
 .frameworks-chapter-sidebar h4 {
 	font-size: 24px;
 	font-weight: 600;
@@ -2240,3 +2242,4 @@ img.qImg {
 	width: 250px;
 	margin: 0 auto 30px auto;
 }
+.frameworks-chapter-sidebar { float:right; }
