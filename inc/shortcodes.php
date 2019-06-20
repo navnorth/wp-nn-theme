@@ -160,7 +160,7 @@ function tc_pdf_embed_func($atts)
         if ($isPDF){
             $return .= '<div class="ps-pdf-block">
                         <div class="psPDFWrapper">';
-            oer_display_pdf_embeds($src);
+            $return .= oer_display_pdf_embeds($src, true);
             $return .= '</div></div>';
         }
     }
