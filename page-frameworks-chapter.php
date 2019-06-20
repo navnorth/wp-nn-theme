@@ -60,7 +60,7 @@ get_header();
 	?>
 	</div>
 	<div class="col-md-4 frameworks-chapter-sidebar">
-		<h4><?php _e("Related Inquiry Set", WP_NN_SLUG); ?></h4>
+		<h4 class="related-inquiry-set-title"><?php _e("Related Inquiry Set", WP_NN_SLUG); ?></h4>
 		<?php
 		$inquiry_sets = get_field('frameworks_related_inquiry_sets');
 		
