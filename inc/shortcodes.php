@@ -142,4 +142,28 @@ function tc_button_tile_func($atts, $content = null)
     $return .= '</a>';
     return $return;
 }
+
+/**
+ * PDF Embed Shortcode
+ * Shortcode Example : [tc_pdf_embed src=""]
+ */
+add_shortcode('tc_pdf_embed', 'tc_pdf_embed_func');
+function tc_pdf_embed_func($atts)
+{
+    $return = "";
+    
+    if (!empty($atts))
+        extract($atts);
+    
+    if ($src){
+        $isPDF = is_pdf_resource($src);
+        if ($isPDF){
+            $return .= '<div class="ps-pdf-block">
+                        <div class="psPDFWrapper">';
+            oer_display_pdf_embeds($src);
+            $return .= '</div></div>';
+        }
+    }
+    return $return;
+}
 ?>

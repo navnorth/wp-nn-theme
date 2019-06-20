@@ -2182,3 +2182,61 @@ img.qImg {
 	justify-content: center;
 	display: flex;
 }
+#tc-frameworks-heading {
+	background: #4a6e7f;
+	padding: 15px 0;
+}
+.tc-framework-chapter-wrapper h1 {
+	font-size: 36px;
+	font-weight: bold;
+	text-shadow: 0px 3px 2px rgba(0, 0, 0, 0.5);
+	text-align: center;
+	color: #fff !important;
+}
+.site-frameworks-chapter pre.wp-block-code { display:none; }
+#tc-frameworks-bar-heading {
+	background:#e9eef1;
+	padding: 15px 0;
+	overflow: hidden;
+}
+.tc-framework-bar-wrapper {
+	padding: 0 15px;
+	overflow: hidden;
+}
+.tc-framework-bar-right .tc-prev-button,
+.tc-framework-bar-right .tc-next-button {
+	padding: 10px;
+	display: inline-block;
+	color:#5D1027;
+}
+.tc-button-separator {
+	background: #cdcdcd;
+	width: 2px;
+	display: inline-block;
+}
+.tc-framework-bar-left .back-button i { font-weight:bold; margin-right:15px; }
+.tc-framework-bar-right .tc-prev-button i { font-weight:bold; margin-right:10px; }
+.tc-framework-bar-right .tc-next-button i { font-weight:bold; margin-left:10px; }
+.tc-framework-bar-right { text-align:right; }
+.site-frameworks-chapter {
+	overflow: hidden;
+	padding: 50px 5%;
+}
+.tc-framework-bar-left .back-button{
+	background: #2A3E48;
+	padding: 10px 20px;
+	display: inline-block;
+	color: #fff;
+}
+.frameworks-chapter-content h1.entry-title {
+	font-weight: bold;
+	font-size: 32px;
+	margin-top: 0;
+}
+.frameworks-chapter-sidebar h4 {
+	font-size: 24px;
+	font-weight: 600;
+	color: #5D1027;
+	width: 250px;
+	margin: 0 auto 30px auto;
+}
