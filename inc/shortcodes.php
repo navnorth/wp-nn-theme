@@ -81,7 +81,7 @@ function tc_bar_tile_func($atts, $content = null)
     $return     = '';
     $new_tab    = '';
     
-    if ($new_window==true)
+    if ($new_window=="true")
         $new_tab = ' target="_blank"';
     
     $return .= '<a href="'.$link_url.'"'.$new_tab.' class="tc-bar-tile-block-link">';
