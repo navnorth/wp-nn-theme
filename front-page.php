@@ -192,7 +192,7 @@ get_header();
                             <div><i class="fal fa-fax"></i><?php echo the_field('home_page_about_left_side_fax'); ?> FAX</div>
                         <?php endif; ?>
                         <?php if (get_field('home_page_about_left_side_website')): ?>
-                            <div><i class="far fa-star"></i><?php echo the_field('home_page_about_left_side_website'); ?></div>
+                            <div><i class="far fa-star"></i><a href="<?php echo the_field('home_page_about_left_side_website'); ?>" target="_blank"><?php echo the_field('home_page_about_left_side_website'); ?></a></div>
                         <?php endif; ?>
                         <?php if (get_field('home_page_about_left_side_email')): ?>
                             <div><i class="fal fa-envelope"></i><?php echo the_field('home_page_about_left_side_email'); ?></div>
