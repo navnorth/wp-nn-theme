@@ -195,7 +195,7 @@ get_header();
                             <div><i class="far fa-star"></i><a href="<?php echo the_field('home_page_about_left_side_website'); ?>" target="_blank"><?php echo the_field('home_page_about_left_side_website'); ?></a></div>
                         <?php endif; ?>
                         <?php if (get_field('home_page_about_left_side_email')): ?>
-                            <div><i class="fal fa-envelope"></i><?php echo the_field('home_page_about_left_side_email'); ?></div>
+                            <div><i class="fal fa-envelope"></i><a href="mailto:<?php echo the_field('home_page_about_left_side_email'); ?>" target="_blank"><?php echo the_field('home_page_about_left_side_email'); ?></a></div>
                         <?php endif; ?>
                     <?php endif; ?>
                 </div>
