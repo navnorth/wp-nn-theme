@@ -181,14 +181,21 @@ get_header();
             <div class="tc-about-content clearfix">
                 <div class="col-md-6 col-sm-12 tc-about-content-left padding-none">
                     <?php if (get_field('home_page_about_left_side')): ?>
-                        <img class="logo" alt="California Historical Society Logo" src="<?php echo the_field('home_page_about_left_side_logo'); ?>">
+                        <?php if (get_field('home_page_about_left_side_logo_link')): ?>
+                            <a href="<?php echo the_field('home_page_about_left_side_logo_link'); ?>" target="_blank"><img class="logo" alt="California Historical Society Logo" src="<?php echo the_field('home_page_about_left_side_logo'); ?>"></a>
+                        <?php else: ?>
+                            <img class="logo" alt="California Historical Society Logo" src="<?php echo the_field('home_page_about_left_side_logo'); ?>">
+                        <?php endif; ?>
                         <div><i class="fal fa-map-marker-alt"></i><?php echo the_field('home_page_about_left_side_address'); ?></div>
                         <div><i class="fal fa-phone"></i><?php echo the_field('home_page_about_left_side_phone'); ?></div>
                         <?php if (get_field('home_page_about_left_side_fax')): ?>
                             <div><i class="fal fa-fax"></i><?php echo the_field('home_page_about_left_side_fax'); ?> FAX</div>
                         <?php endif; ?>
+                        <?php if (get_field('home_page_about_left_side_website')): ?>
+                            <div><i class="far fa-star"></i><a href="<?php echo the_field('home_page_about_left_side_website'); ?>" target="_blank"><?php echo the_field('home_page_about_left_side_website'); ?></a></div>
+                        <?php endif; ?>
                         <?php if (get_field('home_page_about_left_side_email')): ?>
-                            <div><i class="fal fa-envelope"></i><?php echo the_field('home_page_about_left_side_email'); ?></div>
+                            <div><i class="fal fa-envelope"></i><a href="mailto:<?php echo the_field('home_page_about_left_side_email'); ?>" target="_blank"><?php echo the_field('home_page_about_left_side_email'); ?></a></div>
                         <?php endif; ?>
                     <?php endif; ?>
                 </div>

@@ -4,7 +4,7 @@
  Author:       Navigation North
  Author URI:   https://www.navigationnorth.com
  Template:
- Version:      0.2.0
+ Version:      0.1.0
  Tags:         responsive-layout, accessibility-ready
  Text Domain:  navnorth
  License:      GPL3
@@ -1034,7 +1034,7 @@ object {
 /*--------------------------------------------------------------
 ## Header
 --------------------------------------------------------------*/
-.site-header {
+.site-header { 
 	background-color:#2A3E48;
 	-webkit-box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
 	-moz-box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
@@ -1052,9 +1052,9 @@ a.site-brand {
 }
 .site-brand:hover { text-decoration:none; }
 #navbarTop { width:70%; overflow:hidden !important;  }
-.navbar-nav li a {
-	font-family: 'Helvetica Neue Medium', 'Helvetica Neue', 'Roboto', Helvetica, Arial, sans-serif;
-	font-size:16px;
+.navbar-nav li a { 
+	font-family: 'Helvetica Neue Medium', 'Helvetica Neue', 'Roboto', Helvetica, Arial, sans-serif; 
+	font-size:16px; 
 	color: #FED104 !important;
 	transition: all .2s ease-in;
  }
@@ -1065,7 +1065,7 @@ a.site-brand {
 .navbar-nav li.menu-item a:hover, .navbar-nav li a:focus {
 	 color: #fff !important;
  }
-.navbar-nav li.menu-item.current-menu-item a:hover {
+.navbar-nav li.menu-item.current-menu-item a:hover { 
 	text-decoration:none;
 	color: #fff !important;
 }
@@ -1170,7 +1170,7 @@ a.site-brand {
 	color: #fff;
 	font-family: 'Helvetica Neue', 'Roboto', Helvetica, Arial, sans-serif;
   }
-.tc-search-field:-moz-placeholder {
+.tc-search-field:-moz-placeholder { 
 	color: #fff;
 	font-family: 'Helvetica Neue', 'Roboto', Helvetica, Arial, sans-serif;
   }
@@ -1268,9 +1268,9 @@ time {
 }
 #menu-footer-menu { margin:20px 0; padding:0; }
 #menu-footer-menu li{ display:inline-block; font-family: 'Helvetica Neue Medium', 'Helvetica Neue', 'Roboto', Helvetica, Arial, sans-serif;  }
-#menu-footer-menu li a {
+#menu-footer-menu li a { 
 	transition: all .2s ease-in;
-	color:#FFB904;
+	color:#FFB904; 
 	position: relative;
 }
 #menu-footer-menu li a:before {
@@ -1292,17 +1292,17 @@ time {
 	-webkit-transform: scaleX(1);
 	transform: scaleX(1);
 }
-#menu-footer-menu li a:hover, #menu-footer-menu li a:focus {
-	text-decoration: none;
+#menu-footer-menu li a:hover, #menu-footer-menu li a:focus { 
+	text-decoration: none; 
 	color: #fff !important;
 }
 .nn-social-links { margin: 20px 50px; padding: 0; text-align: right;}
 .nn-social-links li { list-style-type:none; display:inline-block; margin:0 20px; }
 .nn-social-links li:first-child { margin-left:0; }
 .nn-social-links li:last-child { margin-right:0; }
-.nn-social-links li a {
+.nn-social-links li a { 
 	transition: all .2s ease-in;
-	color:#FFB904;
+	color:#FFB904; 
 }
 .nn-social-links li a:hover, .nn-social-links li a:focus {
 	color: #fff;
@@ -1365,11 +1365,11 @@ time {
 	filter: drop-shadow(0 5px 3px rgba(0,0,0,0.1));
 }
 #tc-heading .padding-none { float:left; }
-#banner-heading {
-	position: absolute;
+#banner-heading { 
+	position: absolute; 
 	top: 47%;
 	right: 8%;
-	width: 100%;
+	width: 100%; 
 	text-align: center;
 	z-index: 3;
 }
@@ -1453,9 +1453,9 @@ time {
 	width: 100%;
 }
 #quote-img { text-align:center; float:left; }
-img.qImg {
-	border-radius:50%;
-	width:150px;
+img.qImg { 
+	border-radius:50%; 
+	width:150px; 
 	height:150px;
 	-webkit-box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
 	-moz-box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
@@ -1602,10 +1602,10 @@ img.qImg {
 	color: #851939;
 	text-align: center;
 }
-#tc-news-events-blocks {
-	overflow: hidden;
-	margin: 50px 100px;
-	padding-bottom: 25px;
+#tc-news-events-blocks { 
+	overflow: hidden; 
+	margin: 50px 100px; 
+	padding-bottom: 25px; 
 	display: flex;
 	justify-content: center;
 }
@@ -1631,7 +1631,7 @@ img.qImg {
 .tc-news-events-block:hover {
 	cursor: pointer;
 }
-.tc-news-events-description {
+.tc-news-events-description { 
 	padding: 20px 25px;
 	transition: all .2s ease-in-out;
 }
@@ -1712,10 +1712,10 @@ img.qImg {
 }
 .tc-about-content { background:#436576; overflow:hidden; }
 .tc-about-content-right,.tc-about-content-left { float:left; }
-.tc-about-content-left {
-	padding: 5%;
+.tc-about-content-left { 
+	padding: 5%; 
 	color: #fff;
-	font-family: 'Helvetica Neue', 'Roboto', Arial, Helvetica, sans-serif;
+	font-family: 'Helvetica Neue', 'Roboto', Arial, Helvetica, sans-serif;	
 }
 .tc-about-content-left div {
 	display: flex;
@@ -1775,11 +1775,11 @@ img.qImg {
 .inquiry-set-callout-box .wp-block-column p {
 	margin-bottom:0;
 }
-#page-banner-heading {
-	position: absolute;
+#page-banner-heading { 
+	position: absolute; 
 	top: 55%;
 	left: 20%;
-	width: 100%;
+	width: 100%; 
 	z-index: 3;
 }
 #page-banner-title {
@@ -1933,7 +1933,7 @@ img.qImg {
 	display: flex;
 	background-color: rgb(19,29,33, .9);
 	color: #FFFEF7;
-	position: absolute;
+	position: absolute; 
 	top: 0;
 	left: 0;
 	right: 0;
@@ -2068,10 +2068,10 @@ img.qImg {
 }
 .frameworks-standards-wrapper.has-1-columns .wp-block-column { flex-basis:100%; }
 .frameworks-standards-wrapper #accordion .panel {
-	margin:35px 0;
+	margin:35px 0; 
 }
 .frameworks-standards-wrapper #accordion .panel.panel-default {
-	border:none;
+	border:none; 
 }
 .frameworks-standards-wrapper #accordion .panel-heading {
 	background-color: #375260;
@@ -2243,3 +2243,4 @@ img.qImg {
 	margin: 0 auto 30px auto;
 }
 .frameworks-chapter-sidebar { float:right; }
+.tc-about-content-left  a { color:#ffffff !important; }
