@@ -38,6 +38,9 @@
 	.wp-nn-thumbnail-link {
 		font-size: 24px;
 	}
+	.tc-inquiry-set-section h2, .tc-about-section h2 {
+		font-size: 28px;
+	}
 }
 
 /* Large Devices */
@@ -221,6 +224,30 @@
 	}
 	.large-screen-back-btn {
 		display: none;
+	}
+	.about .tc-about-section {
+		width: 50%;
+	}
+	.tc-inquiry-set-section h2, .tc-about-section h2 {
+		font-size: 24px;
+	}
+	#tc-quote-box.about-page-quote {
+		margin-top: 65px;
+	}
+	.about-page-quote .tc-quote-text {
+		margin-left: 0;
+	}
+	.about-page-section-2 {
+		padding: 0;
+	}
+	.about-page-section-2 img {
+		margin-bottom: 15px;
+	}
+	.participating-institutions-wrap p {
+		margin-left: 0;
+	}
+	.participating-institutions {
+		margin-left: 0;
 	}
 }
 

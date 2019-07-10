@@ -76,7 +76,7 @@ get_header();
         </div>
         <div class="about-content">
             <?php if (get_field('about_page_section_2')): ?>
-            <div class="p-5"><?php echo the_field('about_page_section_2'); ?></div>
+            <div class="about-page-section-2"><?php echo the_field('about_page_section_2'); ?></div>
             <?php endif; ?>
         </div>
     </div>
