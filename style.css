@@ -138,8 +138,8 @@ pre {
 a {
 	font-family: 'Helvetica Neue', 'Roboto', Helvetica, Arial,sans-serif;
 	color: #CD620F;
-	font-size: 18px;
-	line-height: 20px;
+	font-size: 16px;
+	line-height: 18px;
 }
 
 /**
@@ -653,7 +653,7 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-	color: royalblue;
+	color: #AD2152;
 }
 
 /* a:visited {
@@ -661,7 +661,7 @@ a {
 } */
 
 a:hover, a:focus, a:active {
-	color: midnightblue;
+	color: #CD620F;
 }
 
 a:focus {
