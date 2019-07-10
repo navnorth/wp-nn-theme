@@ -1758,7 +1758,7 @@ img.qImg {
 	width: 100%;
 }
 .inquiry-set-callout-box .wp-block-column {
-	flex-basis:70%;
+	flex-basis:75%;
 	margin:60px auto;
 	padding: 30px;
 }
@@ -1768,12 +1768,16 @@ img.qImg {
 	color: #fff;
     margin-bottom: 25px;
 }
-.left-column-description {
+.left-column-description, .inquiry-set-callout-box .wp-block-column p {
 	font-size: 16px;
 	color: #fff;
 }
+.inquiry-set-callout-box .wp-block-column a {
+	color: #ffb904;
+	font-size: 16px;
+}
 .inquiry-set-callout-box .wp-block-column p {
-	margin-bottom:0;
+	margin-bottom: 10px;
 }
 #page-banner-heading { 
 	position: absolute; 
@@ -2244,3 +2248,81 @@ img.qImg {
 }
 .frameworks-chapter-sidebar { float:right; }
 .tc-about-content-left  a { color:#ffffff !important; }
+
+/*--------------------------------------------------------------
+## About Page Styles
+--------------------------------------------------------------*/
+.about-wrapper {
+	/* padding: 30px; */
+
+}
+.about-wrapper a {
+	color: #FFB904;
+	font-size: 16px;
+}
+.blue-background {
+	background: linear-gradient(180deg, #4A6F81 0%, #436576 71.27%);
+}
+.blue-background p {
+	color: #fff;
+}
+.white-background .about-content a {
+	color:#AD2152;
+}
+.about-wrapper .tc-about-topbar {
+	position: relative;
+}
+.about-wrapper .tc-about-section {
+	width: 36%;
+}
+.about-wrapper h1 {
+	font-family: "Biko Bold", Helvetica, Arial, sans-serif !important;
+	font-size: 24px;
+}
+.about-wrapper p {
+	font-size: 16px;
+}
+.about-content {
+	padding: 5% 13%;
+}
+.about-content h3 {
+	font-family: "Biko Bold", Helvetica, Arial, sans-serif !important;
+	font-size: 24px;
+	color: #fff;
+}
+.about h1.white-background-header {
+	font-family: "Biko Bold", Helvetica, Arial, sans-serif !important;
+	font-size: 36px;
+	color: #851939;
+	text-align: center;
+	margin-top: 40px;
+}
+.about-content.about-framework, .about-content.participating-institutions-wrap {
+	padding-top: 0;
+}
+.about-main-header {
+	margin-bottom: 25px;
+}
+.about-main-header h1 {
+	color: #851939;
+	margin-top: 0;
+}
+.participating-institutions {
+	list-style: none;
+	padding-left: 0;
+}
+.participating-institutions-wrap p {
+	margin-left: 3em;
+}
+.about-main-img {
+	max-height: 300px;
+}
+.tc-about-section.inquiry-set-title {
+	width: 20%;
+}
+.about-page-quote .tc-quote-text {
+	font-size: 16px;
+}
+.about-page-quote .quote-source {
+	font-size: 14px;
+}
