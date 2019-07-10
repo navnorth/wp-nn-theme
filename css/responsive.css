@@ -23,6 +23,12 @@
 	}
 }
 
+@media only screen and (max-width: 1300px) {
+	.tc-inquiry-set-section h2, .tc-about-section h2 {
+		font-size: 28px;
+	}
+}
+
 /* Medium devices */
 @media only screen and (max-width: 1440px) {
 	.wp-block-wp-nn-theme-thumbnail-block {
@@ -37,9 +43,6 @@
 	}
 	.wp-nn-thumbnail-link {
 		font-size: 24px;
-	}
-	.tc-inquiry-set-section h2, .tc-about-section h2 {
-		font-size: 28px;
 	}
 }
 
