@@ -50,9 +50,9 @@
 					echo "<li><a href='".$instagram."' title='Opens in a New Window' target='_blank'><i class='fab fa-instagram fa-2x'></i><span class='sr-only'>Instagram</span></a></li>";
 				}
 				
-				$flickr = get_option("wp_nn_theme_social_flickr");
-				if ($flickr) {
-					echo "<li><a href='".$flickr."' title='Opens in a New Window' target='_blank'><i class='fab fa-flickr fa-2x'></i><span class='sr-only'>Flickr</span></a></li>";
+				$youtube = get_option("wp_nn_theme_social_youtube");
+				if ($youtube) {
+					echo "<li><a href='".$youtube."' title='Opens in a New Window' target='_blank'><i class='fab fa-youtube fa-2x'></i><span class='sr-only'>YouTube</span></a></li>";
 				}
 				?>
 				</ul>

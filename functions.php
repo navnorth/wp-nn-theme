@@ -263,17 +263,17 @@ function wp_nn_theme_settings_page() {
 		)
 	);
         
-        //Add Settings field for Social Links - Flickr
+	//Add Settings field for Social Links - Youtube
 	add_settings_field(
-		'wp_nn_theme_social_flickr',
+		'wp_nn_theme_social_youtube',
 		'',
 		'wp_nn_theme_settings_field',
 		$page,
 		'wp_nn_theme_social_settings',
 		array(
-			'uid' => 'wp_nn_theme_social_flickr',
+			'uid' => 'wp_nn_theme_social_youtube',
 			'type' => 'textbox',
-			'name' =>  __('Flickr: ', 'wp_nn_theme')
+			'name' =>  __('YouTube: ', 'wp_nn_theme')
 		)
 	);
 
@@ -281,7 +281,7 @@ function wp_nn_theme_settings_page() {
         register_setting( 'theme_settings_page' , 'wp_nn_theme_social_instagram' );
         register_setting( 'theme_settings_page' , 'wp_nn_theme_social_facebook' );
         register_setting( 'theme_settings_page' , 'wp_nn_theme_social_twitter' );
-        register_setting( 'theme_settings_page' , 'wp_nn_theme_social_flickr' );
+		register_setting( 'theme_settings_page' , 'wp_nn_theme_social_youtube' );
 }
 add_action( 'admin_init' , 'wp_nn_theme_settings_page' );
 
