@@ -31,82 +31,79 @@ get_header();
         <div class="tc-about-topbar clearfix">
             <div class="col-md-6 col-sm-6 col-xs-6 padding-0 tc-custom-bg-blue"></div>
             <div class="col-md-6 col-sm-6 col-xs-6 padding-0 tc-custom-bg-yellow"></div>
-            <?php if (get_field('about_page_title_1')): ?>
+            <?php if (get_field('about_page_section_1')): 
+                $section1 = get_field('about_page_section_1');
+                ?>
             <div class="tc-about-section">
-                <h2><?php echo the_field('about_page_title_1'); ?></h2>
+                <h2><?php echo $section1['title']; ?></h2>
             </div>
-            <?php endif; ?>
         </div>
-        <?php if (get_field('about_page_description_1')): ?>
-        <div class="about-content"><?php echo the_field('about_page_description_1'); ?></div>
+        <div class="about-content"><?php echo $section1['description']; ?></div>
         <?php endif; ?>
     </div>
     <div class="row">
         <div id="tc-quote-box" class="about-page-quote"> 
-        <?php if (get_field('about_page_quote_image')): ?>
+        <?php if (get_field('about_page_quote')): 
+            $quote = get_field('about_page_quote');
+            ?>
             <div class="col-md-3" id="quote-img">
-                <img alt="<?php echo the_field('about_page_quote_image_alt'); ?>" src="<?php echo the_field('about_page_quote_image'); ?>" class="qImg">
+                <img alt="<?php echo $quote['image_alt']; ?>" src="<?php echo $quote['image'] ?>" class="qImg">
             </div>
-        <?php endif; ?>
             <div class="col-md-9" id="quote-text">
                 <div class="tc-quote">
-                    <?php if (get_field('about_page_quote_text')): ?>
                     <div class="tc-quote-text">
-                        <blockquote><?php echo the_field('about_page_quote_text'); ?></blockquote>
+                        <blockquote><?php echo $quote['text']; ?></blockquote>
                     </div>
-                    <?php endif;?>
-                    <?php if (get_field('about_page_quote_source')): ?>
                     <footer class="quote-source">
-                        <?php echo the_field('about_page_quote_source'); ?>
+                        <?php echo $quote['source']; ?>
                     </footer>
-                    <?php endif; ?>
                 </div>
             </div>
+        <?php endif; ?>
         </div>
     </div><!-- Quotes -->
+    <?php if (get_field('about_page_section_2')): 
+        $section2 = get_field('about_page_section_2');
+        ?>
     <div class="about blue-background">
         <div class="tc-about-topbar clearfix">
                 <div class="col-md-6 col-sm-6 col-xs-6 padding-0 tc-custom-bg-blue"></div>
                 <div class="col-md-6 col-sm-6 col-xs-6 padding-0 tc-custom-bg-yellow"></div>
                 <div class="tc-about-section">
-                <?php if (get_field('about_page_title_2')): ?>
-                    <h2><?php echo the_field('about_page_title_2'); ?></h2>
-                <?php endif; ?>
+                    <h2><?php echo $section2['title']; ?></h2>
                 </div>
         </div>
         <div class="about-content">
-            <?php if (get_field('about_page_section_2')): ?>
-            <div class="about-page-section-2"><?php echo the_field('about_page_section_2'); ?></div>
-            <?php endif; ?>
+            <div class="about-page-section-2"><?php echo $section2['description']; ?></div>
         </div>
     </div>
+        <?php endif; ?>
 
+    <?php if (get_field('about_page_section_3')): 
+        $section3 = get_field('about_page_section_3'); ?>
     <div class="about white-background">
-    <?php if (get_field('about_page_title_3')): ?>
-        <h1 class="white-background-header"><?php echo the_field('about_page_title_3'); ?></h1>
-    <?php endif; ?>
-    <?php if (get_field('about_page_section_3')): ?>
+        <h1 class="white-background-header"><?php echo $section3['title']; ?></h1>
         <div class="about-content about-framework">
-        <?php echo the_field('about_page_section_3') ?>
+        <?php echo $section3['description']; ?>
         </div>
-    <?php endif; ?>
     </div>
+    <?php endif; ?>
+    <?php if (get_field('about_page_section_4')):
+        $section4 = get_field('about_page_section_4');
+    ?>
     <div class="about blue-background">
-    <div class="tc-about-topbar clearfix">
+        <div class="tc-about-topbar clearfix">
                 <div class="col-md-6 col-sm-6 col-xs-6 padding-0 tc-custom-bg-blue"></div>
                 <div class="col-md-6 col-sm-6 col-xs-6 padding-0 tc-custom-bg-yellow"></div>
                 <div class="tc-about-section inquiry-set-title">
-                <?php if (get_field('about_page_title_4')): ?>
-                    <h2><?php echo the_field('about_page_title_4') ?></h2>
-                <?php endif; ?>
+                    <h2><?php echo $section4['title']; ?></h2>
                 </div>
         </div>
         <div class="about-content">
-        <?php if (get_field('about_page_section_4')): ?>
-        <?php echo the_field('about_page_section_4'); ?>
-        <?php endif; ?>
+        <?php echo $section4['description']; ?>
         </div>
     </div>
+    <?php endif; ?>
     <div class="about white-background">
         <?php if (get_field('about_page_participating_institutions_title')): ?>
         <h1 class="white-background-header"><?php echo the_field('about_page_participating_institutions_title'); ?></h1>
@@ -125,7 +122,7 @@ get_header();
 
                     // display a sub field value
                     ?>
-                    <li><a href="<?php echo the_sub_field('participating_institution_link'); ?>" target="_blank"><?php echo the_sub_field('participating_institution_name')?></a></li>
+                    <li><a href="<?php echo the_sub_field('url'); ?>" target="_blank"><?php echo the_sub_field('name')?></a></li>
             <?php 
 
                 endwhile;
