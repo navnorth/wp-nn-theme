@@ -775,6 +775,9 @@ a:hover, a:active {
 	text-align: right;
 	width: 50%;
 }
+.comments-title {
+	font-size: 1.5rem;
+}
 
 /*--------------------------------------------------------------
 # Accessibility
