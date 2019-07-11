@@ -59,6 +59,7 @@ get_header();
 	endwhile; // End of the loop.
 	?>
 	</div>
+	<?php if (get_field('frameworks_related_inquiry_sets')): ?>
 	<div class="col-md-4 frameworks-chapter-sidebar">
 		<h4 class="related-inquiry-set-title"><?php _e("Related Inquiry Set", WP_NN_SLUG); ?></h4>
 		<?php
@@ -104,6 +105,7 @@ get_header();
 			}
 		} ?>
 	</div>
+	<?php endif; ?>
 	</main><!-- #main -->
 </div><!-- #primary -->
 
