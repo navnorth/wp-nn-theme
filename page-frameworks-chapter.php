@@ -26,9 +26,6 @@ get_header();
 	<div id="tc-frameworks-bar-heading" class="bar-heading">
 	    <div class="tc-framework-bar-wrapper">
 		<div class="tc-framework-bar-left col-md-6">
-			<?php if (get_field('framework_url')): ?>
-			<a class="back-button" href="<?php echo the_field('framework_url'); ?>"><i class="fal fa-angle-left"></i><?php _e("Back", WP_NN_SLUG)?></a>
-			<?php endif; ?>
 		</div>
 		<div class="tc-framework-bar-right col-md-6">
 			<?php if (get_field('frameworks_previous_link')): ?>
