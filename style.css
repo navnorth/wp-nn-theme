@@ -1926,9 +1926,9 @@ img.qImg {
 	transition: all .2s ease-in;
 }
 .lp-tc-related-inquiry-set-description h4 {
-    overflow:hidden;
+    /*overflow:hidden;
     text-overflow:ellipsis;
-    white-space:nowrap;
+    white-space:nowrap;*/
 	color:#ffffff !important;
 	font-size: 20px;
 	margin-bottom: 0;
