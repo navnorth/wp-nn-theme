@@ -1242,13 +1242,20 @@ h2.section-heading {
 }
 time {
 	font-family:'Helvetica Neue', 'Roboto', Helvetica, Arial, sans-serif;
-	color:#4F4F4F;
-	font-size:20px;
+	color:#851939;
+	font-size: 14px;
 }
 .wp-block-latest-posts li a {
 	font-family:'Helvetica Neue', 'Roboto', Helvetica, Arial, sans-serif;
 	color:#4F4F4F;
 	font-size:24px;
+}
+.entry-meta {
+	font-size: 14px;
+	padding-bottom: 15px;
+}
+.author a {
+	font-size: 14px;
 }
 .image-columns .wp-block-column { margin:0; }
 .container { max-width:100%; width:100%; }
@@ -1256,6 +1263,9 @@ time {
 .entry-content { margin:0; }
 .container .entry-content { margin:1.5em 0 0; }
 .padding-none { padding:0; }
+.post-template-default .content-area {
+	margin: 20px auto;
+}
 /*--------------------------------------------------------------
 ## Footer
 --------------------------------------------------------------*/
