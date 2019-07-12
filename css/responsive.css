@@ -68,9 +68,9 @@
 }
 
 /* Small Devices, Tablets */
-@media only screen and (max-width : 768px) {
+@media only screen and (max-width: 768px) {
 	.site-branding { width:75%; }
-	.container .site-content { padding-bottom: 148px; }
+	.container .site-content { padding-bottom: 130px; }
 	.tc-heading-wrapper { height: 25vh; }
 	#banner-title {
 		font-size: 24px;
@@ -252,6 +252,23 @@
 	.participating-institutions {
 		margin-left: 0;
 	}
+	.tc-lp-details {
+		padding: 30px 20px;
+	}
+	.excerpt-content {
+		padding: 20px;
+	}
+	.tc-home-tabs .col-md-6.nav-item .active:after {
+		display: none;
+	}
+	.tc-related-inquiry-section {
+		height: 50px;
+		width: 60%;
+		top: -11px;
+	}
+	.lp-tc-related-inquiry-block {
+		padding-bottom: 15px;
+	}
 }
 
 /* Extra small devices */
@@ -276,7 +293,7 @@
 		margin-left: 10px;
 	}
 	.nn-social-links {
-		margin: 20px 35px;
+		margin: 15px;
 	}
 	.nn-social-links i {
 		font-size: 1.5em;
@@ -426,6 +443,9 @@
 	.lp-tc-related-inquiry-grades {
 		font-size: 14px;
 		padding: 3px 7px;
+	}
+	.ui-dialog.standards-dialog, .ui-dialog.tags-dialog {
+		width: 320px !important;
 	}
 }
 
