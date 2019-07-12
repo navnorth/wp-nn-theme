@@ -2,6 +2,11 @@
 @media only screen and (min-width:1023px) {
 	.navbar-expand-lg .navbar-collapse { display:block !important; }
 }
+@media only screen and (max-width: 1180px) {
+	.investigate-question-section h2 {
+		white-space: normal;
+	}
+}
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
 	#navbarCollapse { display: flex; }
 	.navbar li.menu-item {
