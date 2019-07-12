@@ -1948,6 +1948,15 @@ img.qImg {
 	font-weight: 400;
 }
 .lp-tc-related-inquiry-set-description h4 a { color:#ffffff !important; white-space:nowrap; font-size:20px; }
+.inquiry-landing-wrapper {
+	position: relative;
+}
+.inquiry-landing-content {
+	padding-top: 80px;
+}
+.inquiry-landing-content h2 {
+	margin-left: 32px;
+}
 .inquiry-set-header-wrapper {
 	display: flex;
 	background-color: rgb(19,29,33, .9);
