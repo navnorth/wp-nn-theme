@@ -1715,6 +1715,10 @@ img.qImg {
 	top: -23px;
 	z-index:999;
 }
+#tc-about a {
+	font-size: 16px;
+	line-height: 26px;
+}
 .tc-about-section h2 {
 	font-family: "Biko Bold", 'Helvetica Neue', 'Roboto', Helvetica, Arial, sans-serif;
 	color: #ffffff;
