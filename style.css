@@ -2073,16 +2073,6 @@ img.qImg {
 	font-weight: 400 !important;
 }
 
-#cookie-law-info-bar:before {
-	content: '\f564';
-	font-family: 'Font Awesome 5 Pro';
-	font-size: 24px;
-	position: absolute;
-    left: 162px;
-	top: 13px;
-	color: bisque;
-}
-
 #cookie_action_close_header {
 	margin-left: 20px !important;
 }
