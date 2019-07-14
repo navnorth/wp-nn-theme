@@ -17,7 +17,7 @@ get_header();
 ?>
 <main id="main" class="inquiry-landing-wrapper">
     <div class="inquiry-set-header-wrapper">
-        <a class="back-button" href="http://chs-test.navigationnorth.com/inquiry-sets"><i class="fal fa-arrow-left"></i>BACK<span class="large-screen-back-btn"> TO INQUIRY SETS</span></a>
+        <a class="back-button" href="/inquiry-sets"><i class="fal fa-arrow-left"></i>BACK<span class="large-screen-back-btn"> TO INQUIRY SETS</span></a>
         <?php if (get_field('inquiry_set_landing_header')): ?>
             <h4 class="inquiry-sets-by-grade-header"><?php echo the_field('inquiry_set_landing_header'); ?></h4>
         <?php endif; ?>
