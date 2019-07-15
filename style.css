@@ -1963,7 +1963,7 @@ img.qImg {
 }
 .inquiry-set-header-wrapper {
 	display: flex;
-	background-color: rgb(19,29,33, .9);
+	background-color: rgba(19,29,33, .9);
 	color: #FFFEF7;
 	position: absolute; 
 	top: 0;
