@@ -17,7 +17,7 @@ get_header();
             <?php endif; ?>
         <div class="row mb-3 mt-5">
             <div class="col-md-6">
-                <img class="about-main-img" src="http://localhost.localdomain/wp-content/uploads/2019/05/1.jpg"/>
+                <img class="about-main-img" src="<?php echo the_field('about_page_main_image') ?>"/>
             </div>
             <?php if (get_field('about_page_main_description')): ?>
             <div class="about-main-description col-md-6">
