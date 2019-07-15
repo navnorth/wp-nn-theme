@@ -117,7 +117,7 @@ function tc_button_tile_func($atts, $content = null)
     $classes    = '';
     $sd_classes = 'col-md-4 col-sm-6';
     
-    if ($new_window==true)
+    if ($new_window=="true")
         $new_tab = ' target="_blank"';
     if (isset($link_label) && $link_label!=="")
         $classes = 'class="col-md-6 tc-button-tile-block-link"';
