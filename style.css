@@ -2365,3 +2365,40 @@ img.qImg {
 .about-page-section-2 {
 	padding: 3rem;
 }
+
+/* Posts Page Styling */
+.posts-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.post-tile {
+	background-color: #f2f2f2;
+	-webkit-box-shadow: 2px 4px 18px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 2px 4px 18px rgba(0, 0, 0, 0.1);
+	box-shadow: 2px 4px 18px rgba(0, 0, 0, 0.1);
+	margin: 40px 0;
+}
+.post-tile p {
+	font-size: 14px;
+	line-height: 22px;
+}
+p.post-date {
+	font-weight: 500;
+	color: #828282;
+}
+.post-thumbnail-wrap {
+	height: 278px;
+	width: 278px;
+	background-size: cover;
+}
+.post-info {
+	padding: 20px 30px;
+}
+.post-info h2 {
+	font-size: 1.5rem;
+}
+.post-tile .tc-learn-more-button {
+	float: right;
+	padding: 5px 10px 5px 10px;
+}
