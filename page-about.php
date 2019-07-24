@@ -136,10 +136,10 @@ get_header();
             ?>
             </ul>
             <?php endif; ?>
+            <?php if (get_field('about_page_additional_citations')): ?>
+                <p><?php echo the_field('about_page_additional_citations'); ?></p>
+            <?php endif; ?>
         </div>
-        <?php if (get_field('about_page_additional_citations')): ?>
-        <p><?php echo the_field('about_page_additional_citations'); ?></p>
-        <?php endif; ?>
     </div>
 </div>
 <?php
