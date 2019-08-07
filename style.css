@@ -765,7 +765,7 @@ a:hover, a:active {
 .posts-navigation .nav-previous,
 .post-navigation .nav-previous {
 	float: left;
-	width: 50%;
+	/* width: 50%; */
 }
 
 .comment-navigation .nav-next,
@@ -773,10 +773,10 @@ a:hover, a:active {
 .post-navigation .nav-next {
 	float: right;
 	text-align: right;
-	width: 50%;
+	/* width: 50%; */
 }
 .comments-title {
-	font-size: 1.5rem;
+	font-size: 1rem;
 }
 
 /*--------------------------------------------------------------
@@ -2404,4 +2404,76 @@ p.post-date {
 	position: absolute;
 	bottom: 30px;
 	right: 30px;
+}
+.entry-footer span {
+	display: block;
+	padding: 5px 0;
+}
+.entry-footer .cat-links,
+.entry-footer .tags-links {
+	font-style:	italic;
+}
+.entry-footer .cat-links a,
+.entry-footer .tags-links a {
+	font-style: normal;
+}
+.entry-footer .cat-links, 
+.entry-footer .tags-links,
+.entry-footer .cat-links a,
+.entry-footer .tags-links a {
+	font-size: 16px;
+}
+.site-main .navigation.post-navigation {
+    margin: 1.5em 0 2em;
+}
+.post-navigation a {
+	font-family: "Biko Bold", Helvetica, Arial, sans-serif !important;
+	font-size: 18px;
+}
+.post-navigation .nav-previous:before {
+	content: '\f060';
+	font-weight: bold;
+	color: #AD2152;
+	padding-right: 10px;
+	font-family: "Font Awesome 5 Free";
+}
+.post-navigation .nav-next:after {
+	content: '\f061';
+	font-weight: bold;
+	color: #AD2152;
+	padding-left: 10px;
+	font-family: "Font Awesome 5 Free";
+}
+.post .entry-content p,
+.post .entry-content {
+	font-size: 18px;
+	line-height: 30px;
+}
+.comment-form .submit {
+	background-color: #851939;
+	color: #fff;
+	border-radius: 0;
+	border: none;
+	padding: 10px 14px;
+	font-family: "Biko", Helvetica, Arial, sans-serif !important;
+	margin-bottom: 30px;
+	transition: all .2s ease-in;
+	font-size: 16px;
+}
+.comment-form .submit:hover {
+	background-color: #CD620F;
+	cursor: pointer;
+}
+.comment-list {
+	padding-left: 0;
+	list-style: none;
+}
+.comment-list .comment {
+	background-color: #fff;
+	border-radius: 4px;
+	padding: 15px 20px;
+	-webkit-box-shadow: 2px 4px 18px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 2px 4px 18px rgba(0, 0, 0, 0.1);
+	box-shadow: 2px 4px 18px rgba(0, 0, 0, 0.1);
+	margin: 25px 0;
 }
