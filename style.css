@@ -4,7 +4,7 @@
  Author:       Navigation North
  Author URI:   https://www.navigationnorth.com
  Template:
- Version:      0.1.3
+ Version:      0.1.4
  Tags:         responsive-layout, accessibility-ready
  Text Domain:  navnorth
  License:      GPL3
@@ -2417,7 +2417,7 @@ p.post-date {
 .entry-footer .tags-links a {
 	font-style: normal;
 }
-.entry-footer .cat-links, 
+.entry-footer .cat-links,
 .entry-footer .tags-links,
 .entry-footer .cat-links a,
 .entry-footer .tags-links a {
