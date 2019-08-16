@@ -31,7 +31,7 @@ if (isset($img_url)){
 
 <article id="post-<?php echo $post_id; ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<h2 class="entry-title"><a href="<?php echo $url; ?>" rel="bookmark"><?php echo $current_post->post_title; ?></a></h2>
+		<h2 class="entry-title search-title"><a href="<?php echo $url; ?>" rel="bookmark"><?php echo $current_post->post_title; ?></a></h2>
 
 		<?php if ( 'post' === get_post_type() ) : ?>
 		<div class="entry-meta">
