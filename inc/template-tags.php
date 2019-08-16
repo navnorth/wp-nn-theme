@@ -133,22 +133,6 @@ if ( ! function_exists( 'wp_nn_theme_tc_entry_footer' ) ) :
 			}
 		}
 
-		edit_post_link(
-			sprintf(
-				wp_kses(
-					/* translators: %s: Name of current post. Only visible to screen readers */
-					__( 'Edit <span class="screen-reader-text">%s</span>', 'wp_nn_theme' ),
-					array(
-						'span' => array(
-							'class' => array(),
-						),
-					)
-				),
-				get_the_title($post_id)
-			),
-			'<span class="edit-link">',
-			'</span>'
-		);
 	}
 endif;
 

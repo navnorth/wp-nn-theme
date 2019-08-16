@@ -2477,9 +2477,9 @@ p.post-date {
 	box-shadow: 2px 4px 18px rgba(0, 0, 0, 0.1);
 	margin: 25px 0;
 }
-.search-results article { margin-bottom:15px; }
-.search-results article:first { border-bottom:1px solid #cdcdcd; }
-.search-results article:last { border-bottom:none; }
+.search-results article.resource { margin-bottom:15px; border-bottom:1px solid #cdcdcd; }
+.search-results article.resource:last { border-bottom:none; }
+.search-results article h2.entry-title.search-title { margin-bottom:10px; }
 .search-results article h2.search-title a { font-size:20px; font-weight:bold; }
 .search-results article .search-content { overflow:hidden; }
 .search-results article .search-content .search_image { float:left; }
