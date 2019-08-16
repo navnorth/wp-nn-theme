@@ -2477,6 +2477,7 @@ p.post-date {
 	box-shadow: 2px 4px 18px rgba(0, 0, 0, 0.1);
 	margin: 25px 0;
 }
+.search-results article { margin-bottom:15px; }
 .search-results article:first { border-bottom:1px solid #cdcdcd; }
 .search-results article:last { border-bottom:none; }
 .search-results article h2.search-title a { font-size:20px; font-weight:bold; }

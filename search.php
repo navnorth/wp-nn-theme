@@ -11,7 +11,7 @@ get_header();
 $results = array();
 ?>
 
-	<section id="primary" class="content-area col-md-8">
+	<section id="primary" class="content-area">
 		<main id="main" class="site-main">
 
 		<?php if ( have_posts() ) : ?>
