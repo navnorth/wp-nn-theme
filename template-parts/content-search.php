@@ -42,17 +42,18 @@ if (isset($img_url)){
 		</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
-
-	<?php if(isset($img_url) && !empty($img_url)) : ?>
-        <div class="col-md-3 col-sm-6 col-xs-12 search_image">
-            <img class="search_featured_image" src="<?php echo $img_url; ?>" alt="<?php echo $img_alt; ?>" />
-        </div>
-        <?php endif; ?>
-
-	<div class="entry-summary <?php echo $summary_class; ?>">
-		<?php echo get_the_excerpt($post_id); ?>
-	</div><!-- .entry-summary -->
-
+	<div class="search-content">
+		<?php if(isset($img_url) && !empty($img_url)) : ?>
+		<div class="col-md-3 col-sm-6 col-xs-12 search_image">
+		    <img class="search_featured_image" src="<?php echo $img_url; ?>" alt="<?php echo $img_alt; ?>" />
+		</div>
+		<?php endif; ?>
+	
+		<div class="entry-summary <?php echo $summary_class; ?>">
+			<?php echo get_the_excerpt($post_id); ?>
+		</div><!-- .entry-summary -->
+	</div>
+	
 	<footer class="entry-footer">
 		<?php wp_nn_theme_tc_entry_footer($post_id); ?>
 	</footer><!-- .entry-footer -->
