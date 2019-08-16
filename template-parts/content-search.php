@@ -9,6 +9,7 @@
 global $post_id;
 $pre_url = "";
 $url = esc_url( get_the_permalink($post_id) );
+$summary_class = "col-md-12 col-sm-12 col-xs-12";
 $current_post = get_post($post_id);
 $img_url = wp_get_attachment_url( get_post_thumbnail_id($post_id) );
 $img_alt = get_post_meta(get_post_thumbnail_id($post_id), '_wp_attachment_image_alt', true);
@@ -21,6 +22,10 @@ if (get_post_type($post_id)=="resource") {
 	}
 	if ($pre_url)
 		$url = $pre_url."/source/".$slug."-".$post_id;
+}
+
+if (isset($img_url)){
+	$summary_class = "col-md-9 col-sm-6 col-xs-12";
 }
 ?>
 
@@ -44,11 +49,11 @@ if (get_post_type($post_id)=="resource") {
         </div>
         <?php endif; ?>
 
-	<div class="entry-summary">
+	<div class="entry-summary <?php echo $summary_class; ?>">
 		<?php echo get_the_excerpt($post_id); ?>
 	</div><!-- .entry-summary -->
 
 	<footer class="entry-footer">
-		<?php wp_nn_theme_entry_footer(); ?>
+		<?php wp_nn_theme_tc_entry_footer($post_id); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php echo $post_id; ?> -->
