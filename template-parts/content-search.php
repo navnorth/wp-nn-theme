@@ -45,10 +45,10 @@ if (get_post_type($post_id)=="resource") {
         <?php endif; ?>
 
 	<div class="entry-summary">
-		<?php the_excerpt(); ?>
+		<?php echo get_the_excerpt($post_id); ?>
 	</div><!-- .entry-summary -->
 
 	<footer class="entry-footer">
 		<?php wp_nn_theme_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
-</article><!-- #post-<?php the_ID(); ?> -->
+</article><!-- #post-<?php echo $post_id; ?> -->
