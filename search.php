@@ -6,7 +6,7 @@
  *
  * @package wp_nn_theme
  */
-
+global $post_id;
 get_header();
 $results = array();
 ?>
@@ -55,9 +55,17 @@ $results = array();
 				 * If you want to overload this in a child theme then include a file
 				 * called content-search.php and that will be used instead.
 				 */
-				get_template_part( 'template-parts/content', 'search' );
+				//get_template_part( 'template-parts/content', 'search' );
 
 			endwhile;
+			
+			usort($results, 'tc_compareType');
+				
+			foreach($results as $result) {
+				$post_id = $result['post']->ID;
+				
+				get_template_part("template-parts/content", "search");
+			}
 
 			the_posts_navigation();
 
