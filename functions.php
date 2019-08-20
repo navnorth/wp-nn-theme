@@ -437,3 +437,47 @@ function tc_ga_script() {
   }
   return $script;
 }
+
+function is_inquiryset_resource($resource_title, $return_details = false){
+    global $wpdb;
+    
+    $args = array(
+        'post_type'  => 'lesson-plans',
+        'meta_query' => array(
+            array(
+                'key'     => 'oer_lp_primary_resources',
+                'value'   => $resource_title,
+                'compare' => 'LIKE',
+            ),
+        ),
+    );
+    $query = new WP_Query( $args );
+    
+    if ($query->post_count>0){
+        if ($return_details)
+            return $query->posts;
+        else
+            return true;
+    } else
+        return false;
+    
+}
+
+add_filter('template_include', 'load_theme_search');
+function load_theme_search($template){
+    global $wp_query;
+    if (!$wp_query->is_search)
+        return $template;
+    
+    $template = get_template_directory() . "/search.php";
+    
+    return $template;
+}
+
+function tc_compareType($array1, $array2) {
+    if ( $array1['typeId'] == $array2['typeId'] )
+        return 0;
+    if ( $array1['typeId'] < $array2['typeId'] )
+        return -1;
+    return 1;
+}

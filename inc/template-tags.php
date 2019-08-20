@@ -111,6 +111,31 @@ if ( ! function_exists( 'wp_nn_theme_entry_footer' ) ) :
 	}
 endif;
 
+if ( ! function_exists( 'wp_nn_theme_tc_entry_footer' ) ) :
+	/**
+	 * Prints HTML with meta information for the categories, tags and comments.
+	 */
+	function wp_nn_theme_tc_entry_footer($post_id) {
+		// Hide category and tag text for pages.
+		if ( 'post' === get_post_type($post_id) ) {
+			/* translators: used between list items, there is a space after the comma */
+			$categories_list = get_the_category_list( esc_html__( ', ', 'wp_nn_theme' ), '', $post_id );
+			if ( $categories_list ) {
+				/* translators: 1: list of categories. */
+				printf( '<span class="cat-links">' . esc_html__( 'Posted in %1$s', 'wp_nn_theme' ) . '</span>', $categories_list ); // WPCS: XSS OK.
+			}
+
+			/* translators: used between list items, there is a space after the comma */
+			$tags_list = get_the_tag_list( '', esc_html_x( ', ', 'list item separator', 'wp_nn_theme' ), '', $post_id );
+			if ( $tags_list ) {
+				/* translators: 1: list of tags. */
+				printf( '<span class="tags-links">' . esc_html__( 'Tagged %1$s', 'wp_nn_theme' ) . '</span>', $tags_list ); // WPCS: XSS OK.
+			}
+		}
+
+	}
+endif;
+
 if ( ! function_exists( 'wp_nn_theme_post_thumbnail' ) ) :
 	/**
 	 * Displays an optional post thumbnail.

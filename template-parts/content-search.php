@@ -6,12 +6,36 @@
  *
  * @package wp_nn_theme
  */
+global $post_id;
+$pre_url = "";
+$url = esc_url( get_the_permalink($post_id) );
+$summary_class = "";
+$current_post = get_post($post_id);
+$img_url = wp_get_attachment_url( get_post_thumbnail_id($post_id) );
+$img_alt = get_post_meta(get_post_thumbnail_id($post_id), '_wp_attachment_image_alt', true);
+if (get_post_type($post_id)=="resource") {
+	$inquiry_set = is_inquiryset_resource($current_post->post_title, true);
+	$slug = str_replace("_","-",$current_post->post_name);
+	
+	if ($inquiry_set){
+		$pre_url = esc_url( get_the_permalink($inquiry_set[0]->ID));
+	}
+	if ($pre_url)
+		$url = $pre_url."/source/".$slug."-".$post_id;
+}
 
+if (isset($img_url) && !empty($img_url)){
+	$summary_class = "col-md-9 col-sm-6 col-xs-12";
+}
+
+if (function_exists('lp_get_resource_thumbnail_url')){
+	$img_url = lp_get_resource_thumbnail_url( get_post_thumbnail_id($post_id), 'resource-thumbnail' );
+}
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="post-<?php echo $post_id; ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
+		<h2 class="entry-title search-title"><a href="<?php echo $url; ?>" rel="bookmark"><?php echo $current_post->post_title; ?></a></h2>
 
 		<?php if ( 'post' === get_post_type() ) : ?>
 		<div class="entry-meta">
@@ -22,14 +46,19 @@
 		</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
-
-	<?php wp_nn_theme_post_thumbnail(); ?>
-
-	<div class="entry-summary">
-		<?php the_excerpt(); ?>
-	</div><!-- .entry-summary -->
-
+	<div class="search-content">
+		<?php if(isset($img_url) && !empty($img_url)) : ?>
+		<div class="col-md-3 col-sm-6 col-xs-12 search_image">
+		    <img class="search_featured_image" src="<?php echo $img_url; ?>" alt="<?php echo $img_alt; ?>" />
+		</div>
+		<?php endif; ?>
+	
+		<div class="entry-summary <?php echo $summary_class; ?>">
+			<?php echo get_the_excerpt($post_id); ?>
+		</div><!-- .entry-summary -->
+	</div>
+	
 	<footer class="entry-footer">
-		<?php wp_nn_theme_entry_footer(); ?>
+		<?php wp_nn_theme_tc_entry_footer($post_id); ?>
 	</footer><!-- .entry-footer -->
-</article><!-- #post-<?php the_ID(); ?> -->
+</article><!-- #post-<?php echo $post_id; ?> -->
