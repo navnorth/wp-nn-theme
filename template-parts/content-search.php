@@ -27,6 +27,10 @@ if (get_post_type($post_id)=="resource") {
 if (isset($img_url) && !empty($img_url)){
 	$summary_class = "col-md-9 col-sm-6 col-xs-12";
 }
+
+if (function_exists('lp_get_resource_thumbnail_url')){
+	$img_url = lp_get_resource_thumbnail_url( get_post_thumbnail_id($post_id), 'resource-thumbnail' );
+}
 ?>
 
 <article id="post-<?php echo $post_id; ?>" <?php post_class(); ?>>
