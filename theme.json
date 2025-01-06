@@ -216,6 +216,35 @@
 		"useRootPaddingAwareAlignments": true
 	},
 	"styles": {
+		"blocks": {
+			"core/button": {
+				"spacing": {
+					"padding": {
+						"top": "10px",
+						"bottom": "10px",
+						"left": "20px",
+						"right": "20px"
+					}
+				},
+				"border": {
+					"radius":{
+						"bottomLeft":"100px",
+						"bottomRight": "100px",
+						"topLeft": "100px",
+						"topRight": "100px"
+					}
+				},
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--body)",
+					"fontSize": "16px",
+					"fontStyle": "normal",
+					"fontWeight": "700",
+					"textTransform": "uppercase",
+					"lineHeight": "130%",
+					"letterSpacing": "0.45px"
+				}
+			}
+		},
 		"color": {
 			"background": "var(--wp--preset--color--base)",
 			"text": "var(--wp--preset--color--contrast)"
