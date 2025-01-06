@@ -3,3 +3,27 @@
 * Template: twentytwentyfour
 * Text Domain: navnorth
 **/
+
+.is-style-nn-blue a {
+    background-color: #1C73BB;
+    color: #FFFFFF;
+}
+.is-style-nn-blue a:hover {
+    background-color: #26A1C6;
+}
+
+.is-style-nn-cyan a{
+    background-color: #26A1C6;
+    color: #FFFFFF;
+}
+.is-style-nn-cyan a:hover {
+    background-color: #1C73BB;
+}
+.is-style-nn-yellow a{
+    background-color: #FCC94D;
+    color: #172836;
+}
+.is-style-nn-yellow a:hover {
+    background-color: #1C73BB;
+    color: #FFFFFF;
+}
