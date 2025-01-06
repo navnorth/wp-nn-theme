@@ -218,6 +218,26 @@
 	"styles": {
 		"blocks": {
 			"core/button": {
+				"variations": {
+					"nn-blue": {
+						"color": {
+							"background": "var(--wp--preset--color--blue)",
+							"text": "var(--wp--preset--color--base)"
+						}
+					},
+					"nn-cyan": {
+						"color": {
+							"background": "var(--wp--preset--color--cyan)",
+							"text": "var(--wp--preset--color--base)"
+						}
+					},
+					"nn-yellow": {
+						"color": {
+							"background": "var(--wp--preset--color--yellow)",
+							"text": "var(--wp--preset--color--black)"
+						}
+					}
+				},
 				"spacing": {
 					"padding": {
 						"top": "10px",

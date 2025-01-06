@@ -3,27 +3,19 @@
 * Template: twentytwentyfour
 * Text Domain: navnorth
 **/
-
-.is-style-nn-blue a {
-    background-color: #1C73BB;
-    color: #FFFFFF;
+/* NN Blue Button Hover Style */
+.wp-block-button.is-style-nn-blue
+	> .wp-block-button__link:not(.has-text-color, .has-background):hover {
+    background-color: var(--wp--preset--color--cyan);
 }
-.is-style-nn-blue a:hover {
-    background-color: #26A1C6;
+/* NN Cyan Button Hover Style */
+.wp-block-button.is-style-nn-cyan
+	> .wp-block-button__link:not(.has-text-color, .has-background):hover {
+    background-color: var(--wp--preset--color--blue);
 }
-
-.is-style-nn-cyan a{
-    background-color: #26A1C6;
-    color: #FFFFFF;
-}
-.is-style-nn-cyan a:hover {
-    background-color: #1C73BB;
-}
-.is-style-nn-yellow a{
-    background-color: #FCC94D;
-    color: #172836;
-}
-.is-style-nn-yellow a:hover {
-    background-color: #1C73BB;
-    color: #FFFFFF;
+/* NN Yellow Button Hover Style */
+.wp-block-button.is-style-nn-yellow
+	> .wp-block-button__link:not(.has-text-color, .has-background):hover {
+    background-color: var(--wp--preset--color--blue);
+    color: var(--wp--preset--color--base);
 }
