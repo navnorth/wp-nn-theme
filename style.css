@@ -3,3 +3,19 @@
 * Template: twentytwentyfour
 * Text Domain: navnorth
 **/
+/* NN Blue Button Hover Style */
+.wp-block-button.is-style-nn-blue
+	> .wp-block-button__link:not(.has-text-color, .has-background):hover {
+    background-color: var(--wp--preset--color--cyan);
+}
+/* NN Cyan Button Hover Style */
+.wp-block-button.is-style-nn-cyan
+	> .wp-block-button__link:not(.has-text-color, .has-background):hover {
+    background-color: var(--wp--preset--color--blue);
+}
+/* NN Yellow Button Hover Style */
+.wp-block-button.is-style-nn-yellow
+	> .wp-block-button__link:not(.has-text-color, .has-background):hover {
+    background-color: var(--wp--preset--color--blue);
+    color: var(--wp--preset--color--base);
+}
