@@ -372,5 +372,17 @@
 			"lineHeight": "1.4em"
 		},
 		"css": ":where(.wp-site-blocks *:focus){outline-width:2px;outline-style:solid}.body1{font-size:var(--wp--preset--font-size--body-1);}.body2{font-size:var(--wp--preset--font-size--body-2);line-height:1.5em;}.body3{font-size:var(--wp--preset--font-size--body-3);line-height:1.5em;letter-spacing:0.005em;}.eyebrow{font-size:var(--wp--preset--font-size--eyebrow);line-height:1.4em;letter-spacing:0.12em;}"
-	}
+	},
+	"templateParts": [
+		{
+			"area": "header",
+			"name": "header",
+			"title": "Header"
+		},
+		{
+			"area": "footer",
+			"name": "footer",
+			"title": "Footer"
+		}
+	]
 }

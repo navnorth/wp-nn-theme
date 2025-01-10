@@ -6,7 +6,6 @@ add_action( 'admin_enqueue_scripts' , 'nn_enqueue_styles' );
 function nn_enqueue_styles(){
     wp_enqueue_style('nn-styles', get_stylesheet_uri());
 }
-
 /**
  * Register custom block styles for core blocks.
  */
@@ -43,3 +42,30 @@ function remove_button_outline_style() {
     );
 }
 add_action( 'enqueue_block_editor_assets', 'remove_button_outline_style', 20 );
+
+/**
+ * Allow SVG and WEBP format in media uploader
+ */
+add_filter('wp_check_filetype_and_ext', 'muse_check_filetype_and_ext', 10, 4);
+function muse_check_filetype_and_ext($data, $file, $filename, $mimes){
+    global $wp_version;
+
+    if ($wp_version !== '4.7.1') {
+        return $data;
+    }
+
+    $filetype = wp_check_filetype($filename, $mimes);
+
+    return [
+        'ext'               => $filetype['ext'],
+        'type'              => $filetype['type'],
+        'proper_filename'   => $data['proper_filename']
+    ];
+}
+add_filter('upload_mimes', 'muse_mime_types', 1, 1);
+function muse_mime_types($mimes) {
+    $mimes['svg'] = 'image/svg+xml';
+    $mimes['svgz'] = 'image/svg+xml';
+    $mimes['webp'] = 'image/webp';
+    return $mimes;
+}
