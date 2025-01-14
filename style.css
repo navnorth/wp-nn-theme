@@ -19,3 +19,19 @@
     background-color: var(--wp--preset--color--blue);
     color: var(--wp--preset--color--base);
 }
+header .wp-block-navigation {
+    flex-grow: 1;
+}
+header .wp-block-navigation .wp-block-navigation__responsive-container-content {
+    justify-content: space-between;
+}
+header .header-navigation {
+    width: 60%;
+}
+header .header-navigation ul.wp-block-navigation {
+    justify-content: flex-start;
+    gap: 58px;
+}
+header .header-navigation ul.wp-block-navigation li.current-menu-item {
+    color: var(--wp--preset--color--blue);
+}
