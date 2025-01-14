@@ -274,15 +274,15 @@
 				},
 				":focus": {
 					"color": {
-						"background": "var(--wp--preset--color--contrast)",
+						"background": "var(--wp--preset--color--blue)",
 						"text": "var(--wp--preset--color--base)"
 					},
 					"outline": {
-						"color": "var(--wp--preset--color--contrast)",
+						"color": "var(--wp--preset--color--blue)",
 						"offset": "2px"
 					},
 					"border": {
-						"color": "var(--wp--preset--color--contrast)"
+						"color": "var(--wp--preset--color--blue)"
 					}
 				},
 				":hover": {

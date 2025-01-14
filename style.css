@@ -64,5 +64,18 @@ header .header-navigation ul.wp-block-navigation li.current-menu-item {
     }
 }
 @media screen and (max-width: 480px) {
-    
+    .wp-block-site-logo {
+        width: 130px;
+    }
+    header > .wp-block-group {
+        padding-top: 20px !important;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    h1 {
+        font-size: var(--wp--preset--font-size--x-large);
+    }
+    h2 {
+        font-size: var(--wp--preset--font-size--large);
+    }
 }
