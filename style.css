@@ -35,3 +35,34 @@ header .header-navigation ul.wp-block-navigation {
 header .header-navigation ul.wp-block-navigation li.current-menu-item {
     color: var(--wp--preset--color--blue);
 }
+.wp-block-navigation__responsive-container-open:not(.always-shown) {
+    display: none;
+}
+@media screen and (max-width: 1199px) {
+    header .header-navigation {
+        width: auto;
+    }
+    .wp-block-navigation__responsive-container-open {
+        display: flex !important;
+    }
+    .wp-block-navigation__responsive-container-open:not(.always-shown) {
+        display: flex !important;
+    }
+    .wp-block-navigation__responsive-container {
+        display: none;
+    }
+}
+@media (min-width: 600px) and (max-width: 1199px) {
+    .wp-block-navigation__responsive-container-open:not(.always-shown) {
+        display: flex;
+    }
+    .wp-block-navigation__responsive-container {
+        display: none;
+    }
+    .wp-block-navigation__responsive-container:not(.hidden-by-default):not(.is-menu-open) {
+        display: none;
+    }
+}
+@media screen and (max-width: 480px) {
+    
+}
