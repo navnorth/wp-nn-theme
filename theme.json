@@ -139,76 +139,43 @@
 			],
 			"fontSizes": [
 				{
-					"fluid": {
-						"min": "2.5rem",
-						"max": "3.27rem"
-					},
-					"name": "Display",
-					"size": "90px",
-					"slug": "ultra-large"
-				},
-				{
-					"fluid": {
-						"min": "2.5rem",
-						"max": "3.27rem"
-					},
-					"name": "Heading 1",
+					"name": "H1",
 					"size": "64px",
 					"slug": "xx-large"
 				},
 				{
-					"fluid": {
-						"min": "1.85rem",
-						"max": "2.5rem"
-					},
-					"name": "Heading 2",
+					"name": "H2",
 					"size": "45px",
 					"slug": "x-large"
 				},
 				{
-					"fluid": {
-						"min": "1.39rem",
-						"max": "1.85rem"
-					},
-					"name": "Heading 3",
-					"size": "32px",
+					"name": "H3",
+					"size": "35px",
 					"slug": "large"
 				},
 				{
 					"fluid": false,
-					"name": "Heading 4",
+					"name": "H4",
 					"size": "23px",
 					"slug": "medium"
 				},
 				{
 					"fluid": false,
-					"name": "Display Body",
-					"size": "23px",
-					"slug": "body"
+					"name": "H5",
+					"size": "20px",
+					"slug": "h5"
 				},
 				{
 					"fluid": false,
-					"name": "Body 1",
+					"name": "H6",
+					"size": "18px",
+					"slug": "small"
+				},
+				{
+					"fluid": false,
+					"name": "Body",
 					"size": "19px",
-					"slug": "body1"
-				},
-				{
-					"fluid": false,
-					"name": "Body 2",
-					"size": "16px",
-					"slug": "body2"
-				},
-				{
-					"fluid": false,
-					"name": "Body 3",
-					"size": "14px",
-					"slug": "body3"
-				},
-                {
-					"fluid": false,
-					"name": "Eyebrow",
-					"size": "14px",
-					"slug": "eyebrow"
+					"slug": "body"
 				}
 			],
 			"writingMode": true
@@ -342,7 +309,7 @@
 			},
 			"h5": {
 				"typography": {
-					"fontSize": "var(--wp--preset--font-size--medium)"
+					"fontSize": "var(--wp--preset--font-size--h-5)"
 				}
 			},
 			"h6": {
@@ -380,7 +347,7 @@
 		},
 		"typography": {
 			"fontFamily": "var(--wp--preset--font-family--body)",
-			"fontSize": "var(--wp--preset--font-size--medium)",
+			"fontSize": "var(--wp--preset--font-size--body)",
 			"fontStyle": "normal",
 			"fontWeight": "400",
 			"lineHeight": "1.4em"
