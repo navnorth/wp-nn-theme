@@ -4,6 +4,14 @@
 * Text Domain: navnorth
 **/
 /* NN Blue Button Hover Style */
+.wp-block-button
+> .wp-block-button__link:not(.has-text-color, .has-background):hover {
+background-color: var(--wp--preset--color--cyan);
+}
+.wp-block-button
+> .wp-block-button__link:not(.has-text-color, .has-background):focus {
+background-color: var(--wp--preset--color--cyan);
+}
 .wp-block-button.is-style-nn-blue
 	> .wp-block-button__link:not(.has-text-color, .has-background):hover {
     background-color: var(--wp--preset--color--cyan);
@@ -16,6 +24,12 @@
 /* NN Yellow Button Hover Style */
 .wp-block-button.is-style-nn-yellow
 	> .wp-block-button__link:not(.has-text-color, .has-background):hover {
+    background-color: var(--wp--preset--color--blue);
+    color: var(--wp--preset--color--base);
+}
+/* NN Yellow Button Hover Style */
+.wp-block-button.is-style-nn-yellow
+	> .wp-block-button__link:not(.has-text-color, .has-background):focus {
     background-color: var(--wp--preset--color--blue);
     color: var(--wp--preset--color--base);
 }
