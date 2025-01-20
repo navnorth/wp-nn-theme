@@ -31,4 +31,7 @@ jobs:
         if [ "$RESPONSE" -eq 404 ]; then
           echo "Error: Repository not found (404)"
           exit 1
+        elif [ "$RESPONSE" -eq 422 ]; then
+          echo "Error: Validation failed, or the endpoint has been spammed. (404)"
+          exit 1
         fi
