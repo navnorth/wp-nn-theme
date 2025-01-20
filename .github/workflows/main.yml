@@ -16,11 +16,22 @@ jobs:
       run: |
         BRANCH_NAME=${GITHUB_REF##*/}
         echo "Triggering deployment for branch: $BRANCH_NAME"
+
+        # Make the API request and capture the response code
         RESPONSE=$(curl -s -o response.json -w "%{http_code}" -X POST \
-          -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+          -H "Authorization: token ${{ secrets.DEPLOY_PAT }}" \
           -H "Accept: application/vnd.github.everest-preview+json" \
           https://api.github.com/repos/navnorth/wp-nn-dot-com/dispatches \
           -d "{\"event_type\": \"trigger-sync-theme\", \"client_payload\": {\"branch\": \"$BRANCH_NAME\"}}")
 
         echo "API Response Code: $RESPONSE"
         cat response.json
+
+        # Exit with non-zero status if the response is 404
+        if [ "$RESPONSE" -eq 404 ]; then
+          echo "Error: Repository not found (404)"
+          exit 1
+        elif [ "$RESPONSE" -eq 422 ]; then
+          echo "Error: Validation failed, or the endpoint has been spammed. (404)"
+          exit 1
+        fi
