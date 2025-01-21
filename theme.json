@@ -266,25 +266,6 @@
 		},
 		"elements": {
 			"button": {
-				":active": {
-					"color": {
-						"background": "var(--wp--preset--color--contrast)",
-						"text": "var(--wp--preset--color--base)"
-					}
-				},
-				":focus": {
-					"color": {
-						"background": "var(--wp--preset--color--blue)",
-						"text": "var(--wp--preset--color--base)"
-					},
-					"outline": {
-						"color": "var(--wp--preset--color--blue)",
-						"offset": "2px"
-					},
-					"border": {
-						"color": "var(--wp--preset--color--blue)"
-					}
-				},
 				":hover": {
 					"color": {
 						"background": "var(--wp--preset--color--blue)",
