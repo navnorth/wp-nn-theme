@@ -136,18 +136,31 @@
   </div>
   <!-- /wp:columns -->
 
-  <!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"0"}}}} -->
+  <!-- wp:group {"align":"wide","className":"has-cyan-background-color has-background","style":{"spacing":{"padding":{"top":"var:preset|spacing|30","bottom":"var:preset|spacing|30","left":"0"}}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
   <div
-    class="wp-block-group alignwide"
-    style="padding-top: var(--wp--preset--spacing--50); padding-bottom: 0"
+    class="wp-block-group alignwide footer-bottom has-cyan-background-color has-background"
+    style="
+      padding-top: var(--wp--preset--spacing--30);
+      padding-bottom: var(--wp--preset--spacing--30);
+      padding-left: 0;
+    "
   >
-    <!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|contrast"}}}},"textColor":"contrast-2","fontSize":"small"} -->
-    <p
-      class="has-contrast-2-color has-text-color has-link-color has-small-font-size"
-    >
-      Designed with <a href="https://wordpress.org" rel="nofollow">WordPress</a>
-    </p>
-    <!-- /wp:paragraph -->
+    <!-- wp:group -->
+    <div class="wp-block-group">
+      <!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|contrast"}}}}} -->
+      <p class="footer-bottom-title">© [current_year] Navigation North</p>
+      <!-- /wp:paragraph -->
+    </div>
+    <!-- /wp:group -->
+    <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|10"}},"layout":{"type":"flex","orientation":"vertical"}} -->
+    <div class="wp-block-group">
+      <!-- wp:navigation {"overlayMenu":"never","style":{"typography":{"fontStyle":"normal","fontWeight":"400"},"spacing":{"blockGap":"var:preset|spacing|10"}},"fontSize":"small","layout":{"type":"flex","orientation":"horizontal"}} -->
+      <!-- wp:navigation-link {"className": "footer-bottom-link","label":"Privacy Notice","url":"/privacy-notice/"} /-->
+
+      <!-- wp:navigation-link {"className": "footer-bottom-link","label":"Terms Of Use","url":"/terms-of-use/"} /-->
+      <!-- /wp:navigation -->
+    </div>
+    <!-- /wp:group -->
   </div>
   <!-- /wp:group -->
 </div>

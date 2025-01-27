@@ -27,6 +27,23 @@ footer {
 .footer-hero .footer-contact-button {
   margin-block-start: 20px;
 }
+.block-editor-block-list__layout .block-editor-block-list__block .footer-bottom,
+.footer-bottom {
+  color: var(--wp--preset--color--base);
+  margin-block-start: 60px;
+  border-top: 1px solid var(--wp--preset--color--base);
+}
+.footer-bottom .footer-bottom-title {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.footer-bottom .footer-bottom-link a {
+  font-family: var(--wp--preset--font-family--body);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
 /* NN Blue Button Hover Style */
 .wp-block-button
   > .wp-block-button__link:not(.has-text-color, .has-background):hover {
@@ -125,6 +142,20 @@ header .header-navigation ul.wp-block-navigation li.current-menu-item {
   }
   .footer-hero .footer-contact-button {
     margin-block-start: 28px;
+  }
+  /* NN Footer Bottom*/
+  .footer-bottom {
+    flex-flow: wrap-reverse;
+  }
+  .footer-bottom .footer-bottom-title {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+  }
+  .footer-bottom .footer-bottom-link a {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
   }
   h1 {
     font-size: var(--wp--preset--font-size--x-large);

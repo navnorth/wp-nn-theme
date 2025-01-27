@@ -90,3 +90,10 @@ function custom_render_block_core_navigation (string $block_content, array $bloc
 }
 
 add_filter('render_block', 'custom_render_block_core_navigation', null, 2);
+
+function nn_current_year_shortcode () {
+    $year = date_i18n ('Y');
+     return $year;
+}
+
+add_shortcode ('current_year', 'nn_current_year_shortcode');
