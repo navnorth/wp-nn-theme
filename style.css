@@ -128,15 +128,38 @@ header .header-navigation ul.wp-block-navigation li.current-menu-item {
     padding-right: 15px;
   }
   /* NN Footer Hero style*/
+  .footer-container {
+    background-size: 400px !important;
+    background-position: 119px -126px !important;
+    padding-top: 60px !important;
+  }
   .footer-hero {
     padding-top: 100px;
     padding-bottom: 0px;
   }
-  .footer-hero .footer-hero-title {
+  .footer-hero-title {
     font-size: 32px;
     font-weight: 700;
     line-height: 38.4px;
     letter-spacing: 0.06em;
+  }
+  .footer-logo-social-container {
+    gap: 32px !important;
+    margin-bottom: 40px !important;
+  }
+  .footer-navigation-section-container {
+    gap: 40px;
+  }
+  .footer-navigation-section-container .wp-block-heading {
+    font-size: 20px !important;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0.12em;
+  }
+  .footer-navigation-section-container a {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
   }
   .footer-hero .footer-contact-button {
     margin-block-start: 28px;
