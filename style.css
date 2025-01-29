@@ -29,7 +29,7 @@
 .block-editor-block-list__layout .block-editor-block-list__block .footer-bottom,
 .footer-bottom {
   color: var(--wp--preset--color--paper);
-  border-top: 1px solid var(--wp--preset--color--divder-main);
+  border-top: 1px solid var(--wp--preset--color--divider-main);
 }
 .footer-bottom p {
   font-family: var(--wp--preset--font-family--body);
