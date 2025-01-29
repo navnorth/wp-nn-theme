@@ -189,7 +189,7 @@ header .header-navigation ul.wp-block-navigation li.current-menu-item {
   }
   /* NN Footer Bottom*/
   .footer-bottom {
-    flex-flow: wrap-reverse;
+    flex-flow: wrap-reverse !important;
   }
   .footer-bottom .footer-bottom-title {
     font-size: 18px;
