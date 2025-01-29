@@ -41,6 +41,7 @@
   font-weight: 400;
   line-height: 24px;
   text-transform: none;
+  text-decoration: none;
 }
 .footer-navigation-section-container .wp-block-heading,
 .footer-navigation-section-container .wp-block-heading a {

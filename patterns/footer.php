@@ -78,14 +78,12 @@
 
 <!-- wp:group {"align":"wide","className":"footer-bottom-layout","style":{"spacing":{"margin":{"top":"38px","bottom":"0"},"padding":{"right":"10px","left":"10px","top":"10px","bottom":"10px"}}}} -->
 <div class="wp-block-group alignwide footer-bottom-layout" style="margin-top:38px;margin-bottom:0;padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px"><!-- wp:group {"className":"footer-bottom-layout-children","style":{"spacing":{"padding":{"top":"32px","bottom":"32px"},"margin":{"bottom":"0"}}},"layout":{"type":"constrained","contentSize":"875px"}} -->
-<div class="wp-block-group footer-bottom-layout-children" style="margin-bottom:0;padding-top:32px;padding-bottom:32px"><!-- wp:group {"templateLock":"all","lock":{"move":true,"remove":true},"align":"full","className":"footer-bottom","style":{"spacing":{"padding":{"top":"10px"}},"border":{"top":{"width":"1px"}}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->
+<div class="wp-block-group footer-bottom-layout-children" style="margin-bottom:0;padding-top:32px;padding-bottom:32px"><!-- wp:group {"templateLock":false,"lock":{"move":false,"remove":false},"align":"full","className":"footer-bottom","style":{"spacing":{"padding":{"top":"10px"}},"border":{"top":{"width":"1px"}}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->
 <div class="wp-block-group alignfull footer-bottom" style="border-top-width:1px;padding-top:10px"><!-- wp:paragraph -->
 <p>© [current_year] Navigation North</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:group {"className":"footer-bottom-link","layout":{"type":"flex","flexWrap":"nowrap"}} -->
-<div class="wp-block-group footer-bottom-link"><!-- wp:navigation {"ref":461,"overlayMenu":"never","style":{"spacing":{"blockGap":"24px"}}} /--></div>
-<!-- /wp:group --></div>
+<!-- wp:navigation {"ref":610,"overlayMenu":"never","className":"footer-bottom-link"} /--></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
