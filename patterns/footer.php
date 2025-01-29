@@ -32,21 +32,21 @@
 <!-- /wp:image -->
 
 <!-- wp:group {"className":"footer-social-section","style":{"spacing":{"blockGap":"10px"}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
-<div class="wp-block-group footer-social-section"><!-- wp:social-links {"iconColor":"base","iconColorValue":"#FFFFFF","size":"has-normal-icon-size","className":"is-style-logos-only"} -->
+<div class="wp-block-group footer-social-section"><!-- wp:social-links {"iconColor":"base","iconColorValue":"#FFFFFF","openInNewTab":true,"size":"has-normal-icon-size","className":"is-style-logos-only"} -->
 <ul class="wp-block-social-links has-normal-icon-size has-icon-color is-style-logos-only"><!-- wp:social-link {"url":"https://www.linkedin.com/company/navnorth","service":"linkedin"} /--></ul>
 <!-- /wp:social-links -->
 
-<!-- wp:social-links {"iconColor":"cyan","iconColorValue":"#26A1C6","iconBackgroundColorValue":"#FFFFFF","size":"has-small-icon-size","className":"is-style-default"} -->
-<ul class="wp-block-social-links has-small-icon-size has-icon-color has-icon-background-color is-style-default"><!-- wp:social-link {"url":"https://twitter.com/navnorth","service":"x","label":""} /--></ul>
+<!-- wp:social-links {"iconColor":"base","iconColorValue":"#FFFFFF","openInNewTab":true,"size":"has-normal-icon-size","className":"is-style-logos-only"} -->
+<ul class="wp-block-social-links has-normal-icon-size has-icon-color is-style-logos-only"><!-- wp:social-link {"url":"https://twitter.com/navnorth","service":"x","label":""} /--></ul>
 <!-- /wp:social-links -->
 
-<!-- wp:social-links {"iconColor":"base","iconColorValue":"#FFFFFF","size":"has-normal-icon-size","className":"is-style-logos-only","style":{"layout":{"selfStretch":"fit","flexSize":null}},"backgroundColor":"cyan"} -->
+<!-- wp:social-links {"iconColor":"base","iconColorValue":"#FFFFFF","openInNewTab":true,"size":"has-normal-icon-size","className":"is-style-logos-only","style":{"layout":{"selfStretch":"fit","flexSize":null}},"backgroundColor":"cyan"} -->
 <ul class="wp-block-social-links has-normal-icon-size has-icon-color is-style-logos-only has-cyan-background-color has-background"><!-- wp:social-link {"url":"https://www.facebook.com/navnorth","service":"facebook"} /--></ul>
 <!-- /wp:social-links --></div>
 <!-- /wp:group -->
 
 <!-- wp:image {"lightbox":{"enabled":false},"id":484,"width":"101px","height":"auto","aspectRatio":"4.6","scale":"cover","sizeSlug":"full","linkDestination":"custom","className":"footer-muse-logo"} -->
-<figure class="wp-block-image size-full is-resized footer-muse-logo"><a href="https://museable.com/"><img src="http://codex.local/wp-content/uploads/2025/01/Museable-Logo.svg" alt="" class="wp-image-484" style="aspect-ratio:4.6;object-fit:cover;width:101px;height:auto"/></a></figure>
+<figure class="wp-block-image size-full is-resized footer-muse-logo"><a href="https://museable.com/" target="_blank" rel=" noreferrer noopener"><img src="http://codex.local/wp-content/uploads/2025/01/Museable-Logo.svg" alt="" class="wp-image-484" style="aspect-ratio:4.6;object-fit:cover;width:101px;height:auto"/></a></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group --></div>
 <!-- /wp:column -->

@@ -16,6 +16,16 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }
+.footer-logo-social-container .wp-block-social-link:hover {
+  transform: none !important;
+}
+.footer-logo-social-container a:hover {
+  color: #f8fbfc !important;
+}
+.footer-navigation-section-container a:hover {
+  color: #d8ecfe !important;
+  text-decoration: none;
+}
 .block-editor-block-list__layout .block-editor-block-list__block .footer-bottom,
 .footer-bottom {
   color: var(--wp--preset--color--base);
