@@ -5,7 +5,7 @@
 **/
 /** NN Footer styling **/
 .footer-container {
-  background-size: 40% !important;
+  background-size: 550px !important;
 }
 .footer-hero-title {
   color: var(--wp--preset--color--base);
@@ -30,7 +30,7 @@
   text-transform: none;
 }
 .footer-navigation-section-container .wp-block-heading {
-  font-family: var(--wp--preset--font-family--body);
+  font-family: var(--wp--preset--font-family--heading) !important;
   font-size: 23px;
   font-weight: 700;
   line-height: 29.9px;
@@ -104,6 +104,9 @@ header .header-navigation ul.wp-block-navigation li.current-menu-item {
   .wp-block-navigation__responsive-container {
     display: none;
   }
+  .footer-navigation-layout-parent {
+    flex-basis: 100% !important;
+  }
 }
 @media (min-width: 600px) and (max-width: 1199px) {
   .wp-block-navigation__responsive-container-open:not(.always-shown) {
@@ -116,6 +119,9 @@ header .header-navigation ul.wp-block-navigation li.current-menu-item {
       .is-menu-open
     ) {
     display: none;
+  }
+  .footer-navigation-section-layout {
+    gap: 81px !important;
   }
 }
 @media screen and (max-width: 480px) {

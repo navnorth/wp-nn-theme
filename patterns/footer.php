@@ -51,8 +51,8 @@
 <!-- /wp:group --></div>
 <!-- /wp:column -->
 
-<!-- wp:column {"width":"60%"} -->
-<div class="wp-block-column" style="flex-basis:60%"><!-- wp:group {"className":"footer-navigation-section-container","style":{"spacing":{"blockGap":"32px"}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"left","verticalAlignment":"top"}} -->
+<!-- wp:column {"width":"60%","className":"footer-navigation-layout-parent"} -->
+<div class="wp-block-column footer-navigation-layout-parent" style="flex-basis:60%"><!-- wp:group {"className":"footer-navigation-section-container","style":{"spacing":{"blockGap":"32px"}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"left","verticalAlignment":"top"}} -->
 <div class="wp-block-group footer-navigation-section-container"><!-- wp:group {"style":{"spacing":{"blockGap":"24px"},"layout":{"selfStretch":"fill","flexSize":null}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"stretch"}} -->
 <div class="wp-block-group"><!-- wp:heading {"className":"has-medium-font-size","style":{"typography":{"fontStyle":"normal","fontWeight":"700"},"elements":{"link":{"color":{"text":"var:preset|color|base"}}}},"textColor":"base","fontFamily":"body"} -->
 <h2 class="wp-block-heading has-medium-font-size has-base-color has-text-color has-link-color has-body-font-family" style="font-style:normal;font-weight:700">OUR WORK</h2>
