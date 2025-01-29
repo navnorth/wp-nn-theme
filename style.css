@@ -29,14 +29,16 @@
   line-height: 24px;
   text-transform: none;
 }
-.footer-navigation-section-container .wp-block-heading {
+.footer-navigation-section-container .wp-block-heading,
+.footer-navigation-section-container .wp-block-heading a {
   font-family: var(--wp--preset--font-family--heading) !important;
   font-size: 23px;
   font-weight: 700;
   line-height: 29.9px;
   letter-spacing: 0.02em;
+  text-decoration: none;
 }
-.footer-navigation-section-container a {
+.footer-navigation-section-container nav a {
   font-family: var(--wp--preset--font-family--body);
   font-size: 19px;
   font-weight: 600;
