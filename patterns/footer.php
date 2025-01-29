@@ -28,7 +28,7 @@
 <div class="wp-block-columns alignwide footer-navigation-section-layout" style="margin-top:38px;margin-bottom:0px"><!-- wp:column {"width":"19%","layout":{"type":"default"}} -->
 <div class="wp-block-column" style="flex-basis:19%"><!-- wp:group {"className":"footer-logo-social-container","style":{"dimensions":{"minHeight":""},"layout":{"selfStretch":"fit","flexSize":null},"spacing":{"blockGap":"16px"}},"layout":{"type":"flex","orientation":"vertical","flexWrap":"wrap","justifyContent":"left"}} -->
 <div class="wp-block-group footer-logo-social-container"><!-- wp:image {"lightbox":{"enabled":false},"id":480,"width":"232px","height":"auto","sizeSlug":"full","linkDestination":"custom"} -->
-<figure class="wp-block-image size-full is-resized"><a href="/" rel="home"><img src="http://codex.local/wp-content/uploads/2025/01/Logo-Horizontal.svg" alt="" class="wp-image-480" style="width:232px;height:auto"/></a></figure>
+<figure class="wp-block-image size-full is-resized"><a href="/" aria-label="Navigate to Navigation North Home Page" rel="home"><img src="http://codex.local/wp-content/uploads/2025/01/Logo-Horizontal.svg" alt="" class="wp-image-480" style="width:232px;height:auto"/></a></figure>
 <!-- /wp:image -->
 
 <!-- wp:group {"className":"footer-social-section","style":{"spacing":{"blockGap":"10px"}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
@@ -46,7 +46,7 @@
 <!-- /wp:group -->
 
 <!-- wp:image {"lightbox":{"enabled":false},"id":484,"width":"101px","height":"auto","aspectRatio":"4.6","scale":"cover","sizeSlug":"full","linkDestination":"custom","className":"footer-muse-logo"} -->
-<figure class="wp-block-image size-full is-resized footer-muse-logo"><a href="https://museable.com/" target="_blank" rel=" noreferrer noopener"><img src="http://codex.local/wp-content/uploads/2025/01/Museable-Logo.svg" alt="" class="wp-image-484" style="aspect-ratio:4.6;object-fit:cover;width:101px;height:auto"/></a></figure>
+<figure class="wp-block-image size-full is-resized footer-muse-logo"><a href="https://museable.com/" aria-label="Navigate to Museable Official Site" target="_blank" rel=" noreferrer noopener"><img src="http://codex.local/wp-content/uploads/2025/01/Museable-Logo.svg" alt="" class="wp-image-484" style="aspect-ratio:4.6;object-fit:cover;width:101px;height:auto"/></a></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group --></div>
 <!-- /wp:column -->
