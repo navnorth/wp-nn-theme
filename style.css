@@ -7,34 +7,40 @@
 .footer-container {
   background-size: 550px !important;
 }
+.footer-logo-social-container .wp-block-social-link:hover {
+  transform: none !important;
+}
+.footer-logo-social-container a:hover {
+  color: var(--wp--preset--color--light-gray) !important;
+}
+.footer-navigation-section-container a:hover {
+  color: var(--wp--preset--color--primary-light) !important;
+  text-decoration: none;
+}
 .footer-hero-title {
-  color: var(--wp--preset--color--base);
+  color: var(--wp--preset--color--paper);
   font-family: var(--wp--preset--font-family--heading);
-  font-size: 64px;
+  font-size: var(--wp--preset--font-size--x-large);
   font-weight: 700;
   line-height: 76.8px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }
-.footer-logo-social-container .wp-block-social-link:hover {
-  transform: none !important;
-}
-.footer-logo-social-container a:hover {
-  color: #f8fbfc !important;
-}
-.footer-navigation-section-container a:hover {
-  color: #d8ecfe !important;
-  text-decoration: none;
-}
 .block-editor-block-list__layout .block-editor-block-list__block .footer-bottom,
 .footer-bottom {
-  color: var(--wp--preset--color--base);
-  border-top: 1px solid var(--wp--preset--color--divder-main, #b8c3cc);
+  color: var(--wp--preset--color--paper);
+  border-top: 1px solid var(--wp--preset--color--divder-main);
 }
-.footer-bottom p,
+.footer-bottom p {
+  font-family: var(--wp--preset--font-family--body);
+  font-size: var(--wp--preset--font-size--body-2);
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: none;
+}
 .footer-bottom-link a {
   font-family: var(--wp--preset--font-family--body);
-  font-size: 16px;
+  font-size: var(--wp--preset--font-size--body-1);
   font-weight: 400;
   line-height: 24px;
   text-transform: none;
@@ -42,17 +48,29 @@
 .footer-navigation-section-container .wp-block-heading,
 .footer-navigation-section-container .wp-block-heading a {
   font-family: var(--wp--preset--font-family--heading) !important;
-  font-size: 23px;
+  color: var(--wp--preset--color--paper) !important;
+  font-size: var(--wp--preset--font-size--h-5);
   font-weight: 700;
   line-height: 29.9px;
   letter-spacing: 0.02em;
   text-decoration: none;
 }
-.footer-navigation-section-container nav a {
-  font-family: var(--wp--preset--font-family--body);
-  font-size: 19px;
+.footer-navigation-section-container .wp-block-heading a:hover {
+  color: var(--wp--preset--color--primary-light) !important;
+}
+.footer-navigation-section-container .footer-navigaion-section-list a {
+  font-family: var(--wp--preset--font-family--body) !important;
+  color: var(--wp--preset--color--paper) !important;
+  font-size: var(--wp--preset--font-size--button);
   font-weight: 600;
   line-height: 26px;
+}
+.footer-navigation-section-container .footer-navigaion-section-list a:hover {
+  color: var(--wp--preset--color--primary-light) !important;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: auto;
 }
 /* NN Blue Button Hover Style */
 .wp-block-button
@@ -76,13 +94,13 @@
 .wp-block-button.is-style-nn-yellow
   > .wp-block-button__link:not(.has-text-color, .has-background):hover {
   background-color: var(--wp--preset--color--blue);
-  color: var(--wp--preset--color--base);
+  color: var(--wp--preset--color--paper);
 }
 /* NN Yellow Button Hover Style */
 .wp-block-button.is-style-nn-yellow
   > .wp-block-button__link:not(.has-text-color, .has-background):focus {
   background-color: var(--wp--preset--color--blue);
-  color: var(--wp--preset--color--base);
+  color: var(--wp--preset--color--paper);
 }
 header .wp-block-navigation {
   flex-grow: 1;
@@ -157,7 +175,7 @@ header .header-navigation ul.wp-block-navigation li.current-menu-item {
     padding-bottom: 0px;
   }
   .footer-hero-title {
-    font-size: 32px;
+    font-size: var(--wp--preset--font-size--medium);
     font-weight: 700;
     line-height: 38.4px;
     letter-spacing: 0.06em;
