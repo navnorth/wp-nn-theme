@@ -55,7 +55,7 @@
 <div class="wp-block-column footer-navigation-layout-parent" style="flex-basis:60%"><!-- wp:group {"className":"footer-navigation-section-container","style":{"spacing":{"blockGap":"32px"}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"left","verticalAlignment":"top"}} -->
 <div class="wp-block-group footer-navigation-section-container"><!-- wp:group {"style":{"spacing":{"blockGap":"24px"},"layout":{"selfStretch":"fill","flexSize":null}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"stretch"}} -->
 <div class="wp-block-group"><!-- wp:heading {"className":"has-medium-font-size","style":{"typography":{"fontStyle":"normal","fontWeight":"700"},"elements":{"link":{"color":{"text":"var:preset|color|base"}}}},"textColor":"base","fontFamily":"body"} -->
-<h2 class="wp-block-heading has-medium-font-size has-base-color has-text-color has-link-color has-body-font-family" style="font-style:normal;font-weight:700">OUR WORK</h2>
+<h2 class="wp-block-heading has-medium-font-size has-base-color has-text-color has-link-color has-body-font-family" style="font-style:normal;font-weight:700"><a href="/our-work" aria-label="Navigate To Navigation North Our Work Page">OUR WORK</a></h2>
 <!-- /wp:heading -->
 
 <!-- wp:group {"style":{"layout":{"selfStretch":"fit","flexSize":null}},"layout":{"type":"flex","orientation":"vertical"}} -->
@@ -65,7 +65,7 @@
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"24px"},"layout":{"selfStretch":"fill","flexSize":null}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"stretch"}} -->
 <div class="wp-block-group"><!-- wp:heading {"className":"has-medium-font-size","style":{"elements":{"link":{"color":{"text":"var:preset|color|base"}}}},"textColor":"base","fontFamily":"body"} -->
-<h2 class="wp-block-heading has-medium-font-size has-base-color has-text-color has-link-color has-body-font-family"><a href="/" aria-label="Navigate to Navigation North home page">NAVIGATION NORTH</a></h2>
+<h2 class="wp-block-heading has-medium-font-size has-base-color has-text-color has-link-color has-body-font-family"><a href="/" aria-label="Navigate To Navigation North Home Page">NAVIGATION NORTH</a></h2>
 <!-- /wp:heading -->
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"18px"}},"layout":{"type":"flex","orientation":"vertical"}} -->
