@@ -213,7 +213,7 @@
 							"fontFamily": "Inter",
 							"fontStretch": "normal",
 							"fontStyle": "normal",
-							"fontWeight": "400",
+							"fontWeight": "400 600 700",
 							"src": [
 								"file:./assets/fonts/inter/Inter-VariableFont_slnt,wght.woff2"
 							]
