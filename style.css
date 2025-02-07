@@ -75,31 +75,31 @@
 /* NN Blue Button Hover Style */
 .wp-block-button
   > .wp-block-button__link:not(.has-text-color, .has-background):hover {
-  background-color: var(--wp--preset--color--cyan);
+  background-color: var(--wp--preset--color--secondary-main);
 }
 .wp-block-button
   > .wp-block-button__link:not(.has-text-color, .has-background):focus {
-  background-color: var(--wp--preset--color--cyan);
+  background-color: var(--wp--preset--color--secondary-main);
 }
 .wp-block-button.is-style-nn-blue
   > .wp-block-button__link:not(.has-text-color, .has-background):hover {
-  background-color: var(--wp--preset--color--cyan);
+  background-color: var(--wp--preset--color--secondary-main);
 }
 /* NN Cyan Button Hover Style */
 .wp-block-button.is-style-nn-cyan
   > .wp-block-button__link:not(.has-text-color, .has-background):hover {
-  background-color: var(--wp--preset--color--blue);
+  background-color: var(--wp--preset--color--default);
 }
 /* NN Yellow Button Hover Style */
 .wp-block-button.is-style-nn-yellow
   > .wp-block-button__link:not(.has-text-color, .has-background):hover {
-  background-color: var(--wp--preset--color--blue);
+  background-color: var(--wp--preset--color--default);
   color: var(--wp--preset--color--paper);
 }
 /* NN Yellow Button Hover Style */
 .wp-block-button.is-style-nn-yellow
   > .wp-block-button__link:not(.has-text-color, .has-background):focus {
-  background-color: var(--wp--preset--color--blue);
+  background-color: var(--wp--preset--color--default);
   color: var(--wp--preset--color--paper);
 }
 header .wp-block-navigation {
