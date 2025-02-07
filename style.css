@@ -3,6 +3,75 @@
 * Template: twentytwentyfour
 * Text Domain: navnorth
 **/
+/** NN Footer styling **/
+.footer-container {
+  background-size: 550px !important;
+}
+.footer-logo-social-container .wp-block-social-link:hover {
+  transform: none !important;
+}
+.footer-logo-social-container a:hover {
+  color: var(--wp--preset--color--light-gray) !important;
+}
+.footer-navigation-section-container a:hover {
+  color: var(--wp--preset--color--primary-light) !important;
+  text-decoration: none;
+}
+.footer-hero-title {
+  color: var(--wp--preset--color--paper);
+  font-family: var(--wp--preset--font-family--heading);
+  font-size: var(--wp--preset--font-size--x-large);
+  font-weight: 700;
+  line-height: 76.8px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.block-editor-block-list__layout .block-editor-block-list__block .footer-bottom,
+.footer-bottom {
+  color: var(--wp--preset--color--paper);
+  border-top: 1px solid var(--wp--preset--color--divider-main);
+}
+.footer-bottom p {
+  font-family: var(--wp--preset--font-family--body);
+  font-size: var(--wp--preset--font-size--body-2);
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: none;
+}
+.footer-bottom-link a {
+  font-family: var(--wp--preset--font-family--body);
+  font-size: var(--wp--preset--font-size--body-1);
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: none;
+}
+.footer-navigation-section-container .wp-block-heading,
+.footer-navigation-section-container .wp-block-heading a {
+  font-family: var(--wp--preset--font-family--heading) !important;
+  color: var(--wp--preset--color--paper) !important;
+  font-size: var(--wp--preset--font-size--h-5);
+  font-weight: 700;
+  line-height: 29.9px;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+.footer-navigation-section-container .wp-block-heading a:hover {
+  color: var(--wp--preset--color--primary-light) !important;
+}
+.footer-navigation-section-container .footer-navigaion-section-list a {
+  font-family: var(--wp--preset--font-family--body) !important;
+  color: var(--wp--preset--color--paper) !important;
+  font-size: var(--wp--preset--font-size--button);
+  font-weight: 600;
+  line-height: 26px;
+}
+.footer-navigation-section-container .footer-navigaion-section-list a:hover {
+  color: var(--wp--preset--color--primary-light) !important;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: auto;
+}
 /* NN Blue Button Hover Style */
 .wp-block-button
   > .wp-block-button__link:not(.has-text-color, .has-background):hover {
@@ -65,6 +134,9 @@ header .header-navigation ul.wp-block-navigation li.current-menu-item {
   .wp-block-navigation__responsive-container {
     display: none;
   }
+  .footer-navigation-layout-parent {
+    flex-basis: 100% !important;
+  }
 }
 @media (min-width: 600px) and (max-width: 1199px) {
   .wp-block-navigation__responsive-container-open:not(.always-shown) {
@@ -78,6 +150,9 @@ header .header-navigation ul.wp-block-navigation li.current-menu-item {
     ) {
     display: none;
   }
+  .footer-navigation-section-layout {
+    gap: 81px !important;
+  }
 }
 @media screen and (max-width: 480px) {
   .wp-block-site-logo {
@@ -87,6 +162,58 @@ header .header-navigation ul.wp-block-navigation li.current-menu-item {
     padding-top: 20px !important;
     padding-left: 15px;
     padding-right: 15px;
+  }
+  /* NN Footer Hero style*/
+  .footer-container {
+    background-size: 400px !important;
+    background-position: 119px -126px !important;
+    padding-top: 60px !important;
+    padding-bottom: 30px !important;
+  }
+  .footer-hero {
+    padding-top: 100px;
+    padding-bottom: 0px;
+  }
+  .footer-hero-title {
+    font-size: var(--wp--preset--font-size--medium);
+    font-weight: 700;
+    line-height: 38.4px;
+    letter-spacing: 0.06em;
+  }
+  .footer-logo-social-container {
+    gap: 32px !important;
+  }
+  .footer-navigation-section-container {
+    gap: 30px;
+  }
+  .footer-navigation-section-layout {
+    gap: 81px !important;
+  }
+  .footer-navigation-section-container a {
+    white-space: nowrap;
+  }
+  .footer-bottom-layout {
+    padding: 0px !important;
+  }
+  .footer-bottom-layout-children {
+    padding: 0px !important;
+  }
+  .footer-hero .footer-contact-button {
+    margin-block-start: 28px;
+  }
+  /* NN Footer Bottom*/
+  .footer-bottom {
+    flex-flow: wrap-reverse;
+  }
+  .footer-bottom .footer-bottom-title {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+  }
+  .footer-bottom .footer-bottom-link a {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
   }
   h1 {
     font-size: var(--wp--preset--font-size--x-large);
