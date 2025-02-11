@@ -2,9 +2,9 @@ name: Deploy WP NN theme to Staging Site
 
 on: 
     push: 
-        branches: [stage]
+        branches: [MUSE-2552]
 
-concurrency: stage
+concurrency: MUSE-2552
 
 jobs: 
     deploy:
