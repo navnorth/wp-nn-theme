@@ -34,7 +34,7 @@ jobs:
               run: |
 
                 # Create remote theme directory if it doesn't exist
-                ssh SSH_USER@SSH_HOST "mkdir -p $REMOTE_DIR"
+                ssh $SSH_USER@$SSH_HOST "mkdir -p $REMOTE_DIR"
 
                 # Deploy theme code using RSYNC with .deployignore
                 rsync -avz \
