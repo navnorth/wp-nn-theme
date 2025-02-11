@@ -1,0 +1,17 @@
+name: Deploy WP NN theme to Staging Site
+
+on: 
+    push: 
+        branches: [stage]
+
+concurrency: stage
+
+jobs: 
+    deploy:
+        name: Deploy to Stage
+        runs-on: ubuntu-latest
+        
+        steps:
+            - name: Get latest theme code
+              uses: actions/checkout@v4
+        
