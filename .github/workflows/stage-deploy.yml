@@ -30,7 +30,7 @@ jobs:
                 SSH_HOST: ${{ secrets.SSH_HOST }}
                 SSH_USER: ${{ secrets.SSH_USER }}
                 SOURCE_DIR: "."
-                REMOTE_DIR: "~/files/wp-content/theme/wp-nn-theme"
+                REMOTE_DIR: "~/files/wp-content/themes/wp-nn-theme"
               run: |
 
                 # Create remote theme directory if it doesn't exist
