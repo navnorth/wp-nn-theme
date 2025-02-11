@@ -1,10 +1,10 @@
-name: Deploy WP NN theme to Staging Site
+name: Deploy WP NN theme to Stage Site
 
 on: 
     push: 
-        branches: [MUSE-2552]
+        branches: [stage]
 
-concurrency: MUSE-2552
+concurrency: stage
 
 jobs: 
     deploy:
@@ -28,7 +28,7 @@ jobs:
             - name: Deploy to SpinupWP via SSH
               env:
                 SSH_HOST: ${{ secrets.SSH_HOST }}
-                SSH_USER: ${{ secrets.SSH_USER }}
+                SSH_USER: ${{ secrets.STAGE_SSH_USER }}
                 SOURCE_DIR: "."
                 REMOTE_DIR: "~/files/wp-content/themes/wp-nn-theme"
               run: |
