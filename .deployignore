@@ -1,0 +1,45 @@
+# Development Files
+
+node_modules/
+vendor/
+.git/
+.github/
+
+# Source Files
+
+src/
+
+# Configuration Files
+
+\*.config.js
+webpack.config.js
+babel.config.js
+tsconfig.json
+.eslintrc
+.prettierrc
+
+# Dependency Management
+
+package.json
+package-lock.json
+composer.json
+composer.lock
+
+# Environment & Misc
+
+.env
+.env.\*
+.editorconfig
+\*.log
+README.md
+CHANGELOG.md
+CONTRIBUTING.md
+
+# Specific Exclusions
+
+.gitignore
+.deployignore
+\*.map
+\*.scss
+\*.sass
+\*.less
