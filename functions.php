@@ -1,15 +1,27 @@
 <?php
+/**
+ * NN Web theme functions and definitions
+ *
+ * @link https://developer.wordpress.org/themes/basics/theme-functions/
+ *
+ * @package Navigation North
+ * @since Navigation North 1.0
+ */
+
 define( 'NN_TEXT_DOMAIN', 'navigationnorth' );
 
-add_action( 'wp_enqueue_scripts', 'nn_enqueue_styles' );
-add_action( 'admin_enqueue_scripts', 'nn_enqueue_styles' );
+/**
+ * Enqueue default theme styles.
+ */
 function nn_enqueue_styles() {
 	wp_enqueue_style( 'nn-styles', get_stylesheet_uri() );
 }
+add_action( 'wp_enqueue_scripts', 'nn_enqueue_styles' );
+add_action( 'admin_enqueue_scripts', 'nn_enqueue_styles' );
+
 /**
  * Register custom block styles for core blocks.
  */
-add_action( 'init', 'nn_register_custom_block_styles' );
 function nn_register_custom_block_styles() {
 		// Define the custom styles for the button block.
 		$button_styles = array(
@@ -32,8 +44,12 @@ function nn_register_custom_block_styles() {
 			register_block_style( 'core/button', $style );
 		}
 }
+add_action( 'init', 'nn_register_custom_block_styles' );
 
-function remove_button_outline_style() {
+/**
+ * Remove default button outline style variation.
+ */
+function nn_remove_button_outline_style() {
 	wp_enqueue_script(
 		'custom-block-editor-js',
 		get_stylesheet_directory_uri() . '/assets/js/button-unregister-styles.js',
@@ -41,16 +57,20 @@ function remove_button_outline_style() {
 		filemtime( get_stylesheet_directory() . '/assets/js/button-unregister-styles.js' )
 	);
 }
-add_action( 'enqueue_block_editor_assets', 'remove_button_outline_style', 20 );
+add_action( 'enqueue_block_editor_assets', 'nn_remove_button_outline_style', 20 );
 
 /**
  * Allow SVG and WEBP format in media uploader
+ *
+ * @param array  $data values for the extension, mime type, and corrected filename.
+ * @param string $file full path of the file.
+ * @param string $filename name of the file.
+ * @param array  $mimes array of mime types.
  */
-add_filter( 'wp_check_filetype_and_ext', 'muse_check_filetype_and_ext', 10, 4 );
-function muse_check_filetype_and_ext( $data, $file, $filename, $mimes ) {
+function nn_check_filetype_and_ext( $data, $file, $filename, $mimes ) {
 	global $wp_version;
 
-	if ( $wp_version !== '4.7.1' ) {
+	if ( '4.7.1' !== $wp_version ) {
 		return $data;
 	}
 
@@ -62,19 +82,30 @@ function muse_check_filetype_and_ext( $data, $file, $filename, $mimes ) {
 		'proper_filename' => $data['proper_filename'],
 	);
 }
-add_filter( 'upload_mimes', 'muse_mime_types', 1, 1 );
-function muse_mime_types( $mimes ) {
+add_filter( 'wp_check_filetype_and_ext', 'nn_check_filetype_and_ext', 10, 4 );
+
+/**
+ * Add SVG and WEBP to allowed mime types.
+ *
+ * @param array $mimes mime types keyed by the file extension regex.
+ */
+function nn_mime_types( $mimes ) {
 	$mimes['svg']  = 'image/svg+xml';
 	$mimes['svgz'] = 'image/svg+xml';
 	$mimes['webp'] = 'image/webp';
 	return $mimes;
 }
+add_filter( 'upload_mimes', 'nn_mime_types', 1, 1 );
+
 /**
  * Change hamburger menu icon according to Figma design
+ *
+ * @param string $block_content the block content.
+ * @param array  $block  the full block including name and attributes.
  */
 function custom_render_block_core_navigation( string $block_content, array $block ) {
 	if (
-		$block['blockName'] === 'core/navigation' &&
+		'core/navigation' === $block['blockName'] &&
 		! is_admin() &&
 		! wp_is_json_request()
 	) {
@@ -91,12 +122,13 @@ function custom_render_block_core_navigation( string $block_content, array $bloc
 
 	return $block_content;
 }
-
 add_filter( 'render_block', 'custom_render_block_core_navigation', null, 2 );
 
+/**
+ * Return current year.
+ */
 function nn_current_year_shortcode() {
 	$year = date_i18n( 'Y' );
 	return $year;
 }
-
 add_shortcode( 'current_year', 'nn_current_year_shortcode' );
