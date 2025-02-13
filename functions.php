@@ -14,7 +14,12 @@ define( 'NN_TEXT_DOMAIN', 'navigationnorth' );
  * Enqueue default theme styles.
  */
 function nn_enqueue_styles() {
-	wp_enqueue_style( 'nn-styles', get_stylesheet_uri() );
+	wp_enqueue_style( // phpcs:ignore WordPress.WP.EnqueuedResourceParameters.NoExplicitVersion
+		'nn-styles',
+		get_stylesheet_uri(),
+		array(),
+		null // phpcs:ignore WordPress.WP.EnqueuedResourceParameters.MissingVersion
+	);
 }
 add_action( 'wp_enqueue_scripts', 'nn_enqueue_styles' );
 add_action( 'admin_enqueue_scripts', 'nn_enqueue_styles' );
@@ -54,7 +59,8 @@ function nn_remove_button_outline_style() {
 		'custom-block-editor-js',
 		get_stylesheet_directory_uri() . '/assets/js/button-unregister-styles.js',
 		array( 'wp-blocks', 'wp-dom-ready', 'wp-edit-post' ),
-		filemtime( get_stylesheet_directory() . '/assets/js/button-unregister-styles.js' )
+		filemtime( get_stylesheet_directory() . '/assets/js/button-unregister-styles.js' ),
+		true
 	);
 }
 add_action( 'enqueue_block_editor_assets', 'nn_remove_button_outline_style', 20 );
