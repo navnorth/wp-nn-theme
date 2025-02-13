@@ -73,4 +73,4 @@ jobs:
         run: npm install
 
       - name: Run Stylelint
-        run: npx stylelint "**/*.scss" --config .stylelint.mjs
+        run: npx stylelint "**/*.css" --config .stylelint.mjs
