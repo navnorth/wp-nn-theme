@@ -5,8 +5,12 @@
  * Categories: footer
  * Block Types: core/template-part/footer
  * Description: A footer section with hero section and 3 column
+ *
+ * @package WordPress
  */
+
 ?>
+
 <!-- wp:group {"className":"footer-container","style":{"spacing":{"padding":{"top":"100px"},"blockGap":"26px"},"elements":{"link":{"color":{"text":"var:preset|color|base"}}},"background":{"backgroundImage":{"url":"http://codex.local/wp-content/uploads/2025/01/nn-logo-mark-white.svg","id":502,"source":"file","title":"nn-logo-mark-white"},"backgroundSize":"550px","backgroundAttachment":"scroll","backgroundPosition":"100% 30%","backgroundRepeat":"no-repeat"}},"backgroundColor":"cyan","textColor":"base","layout":{"type":"constrained"}} -->
 <div class="wp-block-group footer-container has-base-color has-cyan-background-color has-text-color has-background has-link-color" style="padding-top:100px"><!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"0","bottom":"0"},"blockGap":"0"}},"layout":{"type":"default"}} -->
 <div class="wp-block-group alignwide" style="padding-top:0;padding-bottom:0"><!-- wp:group {"style":{"spacing":{"padding":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained","justifyContent":"left","contentSize":"875px"}} -->

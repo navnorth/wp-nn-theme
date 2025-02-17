@@ -1,0 +1,76 @@
+name: Pull Requests
+
+on:
+  pull_request:
+    branches: [main, stage]
+
+jobs:
+  phpcs:
+    name: Run PHPCS
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: "8.0"
+          tools: composer
+
+      - name: Configure Composer Allow Plugins
+        run: |
+          composer config --global allow-plugins.dealerdirect/phpcodesniffer-composer-installer true
+
+      - name: Install Dependencies
+        run: |
+          composer global require squizlabs/php_codesniffer
+          composer global require phpcsstandards/phpcsutils
+          composer global require phpcsstandards/phpcsextra
+          composer global require wp-coding-standards/wpcs
+
+      - name: Set PHPCS WordPress Configuration
+        run: |
+          phpcs --config-set installed_paths $HOME/.composer/vendor/wp-coding-standards/wpcs,$HOME/.composer/vendor/phpcsstandards/phpcsutils,$HOME/.composer/vendor/phpcsstandards/phpcsextra
+
+      - name: Check Coding Standards
+        run: phpcs
+
+  eslint:
+    name: Run ESlint
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "18"
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run ESLint
+        run: npx eslint .
+
+  stylelint:
+    name: Run Stylelint
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "18"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run Stylelint
+        run: npx stylelint "**/*.css" --config .stylelint.mjs
