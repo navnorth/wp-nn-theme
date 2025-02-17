@@ -131,11 +131,6 @@
 					"slug": "success-main"
 				},
 				{
-					"color": "#3C824D",
-					"name": "Success Main",
-					"slug": "success-main"
-				},
-				{
 					"color": "#5AFFB2",
 					"name": "Success Invert",
 					"slug": "success-invert"
