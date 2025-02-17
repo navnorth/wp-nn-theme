@@ -428,7 +428,8 @@
 				},
 				"typography": {
 					"fontWeight": "400"
-				}
+				},
+				"css": "flex-grow:1"
 			},
 			"navnorth/inner-chip": {
 				"typography": {
